@@ -50,9 +50,24 @@ Thông tin cấu hình:
 | Agent Model | `nvidia/nemotron-3.5-lightning:free` |
 | API Provider | OpenRouter |
 
-Trong phiên bản hiện tại, embeddings được tính khi chạy chương trình và lưu trong bộ nhớ RAM. File JSON chứa nội dung và metadata của các chunks được lưu trên ổ đĩa.
+#### Vector Store sử dụng PostgreSQL và pgvector
 
-Hệ thống chưa có bằng chứng tích hợp một Vector Database lưu trữ lâu dài (Persistent Vector Database) như ChromaDB. Vì vậy, mình không xem phần xử lý embeddings trong RAM là một cơ sở dữ liệu vector có khả năng lưu trữ lâu dài.
+Trong Day 6, mình đã sử dụng PostgreSQL kết hợp với pgvector để lưu embeddings. Database có 371 records, gồm Strategy A với 190 chunks và Strategy B với 181 chunks.
+
+Khi thực hiện Day 7, mình kiểm tra và xác nhận 181 Chunk IDs của Strategy B khớp hoàn toàn với bộ dữ liệu đang sử dụng.
+
+Tuy nhiên, chỉ có 61/181 chunks khớp chính xác về nội dung văn bản. Phần còn lại có những khác biệt về mã hóa ký tự khi xử lý PDF.
+
+Để tránh ảnh hưởng đến dữ liệu gốc của Day 6, mình tạo bảng `day7_minilm_chunks` trong cùng PostgreSQL và lưu lại 181 embeddings bằng mô hình `all-MiniLM-L6-v2`, mỗi vector có 384 chiều.
+
+Sau khi lưu, mình kiểm tra và xác nhận cả 181 records đều khớp với văn bản hiện tại thông qua SHA-256.
+
+Mình tiếp tục cập nhật Dense Retrieval, Hybrid Retrieval và AI Agent để đọc embeddings từ PostgreSQL thay vì tạo lại toàn bộ vectors mỗi lần chạy.
+
+Các phép tính cosine similarity và RRF vẫn được thực hiện bằng NumPy và Python. PostgreSQL đóng vai trò lưu trữ embeddings lâu dài (Persistent Vector Store).
+
+Khi kiểm tra lại trên Dev, Dense Retrieval và Hybrid Retrieval giữ nguyên các chỉ số Hit@1, Hit@3 và Context Evidence Rate so với trước khi kết nối PostgreSQL.
+
 
 ### 1.3. Xây dựng Benchmark
 
@@ -218,11 +233,48 @@ Sau khi chốt cấu hình, mình sử dụng cùng cấu hình đó để chạ
 
 ### 2.8. Retrieval Benchmark trên Test
 
-Phần Agent Test đã được thực hiện, nhưng kết quả Retrieval-only Test Benchmark cho TF-IDF và Hybrid chưa được xác nhận trong dữ liệu hiện có.
+Sau khi lựa chọn cấu hình trên Dev, mình tiến hành đánh giá TF-IDF Baseline và Hybrid RRF trên 5 câu Answerable Test.
 
-Vì vậy, mình chưa ghi điểm Hit@1, Evidence Hit@3 và Context Evidence Rate trên Test.
+Các câu hỏi được sử dụng gồm Q09, Q10, Q18, Q19 và Q20.
 
-Kết quả Agent Test ở phần tiếp theo không được sử dụng thay thế cho các chỉ số Retrieval-only này.
+Trước khi đánh giá, mình kiểm tra và chuẩn hóa các đoạn Gold Evidence để chúng khớp với văn bản đã trích xuất từ PDF. Việc chuẩn hóa chỉ nhằm xử lý lỗi ký tự, xuống dòng và ranh giới chunks. Riêng Q19 có bằng chứng nằm trong hai chunks liên tiếp.
+
+Mình giữ nguyên thuật toán và cấu hình Hybrid đã lựa chọn trên Dev, không điều chỉnh theo kết quả Test.
+
+| Chỉ số | TF-IDF Baseline | Hybrid RRF |
+|---|---:|---:|
+| Hit@1 | 1/5 (20%) | 2/5 (40%) |
+| Evidence Hit@3 | 3/5 (60%) | 3/5 (60%) |
+| Context Evidence Rate | 2/5 (40%) | 3/5 (60%) |
+| Median Latency | 0,455 ms | 11,04 ms |
+| Average Context | 528,6 ký tự | 990,2 ký tự |
+| Service Cost | 0 USD | 0 USD |
+
+**Nhận xét**
+
+Hybrid Retrieval đạt Hit@1 là 40%, cao hơn TF-IDF ở mức 20%.
+
+Evidence Hit@3 của hai phương pháp đều đạt 60%. Tuy nhiên, Hybrid có Context Evidence Rate cao hơn, đạt 60% so với 40% của TF-IDF.
+
+Điều này cho thấy Hybrid không tìm được nhiều bộ bằng chứng đầy đủ hơn trong Top 3, nhưng giữ lại bằng chứng trong context tốt hơn.
+
+Đổi lại, thời gian truy vấn trung vị của Hybrid là 11,04 ms, cao hơn TF-IDF với 0,455 ms.
+
+Mình nhận thấy Hybrid có lợi thế về chất lượng context, nhưng phải đánh đổi bằng thời gian xử lý. Do tập Test chỉ gồm 5 câu hỏi, kết quả này chưa đủ để khẳng định Hybrid luôn tốt hơn trên mọi dữ liệu.
+
+**Kết luận**
+
+Mình tiếp tục sử dụng Hybrid RRF với Top-k = 3, RRF k = 60 và Context Budget = 1.200 ký tự làm cấu hình cuối cùng.
+
+Cấu hình này đã được lựa chọn dựa trên Dev trước khi chạy Test.
+
+Kết quả chi tiết được lưu tại:
+
+- `results/baseline_test/summary.json`
+- `results/baseline_test/traces.json`
+- `results/hybrid_test_1200/summary.json`
+- `results/hybrid_test_1200/traces.json`
+
 
 ## 3. AI Agent và đánh giá
 
@@ -479,6 +531,92 @@ py starter/agent_metrics.py `
 Các API Key được quản lý bằng file `.env` trên máy cá nhân và không được đưa vào repository.
 
 Để tái lập đầy đủ, người chạy cần chuẩn bị môi trường Python, cài đặt các thư viện cần thiết, có quyền truy cập vào nguồn dữ liệu và cấu hình OpenRouter API Key của riêng mình.
+
+
+#### 5.2.1. Tạo lại Vector Store từ Day 6
+
+Để chạy lại hệ thống, mình sử dụng PostgreSQL 16 kết hợp pgvector từ môi trường Docker của Day 6.
+
+Database được truy cập qua `127.0.0.1:55433`. Trong Day 7, mình tạo bảng `day7_minilm_chunks` riêng để lưu 181 embeddings, không thay đổi dữ liệu gốc của Day 6.
+
+**Bước 1: Khởi động PostgreSQL**
+
+Mở Docker Desktop và khởi động container PostgreSQL của Day 6.
+
+Kiểm tra bằng lệnh:
+
+```powershell
+docker ps
+```
+
+**Bước 2: Thiết lập kết nối**
+
+Trong PowerShell:
+
+```powershell
+$cid = "day6_student_starter-postgres-1"
+$env:DAY7_DB_USER = (docker exec $cid printenv POSTGRES_USER).Trim()
+$env:DAY7_DB_NAME = (docker exec $cid printenv POSTGRES_DB).Trim()
+$env:DAY7_DB_PASSWORD = (docker exec $cid printenv POSTGRES_PASSWORD).Trim()
+```
+
+Tên container và port cần được điều chỉnh nếu chạy trên môi trường Docker khác.
+
+**Bước 3: Tạo bảng lưu embeddings**
+
+```powershell
+docker exec $cid psql -U $env:DAY7_DB_USER -d $env:DAY7_DB_NAME -c "CREATE EXTENSION IF NOT EXISTS vector;" -c "CREATE TABLE IF NOT EXISTS public.day7_minilm_chunks (chunk_id TEXT PRIMARY KEY, source_id TEXT NOT NULL, page INTEGER, content TEXT NOT NULL, text_sha256 TEXT NOT NULL, embedding vector(384) NOT NULL);"
+```
+
+**Bước 4: Tạo và nạp embeddings**
+
+Cài đặt các thư viện cần thiết:
+
+```powershell
+py -m pip install "psycopg[binary]" sentence-transformers numpy
+```
+
+Sau đó, đọc 181 chunks từ `data/converted/chunks.json`, sử dụng MiniLM `all-MiniLM-L6-v2` để tạo embeddings đã chuẩn hóa (normalized embeddings) và lưu vào bảng `day7_minilm_chunks`.
+
+Mỗi record gồm Chunk ID, Source ID, Page, Content, SHA-256 và vector 384 chiều.
+
+Lệnh tạo và nạp dữ liệu cần được chạy trước lần đầu sử dụng Dense Retrieval, Hybrid Retrieval hoặc Agent trên một database mới.
+
+
+**Lệnh tạo và nạp 181 embeddings vào PostgreSQL**
+
+Sau khi thiết lập các biến môi trường ở Bước 2 và tạo bảng ở Bước 3, mình chạy lệnh sau để tạo lại embeddings từ dữ liệu Day 6 đã chuyển đổi:
+
+```powershell
+py -c "import os,json,hashlib,psycopg; from pathlib import Path; from sentence_transformers import SentenceTransformer; cs=json.loads(Path('data/converted/chunks.json').read_text(encoding='utf-8-sig')); assert len(cs)==181; model=SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2'); vec=model.encode([c['text'] for c in cs],normalize_embeddings=True,convert_to_numpy=True); assert vec.shape==(181,384); rows=[(c['id'],c['source_id'],c['page'],c['text'],hashlib.sha256(c['text'].encode('utf-8')).hexdigest(),'['+','.join(format(float(v),'.9g') for v in a)+']') for c,a in zip(cs,vec)]; conn=psycopg.connect(host='127.0.0.1',port=55433,dbname=os.environ['DAY7_DB_NAME'],user=os.environ['DAY7_DB_USER'],password=os.environ['DAY7_DB_PASSWORD']); cur=conn.cursor(); cur.executemany('INSERT INTO public.day7_minilm_chunks (chunk_id,source_id,page,content,text_sha256,embedding) VALUES (%s,%s,%s,%s,%s,%s::vector) ON CONFLICT (chunk_id) DO UPDATE SET source_id=EXCLUDED.source_id,page=EXCLUDED.page,content=EXCLUDED.content,text_sha256=EXCLUDED.text_sha256,embedding=EXCLUDED.embedding',rows); conn.commit(); print('Stored vectors:',len(rows),'| Dimensions:',vec.shape[1]); cur.close(); conn.close()"
+```
+
+Kết quả mong đợi:
+
+`Stored vectors: 181 | Dimensions: 384`
+
+Lệnh chỉ thêm hoặc cập nhật dữ liệu trong bảng `day7_minilm_chunks`, không thay đổi bảng `day6_chunks`.
+
+Sau khi chạy, mình sử dụng câu lệnh SQL ở Bước 5 để kiểm tra số lượng records và kích thước vector.
+
+
+**Bước 5: Kiểm tra Vector Store**
+
+```powershell
+docker exec $cid psql -U $env:DAY7_DB_USER -d $env:DAY7_DB_NAME -c "SELECT COUNT(*) AS total, MIN(vector_dims(embedding)) AS dimensions FROM public.day7_minilm_chunks;"
+```
+
+Kết quả mong đợi:
+
+- Total: 181
+- Dimensions: 384
+
+Khi Vector Store đã được chuẩn bị, các chương trình Dense Retrieval, Hybrid Retrieval và Agent sẽ đọc embeddings từ PostgreSQL.
+
+Việc kết nối sử dụng các biến môi trường `DAY7_DB_USER`, `DAY7_DB_NAME` và `DAY7_DB_PASSWORD`.
+
+Mình không đưa mật khẩu PostgreSQL hoặc API Key lên GitHub.
+
 
 ### 5.3. Nguồn tham khảo
 

@@ -1,0 +1,16 @@
+{
+  "strategy": "hybrid_rrf",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "split": "test",
+  "n": 5,
+  "rrf_k": 60,
+  "candidates_per_method": 20,
+  "context_budget_chars": 1200,
+  "hit1": 2,
+  "hit3": 3,
+  "context_hit": 3,
+  "avg_context_chars": 990.2,
+  "median_ms": 11.042399999951158,
+  "index_seconds": 3.9708192999996754,
+  "service_cost_usd": 0
+}

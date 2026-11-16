@@ -5,6 +5,8 @@ import statistics
 import time
 from pathlib import Path
 
+from dense_retrieval import load_vectors_from_pg
+
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
@@ -45,16 +47,17 @@ def main():
     parser.add_argument("--chunks", required=True, type=Path)
     parser.add_argument("--questions", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
+    parser.add_argument("--split", choices=["dev", "test"], default="dev")
     args = parser.parse_args()
 
-    chunks = json.loads(
+    chunks = json.loads(            
         args.chunks.read_text(encoding="utf-8-sig")
     )
     questions = json.loads(
         args.questions.read_text(encoding="utf-8-sig")
     )
 
-    dev = [q for q in questions if q["split"] == "dev"]
+    dev = [q for q in questions if q["split"] == args.split]
     validate(chunks, dev)
 
     print("Building TF-IDF index...")
@@ -64,13 +67,8 @@ def main():
     print("Loading embedding model...")
     model = SentenceTransformer(MODEL)
 
-    print("Encoding chunks...")
-    vectors = model.encode(
-        [c["text"] for c in chunks],
-        normalize_embeddings=True,
-        convert_to_numpy=True,
-        show_progress_bar=True
-    )
+    print("Loading vectors from PostgreSQL...")
+    vectors = load_vectors_from_pg(chunks)
 
     index_seconds = time.perf_counter() - start
     by_id = {c["id"]: c for c in chunks}
@@ -140,7 +138,7 @@ def main():
 
         traces.append({
             "query_id": q["id"],
-            "split": "dev",
+            "split": args.split,
             "question": q["question"],
             "strategy": "hybrid_rrf",
             "top_k": 3,
@@ -165,7 +163,7 @@ def main():
     summary = {
         "strategy": "hybrid_rrf",
         "model": MODEL,
-        "split": "dev",
+        "split": args.split,
         "n": len(traces),
         "rrf_k": RRF_K,
         "candidates_per_method": CANDIDATES,

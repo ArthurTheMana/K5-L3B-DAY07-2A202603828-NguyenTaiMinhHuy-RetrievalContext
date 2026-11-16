@@ -11,6 +11,8 @@ import time
 from pathlib import Path
 from typing import Any, Protocol
 
+from dense_retrieval import load_vectors_from_pg
+
 import csv
 
 import numpy as np
@@ -110,10 +112,10 @@ def run_agent(
                 candidates, budget=budget
             )
 
-            chunks = {
+            chunks.update({
                 c["id"]: c
                 for c in candidates if c["id"] in ids
-            }
+            })
 
             events.append({
                 "event": "search",
@@ -201,13 +203,8 @@ class HybridRetriever:
         print("Loading embedding model...")
         self.model = SentenceTransformer(MODEL)
 
-        print("Encoding chunks...")
-        self.vectors = self.model.encode(
-            [c["text"] for c in chunks],
-            normalize_embeddings=True,
-            convert_to_numpy=True,
-            show_progress_bar=True
-        )
+        print("Loading vectors from PostgreSQL...")
+        self.vectors = load_vectors_from_pg(self.chunks)
 
     def neighbors(self, chunk):
         """Return the next chunk from the same document and page."""

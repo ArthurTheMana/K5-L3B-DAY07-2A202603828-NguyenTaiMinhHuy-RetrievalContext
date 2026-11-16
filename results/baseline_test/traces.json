@@ -1,0 +1,455 @@
+[
+  {
+    "query_id": "Q09",
+    "split": "test",
+    "question": "What does transfer learning mean in the UOW lecture?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 32,
+        "evidence": "In this learning scenario, the focus is on storing knowledge\ngained while solving one problem and applying it to a diεÇÇerent\nbut related problem."
+      }
+    ],
+    "results": [
+      {
+        "id": "uow_ai_ml_p033_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 33,
+        "text": "Transfer learning\nHow to do it?\nFigure: Transfer learning compared to conventional learning (Credits -\nhttps://towardsdatascience.com/)\n21 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p033",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 143,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.2721862059722033,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "uow_ai_ml_p032_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 32,
+        "text": "Transfer learning\nWhat is it?\nIn this learning scenario, the focus is on storing knowledge\ngained while solving one problem and applying it to a diεÇÇerent\nbut related problem.\nTransfer learning method uses the similarity of data, tasks,\nmodels in diεÇÇerent domains and applies the knowledge from\none domain to another domain.\n21 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p032",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 331,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.22910376884228448,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "colliot_ml_2023_p010_paragraph_005",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 10,
+        "text": "ial intelligence, machine learning and\ndeep learning (Figure 6). Machine learning is one approach to artiεÇücial\nintelligence and other radically diεÇÇerent approaches exist. Deep learning\nis a speciεÇüc type of machine learning approach. It has recently obtained\nimpressive results on some types of data (in particular images and text)\nbut this does not mean that it is the universal solution to all problems.\nAs we will see in this book, there are tasks for which other types of\napproaches perform best.\n",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p010",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 5,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.1822300696819449,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[uow_ai_ml_p033_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 33]\nTransfer learning\nHow to do it?\nFigure: Transfer learning compared to conventional learning (Credits -\nhttps://towardsdatascience.com/)\n21 / 40\n\n[uow_ai_ml_p032_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 32]\nTransfer learning\nWhat is it?\nIn this learning scenario, the focus is on storing knowledge\ngained while solving one problem and applying it to a diεÇÇerent\nbut related problem.\nTransfer learning method uses the similarity of data, tasks,\nmodels in diεÇÇerent domains and applies the knowledge from\none domain to another domain.\n21 / 40",
+    "context_ids": [
+      "uow_ai_ml_p033_paragraph_001",
+      "uow_ai_ml_p032_paragraph_001"
+    ],
+    "context_chars": 638,
+    "elapsed_ms": 0.50020000026052,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q10",
+    "split": "test",
+    "question": "What does a generative model enable according to the lecture slides?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 37,
+        "evidence": "A generative model describes how a dataset is generated, in\nterms of a probabilistic model.\nBy sampling from this model, we are able to generate new\ndata."
+      }
+    ],
+    "results": [
+      {
+        "id": "uow_ai_ml_p037_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 37,
+        "text": "Generative learning\nWhat is it?\nA generative model describes how a dataset is generated, in\nterms of a probabilistic model.\nBy sampling from this model, we are able to generate new\ndata.\n23 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p037",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 194,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.4094363639314993,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "uow_ai_ml_p039_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 39,
+        "text": "Generative learning\nFigure: Generative modeling that can create new samples from examples.\n23 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p039",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 98,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.2915603173522298,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "uow_ai_ml_p038_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 38,
+        "text": "Generative learning\nScenario\nSuppose we have a dataset containing images of horses. We may\nwish to build a model that can generate a new image of a horse\nthat has never existed but still looks real because the model has\nlearned the general rules that govern the appearance of a horse.\nThis is the kind of problem that can be solved using generative\nmodeling.\n23 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p038",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 366,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.2307421498165475,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[uow_ai_ml_p037_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 37]\nGenerative learning\nWhat is it?\nA generative model describes how a dataset is generated, in\nterms of a probabilistic model.\nBy sampling from this model, we are able to generate new\ndata.\n23 / 40\n\n[uow_ai_ml_p039_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 39]\nGenerative learning\nFigure: Generative modeling that can create new samples from examples.\n23 / 40",
+    "context_ids": [
+      "uow_ai_ml_p037_paragraph_001",
+      "uow_ai_ml_p039_paragraph_001"
+    ],
+    "context_chars": 452,
+    "elapsed_ms": 0.5194000000301457,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q18",
+    "split": "test",
+    "question": "What is feature engineering used for in the chapter?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 20,
+        "evidence": "For this\nreason, a common approach is to extract features, which will be series\nof numbers that meaningfully represent the input."
+      }
+    ],
+    "results": [
+      {
+        "id": "uow_ai_ml_p019_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 19,
+        "text": "Data [is king]\nFeature Engineering\n1\nFeature selection : selecting the most useful features to train\non among existing features\n2\nFeature extraction: combining existing features to produce a\nmore useful one\n3\nCreating new features by gathering new data\n13 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p019",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 260,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.26924673279105094,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "colliot_ml_2023_p020_paragraph_005",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 20,
+        "text": "res by providing an\nend-to-end approach from the raw data to the output. In some areas,\nthis has made feature engineering less important but there are still ap-\nMachine Learning for Brain Disorders, Chapter 1",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p020",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 208,
+          "chunk_index": 5,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.2668886880559897,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "colliot_ml_2023_p020_paragraph_004",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 20,
+        "text": "relevant features could\nbe the volumes of diεÇÇerent anatomical regions of the brain (this speciεÇüc\nprocess is done using a technique called image segmentation which is cov-\nered in another chapter). This would result in a series of numbers that\nwould form an input vector. The development of eεÇâcient methods for\nextracting meaningful features from raw data is important in machine\nlearning.\nSuch an approach is often called feature engineering.\nDeep\nlearning methods allow for avoiding extracting featu",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p020",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 4,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.2321134031524386,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[uow_ai_ml_p019_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 19]\nData [is king]\nFeature Engineering\n1\nFeature selection : selecting the most useful features to train\non among existing features\n2\nFeature extraction: combining existing features to produce a\nmore useful one\n3\nCreating new features by gathering new data\n13 / 40\n\n[colliot_ml_2023_p020_paragraph_005 | https://hal.science/hal-03957125v3 | page 20]\nres by providing an\nend-to-end approach from the raw data to the output. In some areas,\nthis has made feature engineering less important but there are still ap-\nMachine Learning for Brain Disorders, Chapter 1",
+    "context_ids": [
+      "uow_ai_ml_p019_paragraph_001",
+      "colliot_ml_2023_p020_paragraph_005"
+    ],
+    "context_chars": 633,
+    "elapsed_ms": 0.4181999997854291,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q19",
+    "split": "test",
+    "question": "In the linear regression example, what makes one model the best?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 22,
+        "evidence": "Each model (and thus each value of the\nparameter w1) corresponds to a value of the cost J(w1). The best model\n(the blue line) is the one which minimiz"
+      },
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 22,
+        "evidence": "es J(w1), here it corresponds to\nthe line with a slope w1 = 1."
+      }
+    ],
+    "results": [
+      {
+        "id": "uow_ai_ml_p020_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 20,
+        "text": "Supervised learning\nWhat is it?\nIn this learning scenario, there are examples of appropriate\noutput data for speciεÇüc input data.\nThe problem is how to learn the best model of the relationship\nbetween the input and output from the example data.\n14 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p020",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 251,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.2890818564053102,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "uow_ai_ml_p025_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 25,
+        "text": "Unsupervised learning\nWhat is it?\nIn this learning scenario, there are example data, but they are\nnot identiεÇüed with a speciεÇüc label beforehand.\nThe problem is how to learn the underlying model that can\nbest separate the data into meaningful clusters of categories.\nWe want to uncover the pattern inherent in the data.\nWe may not know how many clusters of categories are\nappropriate or makes sense.\n18 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p025",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 406,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.27196019018415335,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "colliot_ml_2023_p015_paragraph_001",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 15,
+        "text": "14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p015",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 1,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.23157248136628616,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[uow_ai_ml_p020_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 20]\nSupervised learning\nWhat is it?\nIn this learning scenario, there are examples of appropriate\noutput data for speciεÇüc input data.\nThe problem is how to learn the best model of the relationship\nbetween the input and output from the example data.\n14 / 40",
+    "context_ids": [
+      "uow_ai_ml_p020_paragraph_001"
+    ],
+    "context_chars": 332,
+    "elapsed_ms": 0.41849999979604036,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q20",
+    "split": "test",
+    "question": "According to the 2023 book chapter, what direction does gradient descent follow?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 23,
+        "evidence": "The value of w1 is iteratively updated by following the opposite of the\ngradient."
+      }
+    ],
+    "results": [
+      {
+        "id": "colliot_ml_2023_p022_paragraph_003",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 22,
+        "text": "tive\ndJ\ndw1, we will work with the gradient ΓêçwJ. The gradient is a vector that\nindicates the direction that one should follow to climb along J. We will\nthus follow the opposite of the gradient, hence the name gradient descent.\nThis process is illustrated in Figure 12, together with the corresponding\nalgorithm.\n4. Conclusion\nThis chapter provided an introduction to machine learning (ML) for a\nnon-technical readership (e.g. physicians, neuroscientists . . . ). ML is an\napproach to artiεÇücial intell",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p022",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 3,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.3973167407911327,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "colliot_ml_2023_p023_paragraph_001",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 23,
+        "text": "22\nColliot\nX\nX\nX\nX\n$(#!)\n#!\nrepeat\nw1 w1 εÇÇΓîÿdJ\ndw1\nuntil convergence;\nFigure 12: Upper panel: Illustration of the concept of gradient descent\nin a simple case where the model f is deεÇüned using only one parameter\nw1. The value of w1 is iteratively updated by following the opposite of the\ngradient. Lower panel: gradient descent algorithm where ╬╖ is the learning\nrate, i.e. the speed at which w1 will be updated.\nMachine Learning for Brain Disorders, Chapter 1",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p023",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 458,
+          "chunk_index": 1,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.21426926548710037,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "colliot_ml_2023_p015_paragraph_004",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 15,
+        "text": "ize a reward.\nThis can for example be the case of a\nmachine learning to play chess, which will play games against itself in\norder to maximize the number of victories. These methods are widely\nused for learning to play games or in the domain of robotics. So far, they\nhave had few applications to brain diseases and will not be covered in\nthe rest of this book.\n3.1.4. Discussion\nUnsupervised learning is obviously attractive because it does not re-\nquire labels. Indeed, acquiring labels for a traini",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p015",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 4,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.10336796780652507,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[colliot_ml_2023_p022_paragraph_003 | https://hal.science/hal-03957125v3 | page 22]\ntive\ndJ\ndw1, we will work with the gradient ΓêçwJ. The gradient is a vector that\nindicates the direction that one should follow to climb along J. We will\nthus follow the opposite of the gradient, hence the name gradient descent.\nThis process is illustrated in Figure 12, together with the corresponding\nalgorithm.\n4. Conclusion\nThis chapter provided an introduction to machine learning (ML) for a\nnon-technical readership (e.g. physicians, neuroscientists . . . ). ML is an\napproach to artiεÇücial intell",
+    "context_ids": [
+      "colliot_ml_2023_p022_paragraph_003"
+    ],
+    "context_chars": 588,
+    "elapsed_ms": 0.45499999987441697,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": false
+  }
+]

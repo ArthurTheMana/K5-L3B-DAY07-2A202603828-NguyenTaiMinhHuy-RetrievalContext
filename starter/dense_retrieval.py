@@ -5,6 +5,10 @@ import statistics
 import time
 from pathlib import Path
 
+import os
+import hashlib
+import psycopg
+
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
@@ -19,6 +23,55 @@ def complete_evidence(chunks, gold):
         for g in gold
     )
 
+
+def load_vectors_from_pg(chunks):
+    expected = {
+        c["id"]: hashlib.sha256(
+            c["text"].encode("utf-8")
+        ).hexdigest()
+        for c in chunks
+    }
+
+    with psycopg.connect(
+        host="127.0.0.1",
+        port=55433,
+        dbname=os.environ["DAY7_DB_NAME"],
+        user=os.environ["DAY7_DB_USER"],
+        password=os.environ["DAY7_DB_PASSWORD"]
+    ) as conn:
+        with conn.cursor() as cur:
+            cur.execute("""
+                SELECT chunk_id, text_sha256, embedding::text
+                FROM public.day7_minilm_chunks
+            """)
+            stored = {
+                chunk_id: (digest, vector)
+                for chunk_id, digest, vector in cur.fetchall()
+            }
+
+    if set(stored) != set(expected):
+        raise ValueError("Chunk IDs do not match PostgreSQL")
+
+    for chunk_id, digest in expected.items():
+        if stored[chunk_id][0] != digest:
+            raise ValueError(
+                f"Text mismatch for chunk: {chunk_id}"
+            )
+
+    vectors = np.stack([
+        np.fromstring(
+            stored[c["id"]][1].strip("[]"),
+            sep=",",
+            dtype=np.float32
+        )
+        for c in chunks
+    ])
+
+    if vectors.shape != (len(chunks), 384):
+        raise ValueError("Invalid embedding dimensions")
+
+    print("Loaded vectors from PostgreSQL:", len(vectors))
+    return vectors
 
 def main():
     parser = argparse.ArgumentParser()
@@ -40,14 +93,9 @@ def main():
     print("Loading embedding model...")
     model = SentenceTransformer(MODEL)
 
-    print("Encoding", len(chunks), "chunks...")
+    print("Loading vectors from PostgreSQL...")
     start = time.perf_counter()
-    vectors = model.encode(
-        [c["text"] for c in chunks],
-        normalize_embeddings=True,
-        convert_to_numpy=True,
-        show_progress_bar=True
-    )
+    vectors = load_vectors_from_pg(chunks)
     index_seconds = time.perf_counter() - start
 
     traces = []
