@@ -1,0 +1,106 @@
+{
+  "status": "answered",
+  "answer": "Supervised learning uses labelled examples with known outputs, such as computer-aided diagnosis (classification with expert-diagnosed labels) and predicting age from biological variables like brain MRI [colliot_ml_2023_p013_paragraph_001]. Unsupervised learning works with unlabelled examples where the output is not known [colliot_ml_2023_p015_paragraph_001].",
+  "citations": [
+    "colliot_ml_2023_p013_paragraph_001",
+    "colliot_ml_2023_p015_paragraph_001"
+  ],
+  "events": [
+    {
+      "event": "search",
+      "query": "Colliot supervised vs unsupervised learning examples",
+      "filter": null,
+      "results": [
+        {
+          "id": "colliot_ml_2023_p013_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 13,
+          "text": "12\nColliot\nBox 2: Supervised, unsupervised and reinforcement learning\n┬╖ Supervised learning.\nLearns from labelled examples, i.e.\nexamples for which the output that we are trying to learn is\nknown.\nΓÇô Example 1. The task is computer-aided diagnosis (a clas-\nsiεÇücation problem), the label can be the diagnosis of each\npatient, as deεÇüned by an expert physician.\nΓÇô Example 2. The task is the prediction of the age of a\nperson from a set of biological variables (for example a\nbrain MRI). This is a regress",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p013",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.032266458495966696,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p015_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 15,
+          "text": "14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p015",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03225806451612903,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p012_paragraph_002",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 12,
+          "text": "examining a dataset of medical images where\nthe presence of tumours has been annotated\n3.1\nTypes of learning\nOne usually considers three main types of learning: supervised learn-\ning, unsupervised learning and reinforcement learning (Box 2). In both\nsupervised and unsupervised learning, the experience E is actually the\ninspection of a set of examples, which will we refer to as training examples\nor training set.\n3.1.1. Supervised learning\nIn supervised learning, the machine learns to perform a ta",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p012",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 2,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.032018442622950824,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p013_paragraph_001 | https://hal.science/hal-03957125v3 | page 13]\n12\nColliot\nBox 2: Supervised, unsupervised and reinforcement learning\n┬╖ Supervised learning.\nLearns from labelled examples, i.e.\nexamples for which the output that we are trying to learn is\nknown.\nΓÇô Example 1. The task is computer-aided diagnosis (a clas-\nsiεÇücation problem), the label can be the diagnosis of each\npatient, as deεÇüned by an expert physician.\nΓÇô Example 2. The task is the prediction of the age of a\nperson from a set of biological variables (for example a\nbrain MRI). This is a regress\n\n[colliot_ml_2023_p015_paragraph_001 | https://hal.science/hal-03957125v3 | page 15]\n14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a",
+      "context_ids": [
+        "colliot_ml_2023_p013_paragraph_001",
+        "colliot_ml_2023_p015_paragraph_001"
+      ]
+    },
+    {
+      "event": "answer"
+    }
+  ],
+  "query_id": "Q13",
+  "model": "nvidia/nemotron-3.5-lightning:free",
+  "llm_calls": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 3255.7850000011967,
+      "finish_reason": "stop",
+      "prompt_tokens": 65,
+      "completion_tokens": 524,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 10023.551499994937,
+      "finish_reason": "stop",
+      "prompt_tokens": 525,
+      "completion_tokens": 1948,
+      "cost_usd": 0
+    }
+  ],
+  "elapsed_ms": 13288.135800001328
+}

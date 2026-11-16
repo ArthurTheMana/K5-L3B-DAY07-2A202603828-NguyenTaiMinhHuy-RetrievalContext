@@ -1,0 +1,213 @@
+[
+  {
+    "id": "Q01",
+    "split": "dev",
+    "question": "According to the University of Wollongong lecture, what abilities does AI aim to enable?",
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 5,
+        "evidence": "technologies working together to enable machines to sense,\ncomprehend, act, and learn with human-like levels of intelligence."
+      }
+    ],
+    "expected_answer": "To sense, comprehend, act and learn with human-like levels of intelligence."
+  },
+  {
+    "id": "Q02",
+    "split": "dev",
+    "question": "How do the UOW slides distinguish Strong AI from Weak AI?",
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 10,
+        "evidence": "Strong AI aims to create intelligent machines that are indistinguishable\nfrom the human mind.\n(https://www.ibm.com/cloud/learn/strong-ai)\nWeak AI\nWeak AI, also known as narrow AI, focuses on performing a speciεÇüc task,\nsuch as answering questions based on user input or playing chess."
+      }
+    ],
+    "expected_answer": "Strong AI aims at general human-like capabilities; Weak AI focuses on specific tasks."
+  },
+  {
+    "id": "Q03",
+    "split": "dev",
+    "question": "Which six phases are listed in the UOW AI lifecycle?",
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 15,
+        "evidence": "Six phases\n1\nDiscovery, Data collection and annotation/labeling\n2\nData preparation (preprocessing)\n3\nModel planning (methods, techniques, workεÇéow, variables,\nrelationships, models)\n4\nModel building (training and test datasets, software and\nhardware, analysis of results)\n5\nCommunication of results (identify key εÇündings)\n6\nOperationalize (delivery, pilot project)"
+      }
+    ],
+    "expected_answer": "Discovery/data collection/labeling; preparation; planning; building; communication of results; operationalization."
+  },
+  {
+    "id": "Q04",
+    "split": "dev",
+    "question": "Which three approaches to feature engineering are listed in the lecture?",
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 19,
+        "evidence": "Feature selection : selecting the most useful features to train\non among existing features\n2\nFeature extraction: combining existing features to produce a\nmore useful one\n3\nCreating new features by gathering new data"
+      }
+    ],
+    "expected_answer": "Feature selection, feature extraction, and creating new features by gathering data."
+  },
+  {
+    "id": "Q05",
+    "split": "dev",
+    "question": "What is supervised learning according to the UOW lecture slides?",
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 20,
+        "evidence": "In this learning scenario, there are examples of appropriate\noutput data for speciεÇüc input data.\nThe problem is how to learn the best model of the relationship\nbetween the input and output from the example data."
+      }
+    ],
+    "expected_answer": "Learning a relationship from input data paired with appropriate output examples.",
+    "filter": {
+      "document_type": "lecture_slides"
+    }
+  },
+  {
+    "id": "Q06",
+    "split": "dev",
+    "question": "What three data subsets are recommended for supervised learning in the UOW slides?",
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 21,
+        "evidence": "Separate data into three distinct subsets.\n- training, test, and validation dataset."
+      }
+    ],
+    "expected_answer": "Training, test and validation datasets."
+  },
+  {
+    "id": "Q07",
+    "split": "dev",
+    "question": "How does the UOW lecture define unsupervised learning?",
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 25,
+        "evidence": "In this learning scenario, there are example data, but they are\nnot identiεÇüed with a speciεÇüc label beforehand.\nThe problem is how to learn the underlying model that can\nbest separate the data into meaningful clusters of categories.\nWe want to uncover the pattern inherent in the data."
+      }
+    ],
+    "expected_answer": "Learning from examples without predefined labels to discover patterns or meaningful clusters."
+  },
+  {
+    "id": "Q08",
+    "split": "dev",
+    "question": "What combination of labeled and unlabeled data is used in semi-supervised learning, according to the UOW slides?",
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 30,
+        "evidence": "In this learning scenario, there are a few labeled example data\nand many unlabelled data."
+      }
+    ],
+    "expected_answer": "A few labeled examples and many unlabeled examples."
+  },
+  {
+    "id": "Q11",
+    "split": "dev",
+    "question": "How are AI, machine learning, and deep learning related in Colliot’s chapter?",
+    "gold": [
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 11,
+        "evidence": "Deep learning is a type of machine learning which\ninvolves neural networks with a large number of hidden layers. Machine\nlearning is one approach to artiεÇücial intelligence, but other approaches\nexist."
+      }
+    ],
+    "expected_answer": "Deep learning is a type of machine learning; machine learning is one approach to AI."
+  },
+  {
+    "id": "Q12",
+    "split": "dev",
+    "question": "In the 2023 book chapter, what do E, T, and P represent in Mitchell’s ML definition?",
+    "gold": [
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 12,
+        "evidence": "a computer program is said to learn from experience E with\nrespect to some task T and some performance measure P,\nif its performance at task T, as measured by P, improves with\nexperience E."
+      }
+    ],
+    "expected_answer": "E is experience, T is task, P is performance measure.",
+    "filter": {
+      "document_type": "book_chapter"
+    }
+  },
+  {
+    "id": "Q13",
+    "split": "dev",
+    "question": "What distinguishes supervised learning from unsupervised learning in Colliot’s examples?",
+    "gold": [
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 13,
+        "evidence": "Learns from labelled examples, i.e.\nexamples for which the output that we are trying to learn is\nknown."
+      },
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 13,
+        "evidence": "Unsupervised learning. Learns from unlabelled examples."
+      }
+    ],
+    "expected_answer": "Supervised learning uses labeled examples; unsupervised learning uses unlabeled examples."
+  },
+  {
+    "id": "Q14",
+    "split": "dev",
+    "question": "What two tasks are most common in unsupervised learning in Colliot’s chapter?",
+    "gold": [
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 15,
+        "evidence": "In unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a"
+      },
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 15,
+        "evidence": "re clustering and dimensionality\nreduction (Figure 8)."
+      }
+    ],
+    "expected_answer": "Clustering and dimensionality reduction."
+  },
+  {
+    "id": "Q15",
+    "split": "dev",
+    "question": "What does self-supervised learning do according to the chapter?",
+    "gold": [
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 17,
+        "evidence": "self-supervised learning, where the machine itself provides its own super-\nvision, has emerged."
+      }
+    ],
+    "expected_answer": "The machine provides its own supervision."
+  },
+  {
+    "id": "Q16",
+    "split": "dev",
+    "question": "What does the cost function measure in the learning process?",
+    "gold": [
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 19,
+        "evidence": "minimizes the average error over the training set. Let us call this average\nerror the cost function:"
+      }
+    ],
+    "expected_answer": "The average error across the training set."
+  },
+  {
+    "id": "Q17",
+    "split": "dev",
+    "question": "What is overfitting according to Colliot’s chapter?",
+    "gold": [
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 19,
+        "evidence": "the learned function f may be too speciεÇüc to the training set. In other\nwords, it has learned the training set ΓÇ£by heartΓÇ¥ but has not discovered a\nmore general rule that would work for other examples."
+      }
+    ],
+    "expected_answer": "A model learns the training set too specifically and fails to generalize to new examples."
+  }
+]

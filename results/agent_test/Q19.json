@@ -1,0 +1,105 @@
+{
+  "status": "answered",
+  "answer": "The best model is the one which minimizes the cost J(w1) [colliot_ml_2023_p022_paragraph_001].",
+  "citations": [
+    "colliot_ml_2023_p022_paragraph_001"
+  ],
+  "events": [
+    {
+      "event": "search",
+      "query": "linear regression model selection criteria what makes a model best",
+      "filter": null,
+      "results": [
+        {
+          "id": "colliot_ml_2023_p022_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 22,
+          "text": "Introduction to machine learning\n21\n0\n1\nX\nX\n!\n\"\n#!\n$(#!)\n1\n2\n3\n1\n2\n3\n' \" = 0.3\"\nX\n' \" = 0.5\"\n' \" = \"\nFigure 11: We illustrate the concepts of supervised learning on a very\nsimple case: univariate linear regression with no intercept. Training sam-\nples correspond to the black circles. The diεÇÇerent models f(x) = w1x\ncorrespond to the diεÇÇerent lines. Each model (and thus each value of the\nparameter w1) corresponds to a value of the cost J(w1). The best model\n(the blue line) is the one which minimiz",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p022",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03177805800756621,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "uow_ai_ml_p021_paragraph_001",
+          "source_id": "uow_ai_ml",
+          "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+          "page": 21,
+          "text": "Supervised learning\nHow to do it?\nCollect an appropriate amount of data.\nSeparate data into three distinct subsets.\n- training, test, and validation dataset.\nThere is an implied model whose parameters can be learned.\nTrain the model using an appropriate methodology.\nThere is a method of judging goodness of the model.\n- Optimize model by using the validation data.\nTest the model on the test data (not part of training set).\n14 / 40",
+          "metadata": {
+            "no_text": false,
+            "page_id": "uow_ai_ml_p021",
+            "needs_ocr": false,
+            "source_id": "uow_ai_ml",
+            "char_count": 433,
+            "chunk_index": 1,
+            "document_type": "lecture_slides",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.030834914611005692,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p014_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 14,
+          "text": "Introduction to machine learning\n13\nClassiεÇîcation\n20\n30\n40\n50\n60\nAge (in years)\n17.5\n20.0\n22.5\n25.0\n27.5\n30.0\nBody mass index\nRegression\nFigure 7: Two of the main supervised learning tasks: classiεÇücation and\nregression. The upper panel presents a classiεÇücation task which aims at\nlinearly separating the orange and the blue class. Each sample is described\nby two variables. The lower panel presents a linear regression task in\nwhich the aim is to predict the body mass index from the age of a person.",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p014",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.02967032967032967,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p022_paragraph_001 | https://hal.science/hal-03957125v3 | page 22]\nIntroduction to machine learning\n21\n0\n1\nX\nX\n!\n\"\n#!\n$(#!)\n1\n2\n3\n1\n2\n3\n' \" = 0.3\"\nX\n' \" = 0.5\"\n' \" = \"\nFigure 11: We illustrate the concepts of supervised learning on a very\nsimple case: univariate linear regression with no intercept. Training sam-\nples correspond to the black circles. The diεÇÇerent models f(x) = w1x\ncorrespond to the diεÇÇerent lines. Each model (and thus each value of the\nparameter w1) corresponds to a value of the cost J(w1). The best model\n(the blue line) is the one which minimiz\n\n[colliot_ml_2023_p022_paragraph_002 | https://hal.science/hal-03957125v3 | page 22]\nes J(w1), here it corresponds to\nthe line with a slope w1 = 1.\npossible to directly solve\ndJ\ndw1 = 0. This will nevertheless not be the case\nin general. Very often, it will not be possible to solve this analytically.\nWe will thus resort to an iterative algorithm.\nOne classical iterative\nmethod is gradient descent. In the general case, f depends not on only\none parameter w1 but on a set of parameters (w1, . . . , wp) which can be\nassembled into a vector w. Thus, instead of working with the deriva",
+      "context_ids": [
+        "colliot_ml_2023_p022_paragraph_001",
+        "colliot_ml_2023_p022_paragraph_002"
+      ]
+    },
+    {
+      "event": "answer"
+    }
+  ],
+  "query_id": "Q19",
+  "model": "nvidia/nemotron-3.5-lightning:free",
+  "llm_calls": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 4461.183999999776,
+      "finish_reason": "stop",
+      "prompt_tokens": 63,
+      "completion_tokens": 477,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 12842.76520000094,
+      "finish_reason": "stop",
+      "prompt_tokens": 642,
+      "completion_tokens": 1989,
+      "cost_usd": 0
+    }
+  ],
+  "elapsed_ms": 17314.38789999993
+}

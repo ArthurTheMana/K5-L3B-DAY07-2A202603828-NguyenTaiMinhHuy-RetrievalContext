@@ -1,0 +1,106 @@
+{
+  "status": "answered",
+  "answer": "In Colliot’s chapter, artificial intelligence, machine learning, and deep learning are not synonymous; deep learning is a type of machine learning involving neural networks with many hidden layers, and machine learning is one approach to artificial intelligence (with other approaches existing beyond machine learning) [colliot_ml_2023_p011_paragraph_001]. Machine learning is introduced as an approach to artificial intelligence [colliot_ml_2023_p002_paragraph_001].",
+  "citations": [
+    "colliot_ml_2023_p011_paragraph_001",
+    "colliot_ml_2023_p002_paragraph_001"
+  ],
+  "events": [
+    {
+      "event": "search",
+      "query": "Colliot chapter AI machine learning deep learning",
+      "filter": null,
+      "results": [
+        {
+          "id": "colliot_ml_2023_p011_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 11,
+          "text": "10\nColliot\nArtificial intelligence\nMachine learning\nDeep learning\nFigure 6: ArtiεÇücial intelligence, machine learning and deep learning\nare not synonymous. Deep learning is a type of machine learning which\ninvolves neural networks with a large number of hidden layers. Machine\nlearning is one approach to artiεÇücial intelligence, but other approaches\nexist.\ntions that will directly perform the considered task. Instead, one will\nwrite a program that allows the computer to learn how to perform the\ntas",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p011",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.032266458495966696,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p002_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 2,
+          "text": "Chapter 1\nA non-technical introduction\nto machine learning\nOlivier Colliot*1\n1Sorbonne Universit┬┤e, Institut du Cerveau - Paris Brain Institute - ICM,\nCNRS, Inria, Inserm, AP-HP, H╦åopital de la Piti┬┤e-Salp╦åetri`ere, F-75013, Paris,\nFrance\n*Corresponding author: e-mail address: olivier.colliot@cnrs.fr\nAbstract\nThis chapter provides an introduction to machine learning for a non-\ntechnical readership. Machine learning is an approach to artiεÇücial intelli-\ngence. The chapter thus starts with a brief ",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p002",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.032018442622950824,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p001_paragraph_002",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 1,
+          "text": "├⌐s ou non, ├⌐manant\ndes ├⌐tablissements dΓÇÖenseignement et de recherche\nfran├ºais ou ├⌐trangers, des laboratoires publics ou\npriv├⌐s.\nDistributed under a Creative Commons CC BY 4.0 - Attribution - International License\nA non-technical introduction to machine learning\nOlivier Colliot\nTo cite this version:\nOlivier Colliot. A non-technical introduction to machine learning. Olivier Colliot. Machine Learning for\nBrain Disorders, Springer, 2023. Γƒ¿hal-03957125v3Γƒ⌐",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p001",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 454,
+            "chunk_index": 2,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": false
+          },
+          "score": 0.030017921146953404,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p011_paragraph_001 | https://hal.science/hal-03957125v3 | page 11]\n10\nColliot\nArtificial intelligence\nMachine learning\nDeep learning\nFigure 6: ArtiεÇücial intelligence, machine learning and deep learning\nare not synonymous. Deep learning is a type of machine learning which\ninvolves neural networks with a large number of hidden layers. Machine\nlearning is one approach to artiεÇücial intelligence, but other approaches\nexist.\ntions that will directly perform the considered task. Instead, one will\nwrite a program that allows the computer to learn how to perform the\ntas\n\n[colliot_ml_2023_p002_paragraph_001 | https://hal.science/hal-03957125v3 | page 2]\nChapter 1\nA non-technical introduction\nto machine learning\nOlivier Colliot*1\n1Sorbonne Universit┬┤e, Institut du Cerveau - Paris Brain Institute - ICM,\nCNRS, Inria, Inserm, AP-HP, H╦åopital de la Piti┬┤e-Salp╦åetri`ere, F-75013, Paris,\nFrance\n*Corresponding author: e-mail address: olivier.colliot@cnrs.fr\nAbstract\nThis chapter provides an introduction to machine learning for a non-\ntechnical readership. Machine learning is an approach to artiεÇücial intelli-\ngence. The chapter thus starts with a brief ",
+      "context_ids": [
+        "colliot_ml_2023_p011_paragraph_001",
+        "colliot_ml_2023_p002_paragraph_001"
+      ]
+    },
+    {
+      "event": "answer"
+    }
+  ],
+  "query_id": "Q11",
+  "model": "nvidia/nemotron-3.5-lightning:free",
+  "llm_calls": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 4597.593700003927,
+      "finish_reason": "stop",
+      "prompt_tokens": 67,
+      "completion_tokens": 507,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 16906.634099999792,
+      "finish_reason": "stop",
+      "prompt_tokens": 555,
+      "completion_tokens": 2860,
+      "cost_usd": 0
+    }
+  ],
+  "elapsed_ms": 21516.50510000036
+}

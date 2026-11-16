@@ -1,0 +1,105 @@
+{
+  "status": "answered",
+  "answer": "AI aims to enable machines to sense, comprehend, act, and learn with human-like levels of intelligence [uow_ai_ml_p005_paragraph_001]",
+  "citations": [
+    "uow_ai_ml_p005_paragraph_001"
+  ],
+  "events": [
+    {
+      "event": "search",
+      "query": "University of Wollongong lecture AI aims to enable abilities",
+      "filter": null,
+      "results": [
+        {
+          "id": "uow_ai_ml_p005_paragraph_001",
+          "source_id": "uow_ai_ml",
+          "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+          "page": 5,
+          "text": "Introduction\nWhat is ArtiεÇücial Intelligence (AI)?\nArtiεÇücial intelligence is a constellation of many diεÇÇerent\ntechnologies working together to enable machines to sense,\ncomprehend, act, and learn with human-like levels of intelligence.\nAI isnΓÇÖt just one thing. (https://accenture.com)\n5 / 40",
+          "metadata": {
+            "no_text": false,
+            "page_id": "uow_ai_ml_p005",
+            "needs_ocr": false,
+            "source_id": "uow_ai_ml",
+            "char_count": 290,
+            "chunk_index": 1,
+            "document_type": "lecture_slides",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03200204813108039,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p002_paragraph_003",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 2,
+          "text": "t purpose, the computer is trained using the examination\nof examples or experiences.\nIt is part of a broader εÇüeld of computer\nscience called artiεÇücial intelligence (AI) which aims at creating comput-\ners with abilities that are characteristic of human or animal intelligence.\nThis includes tasks such as perception (the ability to recognize images\nor sounds), reasoning, decision making or creativity. Emblematic tasks\nO. Colliot (Ed.), Machine Learning for Brain Disorders, Springer, 2023",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p002",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 489,
+            "chunk_index": 3,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03177805800756621,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "uow_ai_ml_p007_paragraph_001",
+          "source_id": "uow_ai_ml",
+          "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+          "page": 7,
+          "text": "Introduction\nWhat is ArtiεÇücial Intelligence (AI)?\nHuman intelligence? - Take One!\nHuman intelligence is a mental quality that consists of the abilities\nto learn from experience, adapt to new situations, understand and\nhandle abstract concepts, and use knowledge to manipulate oneΓÇÖs\nenvironment (https://www.britannica.com).\nHuman intelligence? - Take two!\nThrough intelligence, humans possess the cognitive abilities to\nlearn, form concepts, understand, apply logic and reason, including\nthe capaciti",
+          "metadata": {
+            "no_text": false,
+            "page_id": "uow_ai_ml_p007",
+            "needs_ocr": false,
+            "source_id": "uow_ai_ml",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "lecture_slides",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03149801587301587,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[uow_ai_ml_p005_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 5]\nIntroduction\nWhat is ArtiεÇücial Intelligence (AI)?\nArtiεÇücial intelligence is a constellation of many diεÇÇerent\ntechnologies working together to enable machines to sense,\ncomprehend, act, and learn with human-like levels of intelligence.\nAI isnΓÇÖt just one thing. (https://accenture.com)\n5 / 40\n\n[colliot_ml_2023_p002_paragraph_003 | https://hal.science/hal-03957125v3 | page 2]\nt purpose, the computer is trained using the examination\nof examples or experiences.\nIt is part of a broader εÇüeld of computer\nscience called artiεÇücial intelligence (AI) which aims at creating comput-\ners with abilities that are characteristic of human or animal intelligence.\nThis includes tasks such as perception (the ability to recognize images\nor sounds), reasoning, decision making or creativity. Emblematic tasks\nO. Colliot (Ed.), Machine Learning for Brain Disorders, Springer, 2023",
+      "context_ids": [
+        "uow_ai_ml_p005_paragraph_001",
+        "colliot_ml_2023_p002_paragraph_003"
+      ]
+    },
+    {
+      "event": "answer"
+    }
+  ],
+  "query_id": "Q01",
+  "model": "nvidia/nemotron-3.5-lightning:free",
+  "llm_calls": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 7371.0466000047745,
+      "finish_reason": "stop",
+      "prompt_tokens": 68,
+      "completion_tokens": 380,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 7468.795100001444,
+      "finish_reason": "stop",
+      "prompt_tokens": 466,
+      "completion_tokens": 1207,
+      "cost_usd": 0
+    }
+  ],
+  "elapsed_ms": 14851.685800000269
+}

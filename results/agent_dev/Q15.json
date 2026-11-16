@@ -1,0 +1,105 @@
+{
+  "status": "answered",
+  "answer": "self-supervised learning, where the machine itself provides its own supervision [colliot_ml_2023_p017_paragraph_001]",
+  "citations": [
+    "colliot_ml_2023_p017_paragraph_001"
+  ],
+  "events": [
+    {
+      "event": "search",
+      "query": "self-supervised learning chapter summary",
+      "filter": null,
+      "results": [
+        {
+          "id": "uow_ai_ml_p031_paragraph_001",
+          "source_id": "uow_ai_ml",
+          "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+          "page": 31,
+          "text": "Semi-supervised learning\nHow to do it?\nFigure: Semi-supervised self training (Credits- altexsoft.com)\n20 / 40",
+          "metadata": {
+            "no_text": false,
+            "page_id": "uow_ai_ml_p031",
+            "needs_ocr": false,
+            "source_id": "uow_ai_ml",
+            "char_count": 109,
+            "chunk_index": 1,
+            "document_type": "lecture_slides",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03278688524590164,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p017_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 17,
+          "text": "16\nColliot\napplications. However, in the past years, an alternative strategy called\nself-supervised learning, where the machine itself provides its own super-\nvision, has emerged. This is a promising approach which has already led\nto impressive results in diεÇÇerent εÇüelds such as natural language process-\ning in particular [32, 33, 34].\n3.2\nOverview of the learning process\nIn this section, we aim at formalizing the main concepts underlying most\nsupervised learning methods. Some of these concepts, ",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p017",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.031754032258064516,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p013_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 13,
+          "text": "12\nColliot\nBox 2: Supervised, unsupervised and reinforcement learning\n┬╖ Supervised learning.\nLearns from labelled examples, i.e.\nexamples for which the output that we are trying to learn is\nknown.\nΓÇô Example 1. The task is computer-aided diagnosis (a clas-\nsiεÇücation problem), the label can be the diagnosis of each\npatient, as deεÇüned by an expert physician.\nΓÇô Example 2. The task is the prediction of the age of a\nperson from a set of biological variables (for example a\nbrain MRI). This is a regress",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p013",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.0293236301369863,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[uow_ai_ml_p031_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 31]\nSemi-supervised learning\nHow to do it?\nFigure: Semi-supervised self training (Credits- altexsoft.com)\n20 / 40\n\n[colliot_ml_2023_p017_paragraph_001 | https://hal.science/hal-03957125v3 | page 17]\n16\nColliot\napplications. However, in the past years, an alternative strategy called\nself-supervised learning, where the machine itself provides its own super-\nvision, has emerged. This is a promising approach which has already led\nto impressive results in diεÇÇerent εÇüelds such as natural language process-\ning in particular [32, 33, 34].\n3.2\nOverview of the learning process\nIn this section, we aim at formalizing the main concepts underlying most\nsupervised learning methods. Some of these concepts, ",
+      "context_ids": [
+        "uow_ai_ml_p031_paragraph_001",
+        "colliot_ml_2023_p017_paragraph_001"
+      ]
+    },
+    {
+      "event": "answer"
+    }
+  ],
+  "query_id": "Q15",
+  "model": "nvidia/nemotron-3.5-lightning:free",
+  "llm_calls": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 4599.552899999253,
+      "finish_reason": "stop",
+      "prompt_tokens": 63,
+      "completion_tokens": 678,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 11038.861399996676,
+      "finish_reason": "stop",
+      "prompt_tokens": 432,
+      "completion_tokens": 1953,
+      "cost_usd": 0
+    }
+  ],
+  "elapsed_ms": 15650.1100999958
+}

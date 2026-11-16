@@ -1,0 +1,13 @@
+{
+  "strategy": "dense",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "split": "dev",
+  "n": 15,
+  "hit1": 9,
+  "hit3": 12,
+  "context_hit": 9,
+  "avg_context_chars": 576.2666666666667,
+  "median_ms": 15.45790000091074,
+  "index_seconds": 3.2198575000002165,
+  "service_cost_usd": 0
+}

@@ -1,0 +1,105 @@
+{
+  "status": "answered",
+  "answer": "The two most common tasks in unsupervised learning are clustering and dimensionality reduction [colliot_ml_2023_p015_paragraph_002]",
+  "citations": [
+    "colliot_ml_2023_p015_paragraph_002"
+  ],
+  "events": [
+    {
+      "event": "search",
+      "query": "Colliot unsupervised learning chapter most common tasks",
+      "filter": null,
+      "results": [
+        {
+          "id": "colliot_ml_2023_p015_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 15,
+          "text": "14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p015",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03278688524590164,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p012_paragraph_003",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 12,
+          "text": "sk by examin-\ning a set of examples for which the output is known (i.e. the examples\nhave been labelled). The two most common tasks in supervised learn-\ning are classiεÇücation and regression (Figure 7). ClassiεÇücation aims at\nassigning a category for each sample.\nThe examples can for instance\nbe diεÇÇerent patients and the categories are the diεÇÇerent possible diag-\nnoses. The outputs are thus discrete. Examples of common classiεÇücation\nalgorithms include logistic regression (in spite of its name, it ",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p012",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 3,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03021353930031804,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p003_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 3,
+          "text": "2\nColliot\nwhich are easy to perform for a human and are inherently diεÇâcult for a\ncomputer are for instance recognizing objects, faces or animals in pho-\ntographs, or recognizing words in speech. On the other hand, there are\nalso tasks which are inherently easy for a computer and diεÇâcult for a hu-\nman, such as computing with large numbers or memorizing exactly huge\namounts of text. Machine learning is the AI technique that has achieved\nthe most impressive successes over the past years. However, i",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p003",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.029631255487269532,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p015_paragraph_001 | https://hal.science/hal-03957125v3 | page 15]\n14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a\n\n[colliot_ml_2023_p015_paragraph_002 | https://hal.science/hal-03957125v3 | page 15]\nre clustering and dimensionality\nreduction (Figure 8). Clustering aims at discovering groups within the\ntraining set but these groups are not known a priori. The objective is\nto εÇünd groups such that members of the same group are similar while\nmembers of diεÇÇerent groups are dissimilar. For example, one can aim\nto discover disease subtypes which are not known a priori. Some clas-\nsical clustering methods are k-means or spectral clustering for instance.\nDimensionality reduction aims at εÇünding a spa",
+      "context_ids": [
+        "colliot_ml_2023_p015_paragraph_001",
+        "colliot_ml_2023_p015_paragraph_002"
+      ]
+    },
+    {
+      "event": "answer"
+    }
+  ],
+  "query_id": "Q14",
+  "model": "nvidia/nemotron-3.5-lightning:free",
+  "llm_calls": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 5109.096700000009,
+      "finish_reason": "stop",
+      "prompt_tokens": 67,
+      "completion_tokens": 576,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 9377.642800000103,
+      "finish_reason": "stop",
+      "prompt_tokens": 575,
+      "completion_tokens": 1058,
+      "cost_usd": 0
+    }
+  ],
+  "elapsed_ms": 14496.281100000488
+}

@@ -1,0 +1,153 @@
+[
+  {
+    "query_id": "Q01",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q02",
+    "answer_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q03",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q04",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q05",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q06",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q07",
+    "answer_grade": 1,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q08",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q11",
+    "answer_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q12",
+    "answer_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q13",
+    "answer_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q14",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q15",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q16",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q17",
+    "answer_grade": 0,
+    "citation_support": [],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "U01",
+    "answer_grade": null,
+    "citation_support": [],
+    "abstention_correct": true,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "U02",
+    "answer_grade": null,
+    "citation_support": [],
+    "abstention_correct": true,
+    "review_status": "PROPOSED_REVIEW"
+  }
+]

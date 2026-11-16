@@ -1,0 +1,266 @@
+{
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng để trả lời.",
+  "citations": [],
+  "events": [
+    {
+      "event": "search",
+      "query": "Colliot overfitting chapter neuroimaging",
+      "filter": null,
+      "results": [
+        {
+          "id": "colliot_ml_2023_p001_paragraph_002",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 1,
+          "text": "├⌐s ou non, ├⌐manant\ndes ├⌐tablissements dΓÇÖenseignement et de recherche\nfran├ºais ou ├⌐trangers, des laboratoires publics ou\npriv├⌐s.\nDistributed under a Creative Commons CC BY 4.0 - Attribution - International License\nA non-technical introduction to machine learning\nOlivier Colliot\nTo cite this version:\nOlivier Colliot. A non-technical introduction to machine learning. Olivier Colliot. Machine Learning for\nBrain Disorders, Springer, 2023. Γƒ¿hal-03957125v3Γƒ⌐",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p001",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 454,
+            "chunk_index": 2,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": false
+          },
+          "score": 0.03225806451612903,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p025_paragraph_007",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 25,
+          "text": "cs 7(2):179ΓÇô188\nMachine Learning for Brain Disorders, Chapter 1",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p025",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 63,
+            "chunk_index": 7,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": false
+          },
+          "score": 0.03149801587301587,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p011_paragraph_004",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 11,
+          "text": "out lesions. Please refer to Box 1 for\na summary.\nMachine Learning for Brain Disorders, Chapter 1",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p011",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 97,
+            "chunk_index": 4,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03131881575727918,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p001_paragraph_002 | https://hal.science/hal-03957125v3 | page 1]\n├⌐s ou non, ├⌐manant\ndes ├⌐tablissements dΓÇÖenseignement et de recherche\nfran├ºais ou ├⌐trangers, des laboratoires publics ou\npriv├⌐s.\nDistributed under a Creative Commons CC BY 4.0 - Attribution - International License\nA non-technical introduction to machine learning\nOlivier Colliot\nTo cite this version:\nOlivier Colliot. A non-technical introduction to machine learning. Olivier Colliot. Machine Learning for\nBrain Disorders, Springer, 2023. Γƒ¿hal-03957125v3Γƒ⌐\n\n[colliot_ml_2023_p025_paragraph_007 | https://hal.science/hal-03957125v3 | page 25]\ncs 7(2):179ΓÇô188\nMachine Learning for Brain Disorders, Chapter 1\n\n[colliot_ml_2023_p011_paragraph_004 | https://hal.science/hal-03957125v3 | page 11]\nout lesions. Please refer to Box 1 for\na summary.\nMachine Learning for Brain Disorders, Chapter 1",
+      "context_ids": [
+        "colliot_ml_2023_p001_paragraph_002",
+        "colliot_ml_2023_p025_paragraph_007",
+        "colliot_ml_2023_p011_paragraph_004"
+      ]
+    },
+    {
+      "event": "search",
+      "query": "overfitting Colliot",
+      "filter": null,
+      "results": [
+        {
+          "id": "colliot_ml_2023_p001_paragraph_002",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 1,
+          "text": "├⌐s ou non, ├⌐manant\ndes ├⌐tablissements dΓÇÖenseignement et de recherche\nfran├ºais ou ├⌐trangers, des laboratoires publics ou\npriv├⌐s.\nDistributed under a Creative Commons CC BY 4.0 - Attribution - International License\nA non-technical introduction to machine learning\nOlivier Colliot\nTo cite this version:\nOlivier Colliot. A non-technical introduction to machine learning. Olivier Colliot. Machine Learning for\nBrain Disorders, Springer, 2023. Γƒ¿hal-03957125v3Γƒ⌐",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p001",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 454,
+            "chunk_index": 2,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": false
+          },
+          "score": 0.031099324975891997,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p017_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 17,
+          "text": "16\nColliot\napplications. However, in the past years, an alternative strategy called\nself-supervised learning, where the machine itself provides its own super-\nvision, has emerged. This is a promising approach which has already led\nto impressive results in diεÇÇerent εÇüelds such as natural language process-\ning in particular [32, 33, 34].\n3.2\nOverview of the learning process\nIn this section, we aim at formalizing the main concepts underlying most\nsupervised learning methods. Some of these concepts, ",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p017",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.031024531024531024,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p009_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 9,
+          "text": "8\nColliot\n!!\n!\"\n!#\n&$\n&\"\n&!\n&%!\n'\"!\n'\"\"\nOutputs\nInputs\nHidden\nFigure 5: A multilayer perceptron model (here with only one hidden\nlayer, but there can be many more).\nthe statistical theory of learning (in particular the works of Vladimir\nVapnik [22]).\nA landmark algorithm developed at that time was the\nsupport-vector machine (SVM) [23] which worked well with small train-\ning data sets and could handle non-linearities through the use of kernels.\nThe machine learning εÇüeld continued to expand throug",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p009",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.030776515151515152,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p001_paragraph_002 | https://hal.science/hal-03957125v3 | page 1]\n├⌐s ou non, ├⌐manant\ndes ├⌐tablissements dΓÇÖenseignement et de recherche\nfran├ºais ou ├⌐trangers, des laboratoires publics ou\npriv├⌐s.\nDistributed under a Creative Commons CC BY 4.0 - Attribution - International License\nA non-technical introduction to machine learning\nOlivier Colliot\nTo cite this version:\nOlivier Colliot. A non-technical introduction to machine learning. Olivier Colliot. Machine Learning for\nBrain Disorders, Springer, 2023. Γƒ¿hal-03957125v3Γƒ⌐\n\n[colliot_ml_2023_p025_paragraph_007 | https://hal.science/hal-03957125v3 | page 25]\ncs 7(2):179ΓÇô188\nMachine Learning for Brain Disorders, Chapter 1\n\n[colliot_ml_2023_p011_paragraph_004 | https://hal.science/hal-03957125v3 | page 11]\nout lesions. Please refer to Box 1 for\na summary.\nMachine Learning for Brain Disorders, Chapter 1",
+      "context_ids": [
+        "colliot_ml_2023_p001_paragraph_002",
+        "colliot_ml_2023_p025_paragraph_007",
+        "colliot_ml_2023_p011_paragraph_004"
+      ]
+    },
+    {
+      "event": "search",
+      "query": "overfitting",
+      "filter": null,
+      "results": [
+        {
+          "id": "colliot_ml_2023_p019_paragraph_005",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 19,
+          "text": " (there are many variables to represent an input), when the\ntraining set is too small or when the function f is too εÇéexible. A way to\nprevent overεÇütting will be to modify the cost function so that it not only\nrepresents the average error across training samples but also constrains\nthe function f to have some speciεÇüc properties.\nMachine Learning for Brain Disorders, Chapter 1",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p019",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 377,
+            "chunk_index": 5,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.01639344262295082,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p019_paragraph_004",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 19,
+          "text": "n a dataset of young males and we would like to apply\nit to patients of any gender and age). Another reason is that, even if\nthe training set characteristics follow those of the general population,\nthe learned function f may be too speciεÇüc to the training set. In other\nwords, it has learned the training set ΓÇ£by heartΓÇ¥ but has not discovered a\nmore general rule that would work for other examples. This phenomenon\nis called overεÇütting and often arises when the dimensionality of the data\nis too high",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p019",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 4,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.016129032258064516,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p009_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 9,
+          "text": "8\nColliot\n!!\n!\"\n!#\n&$\n&\"\n&!\n&%!\n'\"!\n'\"\"\nOutputs\nInputs\nHidden\nFigure 5: A multilayer perceptron model (here with only one hidden\nlayer, but there can be many more).\nthe statistical theory of learning (in particular the works of Vladimir\nVapnik [22]).\nA landmark algorithm developed at that time was the\nsupport-vector machine (SVM) [23] which worked well with small train-\ning data sets and could handle non-linearities through the use of kernels.\nThe machine learning εÇüeld continued to expand throug",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p009",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.015873015873015872,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p001_paragraph_002 | https://hal.science/hal-03957125v3 | page 1]\n├⌐s ou non, ├⌐manant\ndes ├⌐tablissements dΓÇÖenseignement et de recherche\nfran├ºais ou ├⌐trangers, des laboratoires publics ou\npriv├⌐s.\nDistributed under a Creative Commons CC BY 4.0 - Attribution - International License\nA non-technical introduction to machine learning\nOlivier Colliot\nTo cite this version:\nOlivier Colliot. A non-technical introduction to machine learning. Olivier Colliot. Machine Learning for\nBrain Disorders, Springer, 2023. Γƒ¿hal-03957125v3Γƒ⌐\n\n[colliot_ml_2023_p025_paragraph_007 | https://hal.science/hal-03957125v3 | page 25]\ncs 7(2):179ΓÇô188\nMachine Learning for Brain Disorders, Chapter 1\n\n[colliot_ml_2023_p011_paragraph_004 | https://hal.science/hal-03957125v3 | page 11]\nout lesions. Please refer to Box 1 for\na summary.\nMachine Learning for Brain Disorders, Chapter 1",
+      "context_ids": [
+        "colliot_ml_2023_p001_paragraph_002",
+        "colliot_ml_2023_p025_paragraph_007",
+        "colliot_ml_2023_p011_paragraph_004"
+      ]
+    },
+    {
+      "event": "invalid_or_missing_citations"
+    }
+  ],
+  "query_id": "Q17",
+  "model": "nvidia/nemotron-3.5-lightning:free",
+  "llm_calls": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 5451.149800000167,
+      "finish_reason": "stop",
+      "prompt_tokens": 62,
+      "completion_tokens": 585,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 10511.37110000036,
+      "finish_reason": "stop",
+      "prompt_tokens": 597,
+      "completion_tokens": 1735,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 10191.205500000251,
+      "finish_reason": "stop",
+      "prompt_tokens": 597,
+      "completion_tokens": 1104,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 19838.43139999999,
+      "finish_reason": "stop",
+      "prompt_tokens": 597,
+      "completion_tokens": 2762,
+      "cost_usd": 0
+    }
+  ],
+  "elapsed_ms": 46018.28380000006
+}

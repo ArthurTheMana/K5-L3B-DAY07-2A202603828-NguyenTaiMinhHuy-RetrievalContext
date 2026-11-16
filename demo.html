@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VinUni Day 7 Results</title>
+<style>
+  :root {
+    --bg: #0b1220;
+    --card: #172338;
+    --border: #30415b;
+    --text: #edf3fa;
+    --muted: #aab9ce;
+    --green: #59dfb4;
+    --blue: #86b5ff;
+    --yellow: #ffd080;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 15px/1.6 system-ui, sans-serif;
+  }
+  main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px 20px 60px;
+  }
+  h1 { font-size: 32px; margin: 8px 0; }
+  h2 { font-size: 21px; margin-top: 32px; }
+  p, small { color: var(--muted); }
+  .tag { color: var(--green); font-weight: bold; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin: 24px 0;
+  }
+  .card, .panel {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+  }
+  .label { color: var(--muted); font-size: 13px; }
+  .number {
+    font-size: 29px;
+    font-weight: 800;
+    color: var(--green);
+  }
+  .table-box {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 660px;
+  }
+  th, td {
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border);
+  }
+  th { background: #22314a; color: var(--blue); }
+  tr:last-child td { border-bottom: none; }
+  .good { color: var(--green); font-weight: bold; }
+  .warn { color: var(--yellow); }
+  .bar {
+    height: 12px;
+    background: #34435b;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 8px 0 18px;
+  }
+  .fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6aabff, #59dfb4);
+  }
+  li { margin: 8px 0; }
+  .note {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 12px;
+  }
+  @media(max-width: 780px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<div class="tag">VINUNI AI THỰC CHIẾN | DAY 7</div>
+<h1>Retrieval & Context Engineering</h1>
+<p>Tổng hợp nhanh kết quả thực nghiệm và đánh giá AI Agent.</p>
+
+<div class="grid">
+  <div class="card">
+    <div class="label">Benchmark</div>
+    <div class="number">24</div>
+    <small>20 Answerable, 4 Unanswerable</small>
+  </div>
+  <div class="card">
+    <div class="label">Dev Grounding</div>
+    <div class="number">90%</div>
+    <small>27/30 điểm</small>
+  </div>
+  <div class="card">
+    <div class="label">Test Grounding</div>
+    <div class="number">100%</div>
+    <small>10/10 điểm</small>
+  </div>
+  <div class="card">
+    <div class="label">Test Abstention</div>
+    <div class="number">2/2</div>
+    <small>Từ chối đúng</small>
+  </div>
+</div>
+
+<h2>1. Retrieval Benchmark trên Dev</h2>
+<div class="table-box">
+<table>
+<thead>
+<tr>
+  <th>Phương pháp</th>
+  <th>Hit@1</th>
+  <th>Hit@3</th>
+  <th>Context Hit</th>
+  <th>Latency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>TF-IDF</td><td>10/15</td><td>11/15</td>
+  <td>10/15</td><td>0,47 ms</td>
+</tr>
+<tr>
+  <td>Dense MiniLM</td><td>9/15</td><td>12/15</td>
+  <td>9/15</td><td>15,46 ms</td>
+</tr>
+<tr>
+  <td>Hybrid 800 chars</td><td>10/15</td><td>12/15</td>
+  <td>11/15</td><td>18,14 ms</td>
+</tr>
+<tr>
+  <td class="good">Hybrid 1200 chars</td>
+  <td>10/15</td><td>12/15</td>
+  <td class="good">12/15</td><td>17,04 ms</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="note">
+Cấu hình được chọn: Hybrid RRF, Top-k = 3,
+Context Budget = 1200 ký tự.
+</p>
+
+<h2>2. Agent Answer Rate</h2>
+<div class="panel">
+  <strong>Dev: 14/15 câu Answerable</strong>
+  <div class="bar"><div class="fill" style="width:93.33%"></div></div>
+  <strong>Test: 5/5 câu Answerable</strong>
+  <div class="bar"><div class="fill" style="width:100%"></div></div>
+  <small>
+    Answer Rate chỉ đo số câu đã trả lời,
+    không phải độ chính xác của câu trả lời.
+  </small>
+</div>
+
+<h2>3. Agent Evaluation</h2>
+<div class="table-box">
+<table>
+<thead>
+<tr><th>Metric</th><th>Dev</th><th>Test</th></tr>
+</thead>
+<tbody>
+<tr><td>Total Cases</td><td>17</td><td>7</td></tr>
+<tr><td>Tool Use</td><td>17/17</td><td>7/7</td></tr>
+<tr><td>Grounding</td><td>27/30</td><td>10/10</td></tr>
+<tr><td>Mean Grounding</td><td>1,80/2</td><td>2,00/2</td></tr>
+<tr><td>Citation Validity</td><td>18/18</td><td>7/8</td></tr>
+<tr><td>Citation Coverage</td><td>14/14</td><td>5/5</td></tr>
+<tr><td>Correct Abstention</td><td>2/2</td><td>2/2</td></tr>
+<tr><td>False Abstention</td><td>1/15</td><td>0/5</td></tr>
+<tr><td>Provider Errors</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+</div>
+<p class="note">
+Grounding và Citation Validity sử dụng review labels
+đã chuẩn bị. Đây không phải điểm chấm chính thức.
+</p>
+
+<h2>4. Before / After</h2>
+<div class="table-box">
+<table>
+<thead>
+<tr><th>Câu hỏi</th><th>Trước</th><th>Sau</th><th>Nguyên nhân</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>Q06</td><td>Abstain</td><td class="good">Answered</td>
+  <td>Tìm thêm đúng bằng chứng</td>
+</tr>
+<tr>
+  <td>Q14</td><td>Abstain</td><td class="good">Answered</td>
+  <td>Neighboring Chunk Retrieval</td>
+</tr>
+<tr>
+  <td>Q17</td><td>Abstain</td><td class="warn">Abstain</td>
+  <td>Retrieval Ranking Failure</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2>5. Những điểm cần chú ý</h2>
+<div class="panel">
+<ul>
+  <li><strong>Q07:</strong> Trả lời chưa đầy đủ, Grounding 1/2.</li>
+  <li><strong>Q17:</strong> Bằng chứng tồn tại nhưng Hybrid không lấy được.</li>
+  <li><strong>Q19:</strong> Citation bị cắt giữa câu, nên Test Citation Validity là 7/8.</li>
+  <li><strong>U01 đến U04:</strong> Agent đều từ chối đúng khi thiếu bằng chứng.</li>
+</ul>
+</div>
+
+
+</main>
+</body>
+</html>

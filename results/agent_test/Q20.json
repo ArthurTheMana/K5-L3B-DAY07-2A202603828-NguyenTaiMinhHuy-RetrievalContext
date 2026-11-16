@@ -1,0 +1,107 @@
+{
+  "status": "answered",
+  "answer": "Gradient descent follows the opposite of the gradient, i.e., the direction of steepest descent [colliot_ml_2023_p022_paragraph_003].",
+  "citations": [
+    "colliot_ml_2023_p022_paragraph_003"
+  ],
+  "events": [
+    {
+      "event": "search",
+      "query": "2023 book chapter gradient descent direction",
+      "filter": {
+        "document_type": "book_chapter"
+      },
+      "results": [
+        {
+          "id": "colliot_ml_2023_p022_paragraph_003",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 22,
+          "text": "tive\ndJ\ndw1, we will work with the gradient ΓêçwJ. The gradient is a vector that\nindicates the direction that one should follow to climb along J. We will\nthus follow the opposite of the gradient, hence the name gradient descent.\nThis process is illustrated in Figure 12, together with the corresponding\nalgorithm.\n4. Conclusion\nThis chapter provided an introduction to machine learning (ML) for a\nnon-technical readership (e.g. physicians, neuroscientists . . . ). ML is an\napproach to artiεÇücial intell",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p022",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 3,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03278688524590164,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p023_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 23,
+          "text": "22\nColliot\nX\nX\nX\nX\n$(#!)\n#!\nrepeat\nw1 w1 εÇÇΓîÿdJ\ndw1\nuntil convergence;\nFigure 12: Upper panel: Illustration of the concept of gradient descent\nin a simple case where the model f is deεÇüned using only one parameter\nw1. The value of w1 is iteratively updated by following the opposite of the\ngradient. Lower panel: gradient descent algorithm where ╬╖ is the learning\nrate, i.e. the speed at which w1 will be updated.\nMachine Learning for Brain Disorders, Chapter 1",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p023",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 458,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03225806451612903,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p002_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 2,
+          "text": "Chapter 1\nA non-technical introduction\nto machine learning\nOlivier Colliot*1\n1Sorbonne Universit┬┤e, Institut du Cerveau - Paris Brain Institute - ICM,\nCNRS, Inria, Inserm, AP-HP, H╦åopital de la Piti┬┤e-Salp╦åetri`ere, F-75013, Paris,\nFrance\n*Corresponding author: e-mail address: olivier.colliot@cnrs.fr\nAbstract\nThis chapter provides an introduction to machine learning for a non-\ntechnical readership. Machine learning is an approach to artiεÇücial intelli-\ngence. The chapter thus starts with a brief ",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p002",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.029138513513513514,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p022_paragraph_003 | https://hal.science/hal-03957125v3 | page 22]\ntive\ndJ\ndw1, we will work with the gradient ΓêçwJ. The gradient is a vector that\nindicates the direction that one should follow to climb along J. We will\nthus follow the opposite of the gradient, hence the name gradient descent.\nThis process is illustrated in Figure 12, together with the corresponding\nalgorithm.\n4. Conclusion\nThis chapter provided an introduction to machine learning (ML) for a\nnon-technical readership (e.g. physicians, neuroscientists . . . ). ML is an\napproach to artiεÇücial intell\n\n[colliot_ml_2023_p022_paragraph_004 | https://hal.science/hal-03957125v3 | page 22]\nigence and thus needs to be put into this larger\ncontext. We introduced the main concepts underlying ML that will be\nfurther expanded in Chapters 2 to 6. The reader can εÇünd a summary of\nthese main concepts, as well as notations, in Box 3.\nMachine Learning for Brain Disorders, Chapter 1",
+      "context_ids": [
+        "colliot_ml_2023_p022_paragraph_003",
+        "colliot_ml_2023_p022_paragraph_004"
+      ]
+    },
+    {
+      "event": "answer"
+    }
+  ],
+  "query_id": "Q20",
+  "model": "nvidia/nemotron-3.5-lightning:free",
+  "llm_calls": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 8838.38520000063,
+      "finish_reason": "stop",
+      "prompt_tokens": 68,
+      "completion_tokens": 616,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 10896.963499999401,
+      "finish_reason": "stop",
+      "prompt_tokens": 556,
+      "completion_tokens": 1513,
+      "cost_usd": 0
+    }
+  ],
+  "elapsed_ms": 19753.18580000021
+}

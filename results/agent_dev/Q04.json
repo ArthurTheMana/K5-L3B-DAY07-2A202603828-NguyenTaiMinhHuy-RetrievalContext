@@ -1,0 +1,106 @@
+{
+  "status": "answered",
+  "answer": "The three approaches to feature engineering listed in the lecture are: 1) Feature selection: selecting the most useful features to train on among existing features [uow_ai_ml_p019_paragraph_001]; 2) Feature extraction: combining existing features to produce a more useful one [uow_ai_ml_p019_paragraph_001]; 3) Creating new features by gathering new data [uow_ai_ml_p019_paragraph_001].",
+  "citations": [
+    "uow_ai_ml_p019_paragraph_001"
+  ],
+  "events": [
+    {
+      "event": "search",
+      "query": "three approaches to feature engineering lecture",
+      "filter": null,
+      "results": [
+        {
+          "id": "uow_ai_ml_p019_paragraph_001",
+          "source_id": "uow_ai_ml",
+          "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+          "page": 19,
+          "text": "Data [is king]\nFeature Engineering\n1\nFeature selection : selecting the most useful features to train\non among existing features\n2\nFeature extraction: combining existing features to produce a\nmore useful one\n3\nCreating new features by gathering new data\n13 / 40",
+          "metadata": {
+            "no_text": false,
+            "page_id": "uow_ai_ml_p019",
+            "needs_ocr": false,
+            "source_id": "uow_ai_ml",
+            "char_count": 260,
+            "chunk_index": 1,
+            "document_type": "lecture_slides",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03278688524590164,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p020_paragraph_004",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 20,
+          "text": "relevant features could\nbe the volumes of diεÇÇerent anatomical regions of the brain (this speciεÇüc\nprocess is done using a technique called image segmentation which is cov-\nered in another chapter). This would result in a series of numbers that\nwould form an input vector. The development of eεÇâcient methods for\nextracting meaningful features from raw data is important in machine\nlearning.\nSuch an approach is often called feature engineering.\nDeep\nlearning methods allow for avoiding extracting featu",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p020",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 4,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.0315136476426799,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "uow_ai_ml_p001_paragraph_001",
+          "source_id": "uow_ai_ml",
+          "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+          "page": 1,
+          "text": "A Gentle Introduction to\nArtificial Intelligence and\nMachine Learning\nCentre for AI ΓÇô Faculty of Engineering and Information Sciences\n1 / 40",
+          "metadata": {
+            "no_text": false,
+            "page_id": "uow_ai_ml_p001",
+            "needs_ocr": false,
+            "source_id": "uow_ai_ml",
+            "char_count": 140,
+            "chunk_index": 1,
+            "document_type": "lecture_slides",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": false
+          },
+          "score": 0.03149801587301587,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[uow_ai_ml_p019_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 19]\nData [is king]\nFeature Engineering\n1\nFeature selection : selecting the most useful features to train\non among existing features\n2\nFeature extraction: combining existing features to produce a\nmore useful one\n3\nCreating new features by gathering new data\n13 / 40\n\n[colliot_ml_2023_p020_paragraph_004 | https://hal.science/hal-03957125v3 | page 20]\nrelevant features could\nbe the volumes of diεÇÇerent anatomical regions of the brain (this speciεÇüc\nprocess is done using a technique called image segmentation which is cov-\nered in another chapter). This would result in a series of numbers that\nwould form an input vector. The development of eεÇâcient methods for\nextracting meaningful features from raw data is important in machine\nlearning.\nSuch an approach is often called feature engineering.\nDeep\nlearning methods allow for avoiding extracting featu\n\n[uow_ai_ml_p001_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 1]\nA Gentle Introduction to\nArtificial Intelligence and\nMachine Learning\nCentre for AI ΓÇô Faculty of Engineering and Information Sciences\n1 / 40",
+      "context_ids": [
+        "uow_ai_ml_p019_paragraph_001",
+        "colliot_ml_2023_p020_paragraph_004",
+        "uow_ai_ml_p001_paragraph_001"
+      ]
+    },
+    {
+      "event": "answer"
+    }
+  ],
+  "query_id": "Q04",
+  "model": "nvidia/nemotron-3.5-lightning:free",
+  "llm_calls": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 3764.4226999982493,
+      "finish_reason": "stop",
+      "prompt_tokens": 62,
+      "completion_tokens": 448,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 9442.778399999952,
+      "finish_reason": "stop",
+      "prompt_tokens": 506,
+      "completion_tokens": 1779,
+      "cost_usd": 0
+    }
+  ],
+  "elapsed_ms": 13221.935200002918
+}

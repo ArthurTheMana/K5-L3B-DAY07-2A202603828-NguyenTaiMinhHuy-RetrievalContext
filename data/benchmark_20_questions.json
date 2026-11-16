@@ -1,0 +1,214 @@
+[
+  {
+    "id": "Q01",
+    "split": "dev",
+    "question": "According to the University of Wollongong lecture, what abilities does AI aim to enable?",
+    "expected_answer": "To sense, comprehend, act and learn with human-like levels of intelligence.",
+    "gold_source_id": "uow_ai_ml",
+    "gold_page": 5,
+    "evidence_quote": "dierent technologies working together to enable machines to sense, comprehend, act, and learn with human-like levels of intelligence. AI isn’t just one thing. (https://accenture.com)",
+    "type": "direct"
+  },
+  {
+    "id": "Q02",
+    "split": "dev",
+    "question": "How do the UOW slides distinguish Strong AI from Weak AI?",
+    "expected_answer": "Strong AI aims at general human-like capabilities; Weak AI focuses on specific tasks.",
+    "gold_source_id": "uow_ai_ml",
+    "gold_page": 10,
+    "evidence_quote": "Strong AI Strong articial intelligence (AI), also known as articial general intelligence (AGI) or general AI, is a theoretical form of AI used to describe a certain mindset of AI development. Strong AI aims to create intelligent machines that are indistinguishable from the human mind. (https://www.ibm.com/cloud/learn/strong-ai) Weak AI",
+    "type": "direct"
+  },
+  {
+    "id": "Q03",
+    "split": "dev",
+    "question": "Which six phases are listed in the UOW AI lifecycle?",
+    "expected_answer": "Discovery/data collection/labeling; preparation; planning; building; communication of results; operationalization.",
+    "gold_source_id": "uow_ai_ml",
+    "gold_page": 15,
+    "evidence_quote": "Six phases 1 Discovery, Data collection and annotation/labeling 2 Data preparation (preprocessing) 3 Model planning (methods, techniques, workow, variables, relationships, models) 4 Model building (training and test datasets, software and hardware, analysis of results) 5 Communication of results (identify key ndings) 6 Operationalize (delivery, pilot project)",
+    "type": "paraphrase"
+  },
+  {
+    "id": "Q04",
+    "split": "dev",
+    "question": "Which three approaches to feature engineering are listed in the lecture?",
+    "expected_answer": "Feature selection, feature extraction, and creating new features by gathering data.",
+    "gold_source_id": "uow_ai_ml",
+    "gold_page": 19,
+    "evidence_quote": "Feature selection : selecting the most useful features to train on among existing features 2 Feature extraction: combining existing features to produce a more useful one 3 Creating new features by gathering new data 13 / 40",
+    "type": "direct"
+  },
+  {
+    "id": "Q05",
+    "split": "dev",
+    "question": "What is supervised learning according to the UOW lecture slides?",
+    "expected_answer": "Learning a relationship from input data paired with appropriate output examples.",
+    "gold_source_id": "uow_ai_ml",
+    "gold_page": 20,
+    "evidence_quote": "What is it? In this learning scenario, there are examples of appropriate output data for specic input data. The problem is how to learn the best model of the relationship between the input",
+    "type": "direct",
+    "filter": {
+      "document_type": "lecture_slides"
+    }
+  },
+  {
+    "id": "Q06",
+    "split": "dev",
+    "question": "What three data subsets are recommended for supervised learning in the UOW slides?",
+    "expected_answer": "Training, test and validation datasets.",
+    "gold_source_id": "uow_ai_ml",
+    "gold_page": 21,
+    "evidence_quote": "data into three distinct subsets. - training, test, and validation dataset. There is an implied model whose parameters can be learned. Train the model using an appropriate methodology. There",
+    "type": "paraphrase"
+  },
+  {
+    "id": "Q07",
+    "split": "dev",
+    "question": "How does the UOW lecture define unsupervised learning?",
+    "expected_answer": "Learning from examples without predefined labels to discover patterns or meaningful clusters.",
+    "gold_source_id": "uow_ai_ml",
+    "gold_page": 25,
+    "evidence_quote": "there are example data, but they are not identied with a specic label beforehand. The problem is how to learn the underlying model that can best separate the data",
+    "type": "direct"
+  },
+  {
+    "id": "Q08",
+    "split": "dev",
+    "question": "What combination of labeled and unlabeled data is used in semi-supervised learning, according to the UOW slides?",
+    "expected_answer": "A few labeled examples and many unlabeled examples.",
+    "gold_source_id": "uow_ai_ml",
+    "gold_page": 30,
+    "evidence_quote": "In this learning scenario, there are a few labeled example data and many unlabelled data. labeling data is expensive; there is abundance of unlabelled data. The problem is how to",
+    "type": "direct"
+  },
+  {
+    "id": "Q09",
+    "split": "test",
+    "question": "What does transfer learning mean in the UOW lecture?",
+    "expected_answer": "Reusing knowledge learned for one problem on a different but related problem.",
+    "gold_source_id": "uow_ai_ml",
+    "gold_page": 32,
+    "evidence_quote": "learning scenario, the focus is on storing knowledge gained while solving one problem and applying it to a dierent but related problem. Transfer learning method uses the similarity",
+    "type": "paraphrase"
+  },
+  {
+    "id": "Q10",
+    "split": "test",
+    "question": "What does a generative model enable according to the lecture slides?",
+    "expected_answer": "It models how a dataset is generated and can sample new data.",
+    "gold_source_id": "uow_ai_ml",
+    "gold_page": 37,
+    "evidence_quote": "terms of a probabilistic model. By sampling from this model, we are able to generate new data. 23 / 40",
+    "type": "direct",
+    "filter": {
+      "document_type": "lecture_slides"
+    }
+  },
+  {
+    "id": "Q11",
+    "split": "dev",
+    "question": "How are AI, machine learning, and deep learning related in Colliot’s chapter?",
+    "expected_answer": "Deep learning is a type of machine learning; machine learning is one approach to AI.",
+    "gold_source_id": "colliot_ml_2023",
+    "gold_page": 11,
+    "evidence_quote": "with a large number of hidden layers. Machine learning is one approach to articial intelligence, but other approaches exist. tions that will directly perform the considered task. Instead, one will",
+    "type": "direct"
+  },
+  {
+    "id": "Q12",
+    "split": "dev",
+    "question": "In the 2023 book chapter, what do E, T, and P represent in Mitchell’s ML definition?",
+    "expected_answer": "E is experience, T is task, P is performance measure.",
+    "gold_source_id": "colliot_ml_2023",
+    "gold_page": 12,
+    "evidence_quote": "computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance at task T, as measured by P, improves with experience E.” Example:",
+    "type": "paraphrase",
+    "filter": {
+      "document_type": "book_chapter"
+    }
+  },
+  {
+    "id": "Q13",
+    "split": "dev",
+    "question": "What distinguishes supervised learning from unsupervised learning in Colliot’s examples?",
+    "expected_answer": "Supervised learning uses labeled examples; unsupervised learning uses unlabeled examples.",
+    "gold_source_id": "colliot_ml_2023",
+    "gold_page": 13,
+    "evidence_quote": "Supervised learning. Learns from labelled examples, i.e. examples for which the output that we are trying to learn is known. – Example 1. The task is computer-aided diagnosis (a clas- sication problem), the label can be the diagnosis of each patient, as dened by an expert physician. – Example 2. The task is the prediction of the age of a person from a set of biological variables (for example a brain MRI). This is a regression problem. The label is the true age of a given person in the training set. · Unsupervised learning. Learns from unlabelled examples.",
+    "type": "direct"
+  },
+  {
+    "id": "Q14",
+    "split": "dev",
+    "question": "What two tasks are most common in unsupervised learning in Colliot’s chapter?",
+    "expected_answer": "Clustering and dimensionality reduction.",
+    "gold_source_id": "colliot_ml_2023",
+    "gold_page": 15,
+    "evidence_quote": "tasks in unsupervised learning are clustering and dimensionality reduction (Figure 8). Clustering aims at discovering groups within the training set but these groups are not known",
+    "type": "direct"
+  },
+  {
+    "id": "Q15",
+    "split": "dev",
+    "question": "What does self-supervised learning do according to the chapter?",
+    "expected_answer": "The machine provides its own supervision.",
+    "gold_source_id": "colliot_ml_2023",
+    "gold_page": 17,
+    "evidence_quote": "self-supervised learning, where the machine itself provides its own super- vision, has emerged. This is a promising approach which has already led to impressive results in dierent elds",
+    "type": "paraphrase"
+  },
+  {
+    "id": "Q16",
+    "split": "dev",
+    "question": "What does the cost function measure in the learning process?",
+    "expected_answer": "The average error across the training set.",
+    "gold_source_id": "colliot_ml_2023",
+    "gold_page": 19,
+    "evidence_quote": "for the function which minimizes the average error over the training set. Let us call this average error the cost function: J(f) = 1 n n  i=1 ℓ  y(i), f(x(i))  Learning will then aim at",
+    "type": "direct"
+  },
+  {
+    "id": "Q17",
+    "split": "dev",
+    "question": "What is overfitting according to Colliot’s chapter?",
+    "expected_answer": "A model learns the training set too specifically and fails to generalize to new examples.",
+    "gold_source_id": "colliot_ml_2023",
+    "gold_page": 19,
+    "evidence_quote": "In other words, it has learned the training set “by heart” but has not discovered a more general rule that would work for other examples. This phenomenon is called over",
+    "type": "direct"
+  },
+  {
+    "id": "Q18",
+    "split": "test",
+    "question": "What is feature engineering used for in the chapter?",
+    "expected_answer": "Extracting meaningful numerical features that represent raw inputs.",
+    "gold_source_id": "colliot_ml_2023",
+    "gold_page": 20,
+    "evidence_quote": "this reason, a common approach is to extract features, which will be series of numbers that meaningfully represent the input. For example, if the input is a brain magnetic",
+    "type": "paraphrase"
+  },
+  {
+    "id": "Q19",
+    "split": "test",
+    "question": "In the linear regression example, what makes one model the best?",
+    "expected_answer": "It has the lowest cost function value among the considered models.",
+    "gold_source_id": "colliot_ml_2023",
+    "gold_page": 22,
+    "evidence_quote": "corresponds to a value of the cost J(w1). The best model (the blue line) is the one which minimizes J(w1), here it corresponds to the line with a slope w1 = 1. possible to",
+    "type": "direct"
+  },
+  {
+    "id": "Q20",
+    "split": "test",
+    "question": "According to the 2023 book chapter, what direction does gradient descent follow?",
+    "expected_answer": "The opposite direction of the gradient to reduce the cost.",
+    "gold_source_id": "colliot_ml_2023",
+    "gold_page": 23,
+    "evidence_quote": "iteratively updated by following the opposite of the gradient. Lower panel: gradient descent algorithm where η is the learning rate, i.e. the speed at which w1 will be updated.",
+    "type": "direct",
+    "filter": {
+      "document_type": "book_chapter"
+    }
+  }
+]

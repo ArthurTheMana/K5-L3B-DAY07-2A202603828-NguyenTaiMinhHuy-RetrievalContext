@@ -1,0 +1,64 @@
+[
+  {
+    "query_id": "Q09",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q10",
+    "answer_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q18",
+    "answer_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q19",
+    "answer_grade": 2,
+    "citation_support": [
+      false
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "Q20",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "U03",
+    "answer_grade": null,
+    "citation_support": [],
+    "abstention_correct": true,
+    "review_status": "PROPOSED_REVIEW"
+  },
+  {
+    "query_id": "U04",
+    "answer_grade": null,
+    "citation_support": [],
+    "abstention_correct": true,
+    "review_status": "PROPOSED_REVIEW"
+  }
+]

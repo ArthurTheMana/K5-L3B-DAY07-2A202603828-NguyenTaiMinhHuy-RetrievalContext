@@ -28,8 +28,8 @@ def main():
     parser.add_argument('--questions', required=True, type=Path)
     parser.add_argument('--output', required=True, type=Path)
     args = parser.parse_args()
-    raw_chunks = json.loads(args.chunks.read_text(encoding='utf-8'))
-    raw_questions = json.loads(args.questions.read_text(encoding='utf-8'))
+    raw_chunks = json.loads(args.chunks.read_text(encoding='utf-8-sig'))
+    raw_questions = json.loads(args.questions.read_text(encoding='utf-8-sig'))
     if not isinstance(raw_chunks, list) or not isinstance(raw_questions, list):
         raise ValueError('Hai file đầu vào phải là JSON arrays')
     # Conversion does not infer missing metadata or inspect test evidence.

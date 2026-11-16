@@ -1,0 +1,3260 @@
+[
+  {
+    "id": "colliot_ml_2023_p001_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 1,
+    "text": "HAL Id: hal-03957125\nhttps://hal.science/hal-03957125v3\nSubmitted on 24 May 2023\nHAL is a multi-disciplinary open access archive\nfor the deposit and dissemination of scientiεÇ╢c re-\nsearch documents, whether they are published or not.\nThe documents may come from teaching and research\ninstitutions in France or abroad, or from public or pri-\nvate research centers.\nLΓÇÖarchive ouverte pluridisciplinaire HAL, est des-\ntin├⌐e au d├⌐p├┤t et ├á la diεÇ╡usion de documents scien-\ntiεÇ╢ques de niveau recherche, publi",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p001",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p001_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 1,
+    "text": "├⌐s ou non, ├⌐manant\ndes ├⌐tablissements dΓÇÖenseignement et de recherche\nfran├ºais ou ├⌐trangers, des laboratoires publics ou\npriv├⌐s.\nDistributed under a Creative Commons CC BY 4.0 - Attribution - International License\nA non-technical introduction to machine learning\nOlivier Colliot\nTo cite this version:\nOlivier Colliot. A non-technical introduction to machine learning. Olivier Colliot. Machine Learning for\nBrain Disorders, Springer, 2023. Γƒ¿hal-03957125v3Γƒ⌐",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p001",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 454,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p002_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 2,
+    "text": "Chapter 1\nA non-technical introduction\nto machine learning\nOlivier Colliot*1\n1Sorbonne Universit┬┤e, Institut du Cerveau - Paris Brain Institute - ICM,\nCNRS, Inria, Inserm, AP-HP, H╦åopital de la Piti┬┤e-Salp╦åetri`ere, F-75013, Paris,\nFrance\n*Corresponding author: e-mail address: olivier.colliot@cnrs.fr\nAbstract\nThis chapter provides an introduction to machine learning for a non-\ntechnical readership. Machine learning is an approach to artiεÇücial intelli-\ngence. The chapter thus starts with a brief ",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p002",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p002_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 2,
+    "text": "history of artiεÇücial intelligence\nin order to put machine learning into this broader scientiεÇüc context. We\nthen describe the main general concepts of machine learning. Readers\nwith a background in computer science may skip this chapter.\nKeywords: machine learning, artiεÇÇcial intelligence, supervised learn-\ning, unsupervised learning\n1. Introduction\nMachine learning (ML) is a scientiεÇüc domain which aims at allowing\ncomputers to perform tasks without being explicitly programmed to do\nso [1]. To tha",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p002",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p002_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 2,
+    "text": "t purpose, the computer is trained using the examination\nof examples or experiences.\nIt is part of a broader εÇüeld of computer\nscience called artiεÇücial intelligence (AI) which aims at creating comput-\ners with abilities that are characteristic of human or animal intelligence.\nThis includes tasks such as perception (the ability to recognize images\nor sounds), reasoning, decision making or creativity. Emblematic tasks\nO. Colliot (Ed.), Machine Learning for Brain Disorders, Springer, 2023",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p002",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 489,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p003_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 3,
+    "text": "2\nColliot\nwhich are easy to perform for a human and are inherently diεÇâcult for a\ncomputer are for instance recognizing objects, faces or animals in pho-\ntographs, or recognizing words in speech. On the other hand, there are\nalso tasks which are inherently easy for a computer and diεÇâcult for a hu-\nman, such as computing with large numbers or memorizing exactly huge\namounts of text. Machine learning is the AI technique that has achieved\nthe most impressive successes over the past years. However, i",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p003",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p003_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 3,
+    "text": "t is not the\nonly approach to AI and conceptually diεÇÇerent approaches also exist.\nMachine learning also has close ties to other scientiεÇüc εÇüelds. First,\nit has evident strong links to statistics. Indeed, most machine learning\napproaches exploit statistical properties of the data.\nMoreover, some\nclassical approaches used in machine learning were actually invented in\nstatistics (for instance linear or logistic regression). Nowadays, there is\na constant interplay between progress in statistics and m",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p003",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p003_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 3,
+    "text": "achine learn-\ning.\nML has also important ties to signal and image processing, ML\ntechniques being eεÇâcient for many applications in these domains and\nsignal/image processing concepts being often key to the design or un-\nderstanding of ML techniques. There are also various links to diεÇÇerent\nbranches of mathematics, including optimization and diεÇÇerential geom-\netry. Besides, some inspiration for the design of ML approaches comes\nfrom the observation of biological cognitive systems, hence the connec",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p003",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p003_paragraph_004",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 3,
+    "text": "-\ntions with cognitive science and neuroscience.\nFinally, the term data\nscience has become commonplace to refer to the use of statistical and\ncomputational methods for extracting meaningful patterns from data. In\npractice, machine learning and data science share many concepts, tech-\nniques and tools. Nevertheless, data science puts more emphasis on the\ndiscovery of knowledge from the data while machine learning focuses on\nsolving tasks.\nThis chapter starts by providing a few historical landmarks",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p003",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 4,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p003_paragraph_005",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 3,
+    "text": " regarding\nartiεÇücial intelligence and machine learning (section 2). It then proceeds\nwith the main concepts of ML which are foundational to understand\nother chapters of this book.\n2. A bit of history\nAs a scientiεÇüc endeavour, artiεÇücial intelligence is at least 80 years old.\nHere, we provide a very brief overview of this history. For more details,\nthe reader may refer to [2]. A non-exhaustive timeline of AI is shown\nin Figure 1.\nEven if this is debatable, one often considers AI to emerge in the\n1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p003",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 5,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p003_paragraph_006",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 3,
+    "text": "940sΓÇô1950s with a series of important concepts and events. In 1943,\nthe neurophysiologist Warren McCulloch and the logician Walter Pitts\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p003",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 184,
+      "chunk_index": 6,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p004_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 4,
+    "text": "Introduction to machine learning\n3\n2000\n1950\n1960\n1970\n1980\n1990\n2020\n2010\n1940\nArtificial\nneuron model\nTuring\ntest\nDartmouth\nworkshop\nPerceptron\nBack-\npropagation\nSVM\nDeep\nlearning\nera\nExpert\nsystems\nFigure 1: A brief timeline of AI with some of the landmark advances.\nproposed an artiεÇücial neuron model, which is a mathematical abstraction\nof a biological neuron [3], and showed that sets of neurons can compute\nlogical operations. In 1948, the mathematician and philosopher Norbert\nWiener coined t",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p004",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p004_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 4,
+    "text": "he term ΓÇ£cyberneticsΓÇ£ [4] to designate the scientiεÇüc study\nof control and communication in humans, animals and machines. This\nidea that such processes can be studied within the same framework in\nboth humans/animals and machines is a conceptual revolution. In 1949,\nthe psychologist Donald Hebb [5] described a theory of learning for bi-\nological neurons which was later inεÇéuential in the modiεÇücation of the\nweights of artiεÇücial neurons.\nIn 1950, Alan Turing, one of the founders of computer science, ",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p004",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p004_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 4,
+    "text": "intro-\nduced a test (the famous ΓÇ£Turing testΓÇ¥) for deciding if a machine can\nthink [6]. Actually, since the question can a machine think? is ill-posed\nand depends on the deεÇünition of thinking, Turing proposed to replace\nit with a practical test. The idea is that of a game in which an inter-\nrogator is given the task of determining which of two players A and B\nis a computer and which is a human (by using only responses to writ-\nten questions). In 1956, the mathematician John McCarthy organized\nwh",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p004",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p004_paragraph_004",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 4,
+    "text": "at remained as the famous Darmouth workshop and which united\nten prominent scientists for two months (among which Marvin Minsky,\nClaude Shannon, Arthur Samuel and others). This workshop is more im-\nportant by its scientiεÇüc programme than by its outputs. Let us reproduce\nhere the εÇürst sentences of the proposal written by McCarthy et al. [7] as\nwe believe that they are particularly enlightening on the prospects of\nartiεÇücial intelligence:\nWe propose that a 2 month, 10 man study of artiεÇücial intelli",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p004",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 4,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p004_paragraph_005",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 4,
+    "text": "-\ngence be carried out during the summer of 1956 at Dartmouth\nCollege in Hanover, New Hampshire. The study is to proceed\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p004",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 168,
+      "chunk_index": 5,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p005_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 5,
+    "text": "4\nColliot\non the basis of the conjecture that every aspect of learning or\nany other feature of intelligence can in principle be so pre-\ncisely described that a machine can be made to simulate it.\nAn attempt will be made to εÇünd how to make machines use\nlanguage, form abstractions and concepts, solve kinds of prob-\nlems now reserved for humans, and improve themselves. We\nthink that a signiεÇücant advance can be made in one or more of\nthese problems if a carefully selected group of scientists work\non",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p005",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p005_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 5,
+    "text": " it together for a summer.\nThere was no major advance made at the workshop, although a reasoning\nprogram, able to prove theorems was presented by Allen Newell and\nHerbert Simon [8] at this occasion. This can be considered as the start\nof symbolic AI (we will come back later on the two main families of AI:\nsymbolic and connexionist). Let us end the 1950s with the invention,\nin 1958, of the perceptron by Frank Rosenblatt [9], whose work was\nbuilt upon the ideas of McCulloch, Pitts and Hebb.\nThe pe",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p005",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p005_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 5,
+    "text": "rceptron\nwas the εÇürst actual artiεÇücial neuron. It was able to recognize images.\nThis is an important landmark for several reasons. The perceptron, with\nsome modiεÇücations, is still the building block of modern deep learning\nalgorithms. To mimic an artiεÇücial neuron (Figure 2), it is composed of a\nset of inputs (which correspond to the information entering the synapses)\nxi, which are linearly combined and then go through a non-linear function\ng to produce an output y. This was an important advance ",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p005",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p005_paragraph_004",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 5,
+    "text": "at the time\nbut it had strong limitations, in particular its inability to discriminate\npatterns which are not linearly separable. More generally, in the εÇüeld of\nAI as a whole, unreasonable promises had been made and they were not\ndelivered: newspapers were writing about upcoming machines that could\ntalk, see, write and think; the US government funded huge programs to\ndesign automatic translation programs, etc. This led to a dramatic drop\nin research funding and, more generally, in interest in AI",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p005",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 4,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p005_paragraph_005",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 5,
+    "text": ". This is often\nreferred to as the εÇürst AI winter (Figure 3).\nEven though research in AI continued, it was not before the early\n1980s that real-world applications were once again considered possible.\nThis wave was that of expert systems [10], which are a type of sym-\nbolic AI approach but with domain-speciεÇüc knowledge. Expert systems\nled to commercial applications and to a real boom in the industry. A\nspeciεÇüc programming language, called LISP [11], became dominant for\nthe implementation of exper",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p005",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 5,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p005_paragraph_006",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 5,
+    "text": "t systems. Companies started building LISP\nmachines, which were dedicated computers with speciεÇüc architecture tai-\nlored to execute LISP eεÇâciently. One cannot help thinking of a parallel\nwith current hardware dedicated to deep learning. However, once again,\nexpectations were not met. Expert systems were very large and complex\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p005",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 375,
+      "chunk_index": 6,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p006_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 6,
+    "text": "Introduction to machine learning\n5\n(a)\nx1\nx2...\nxp\ny\nAxon\nDendrites\nAxon terminal\nCell body\n(b)\n!!\n!\"\n!#\nΓêæ\n\"\nΓÇª\n$\"\n$!\nOutput\nInputs\nWeights\nSum\nNon-Linearity\n%\n$#\nFigure 2: (a) Biological neuron. The synapses form the input of the\nneuron.\nTheir signals are combined and if the result exceeds a given\nthreshold, the neuron is activated and produces an output signal which is\nsent through the axon. (b) The perceptron: an artiεÇücial neuron which is\ninspired by biology. It is composed of the set of input",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p006",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p006_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 6,
+    "text": "s (which correspond\nto the information entering the synapses) xi, which are linearly combined\nwith weights wi and then go through a non-linear function g to produce\nan output y. Image in panel (a) is courtesy of Thibault Rolland.\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p006",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 277,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p007_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 7,
+    "text": "6\nColliot\n1st AI\nwinter\n2nd AI\nwinter\nExpert\nsystems\nMachine\nlearning\nEarly research\n2000\n1950\n1960\n1970\n1980\n1990\n2020\n2010\n1940\nFigure 3: Summers and winters of AI.\nsets of rules. They were diεÇâcult to maintain and update. They also had\npoor performances in perception tasks such as image and speech recogni-\ntion. Academic and industrial funding subsequently dropped. This was\nthe second AI winter.\nAt this stage, it is probably useful to come back to the two main\nfamilies of AI: symbolic and conn",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p007",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p007_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 7,
+    "text": "exionist (Figure 4). They had important\nlinks at the beginning (see for example the work of McCulloch and Pitt\naiming to perform logical operations using artiεÇücial neurons) but they\nsubsequently developed separately. In short, these two families can be\ndescribed as follows. The εÇürst operates on symbols through sets of logical\nrules. It has strong ties to the domain of predicate logic. Connexionism\naims at training networks of artiεÇücial neurons.\nThis is done through\nthe examination of training ex",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p007",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p007_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 7,
+    "text": "amples. More generally, it is acceptable\nto put most machine learning methods within the connexionist family,\neven though they donΓÇÖt rely on artiεÇücial neuron models, because their\nunderlying principle is also to exploit statistical similarities in the training\ndata. For a more detailed perspective on the two families of AI, the reader\ncan refer to the very interesting (and even entertaining!) paper of Cardon\net al [12].\nLet us come back to our historical timeline. The 1980s saw a rebirth of\nconn",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p007",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p007_paragraph_004",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 7,
+    "text": "exionism and, more generally, the start of the rise of machine learn-\ning. Interestingly, it is at that time that two of the main conferences\non machine learning started: the International Conference on Machine\nLearning (ICML) in 1980 and Neural Information Processing Systems\n(NeurIPS, formerly NIPS) in 1987. It had been known for a long time\nthat neural networks with multiple layers (as opposed to the original per-\nceptron with a single layer) (Figure 5) could solve non-linearly separable\nprobl",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p007",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 4,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p007_paragraph_005",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 7,
+    "text": "ems but their training remained diεÇâcult. The back-propagation al-\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p007",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 113,
+      "chunk_index": 5,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p008_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 8,
+    "text": "Introduction to machine learning\n7\nArtificial intelligence\nConnexionism\n-\nNeural networks\n-\nMore generally:\nmachine learning\nSymbolic AI\nOperates on symbols\nthrough logical rules\nFigure 4: Two families of AI. The symbolic approach operates on sym-\nbols through logical rules. The connexionist family actually not only en-\ncompasses artiεÇücial neural networks but more generally machine learning\napproaches.\ngorithm for training multilayer neural networks was described by David\nRumelhart, GeoεÇÇrey Hint",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p008",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p008_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 8,
+    "text": "on and Ronald Williams [13] in 1986, as well\nas by Yann Le Cun in 1985 [14], who also reεÇüned the procedure in his\nPhD thesis published in 1987.\nThis idea had actually been explored\nsince the 1960s but it was only in the 1980s that it was eεÇâciently used\nfor training multilayer neural networks. Finally, in 1989, Yann Le Cun\nproposed the convolutional neural network [15], an architecture inspired\nby the organization of the visual cortex, whose principle is still at the\ncore of state-of-the-art algo",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p008",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p008_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 8,
+    "text": "rithms for many image processing and recog-\nnition tasks. Multilayer neural networks demonstrated their utility in\nseveral real-world applications such as digit recognition on checks and\nZIP codes [16]. Nevertheless, they would not become the dominant ma-\nchine learning approach until the 2010s. Indeed, at the time, they re-\nquired considerable computing power for training and there was often\nnot enough training data.\nDuring the 1980s and 1990s, machine learning methods continued to\ndevelop. Int",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p008",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p008_paragraph_004",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 8,
+    "text": "erestingly, connections between machine learning and statis-\ntics increased. We are not going to provide an overview of the history\nof statistics, but one should note that many statistical methods such\nas linear regression (Legendre, 1805 [17]), principal component analysis\n(Pearson, 1901 [18]), discriminant analysis (Fisher, 1936) [19] or decision\ntrees [20] can actually be used to solve machine learning tasks such as\nautomatic categorization of objects or prediction. In the 1980s, decision\ntre",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p008",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 4,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p008_paragraph_005",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 8,
+    "text": "es witnessed important developments (see for example the ID3 [21] and\nCART [21] algorithms). In the 1990s, there were important advances in\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p008",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 187,
+      "chunk_index": 5,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p009_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 9,
+    "text": "8\nColliot\n!!\n!\"\n!#\n&$\n&\"\n&!\n&%!\n'\"!\n'\"\"\nOutputs\nInputs\nHidden\nFigure 5: A multilayer perceptron model (here with only one hidden\nlayer, but there can be many more).\nthe statistical theory of learning (in particular the works of Vladimir\nVapnik [22]).\nA landmark algorithm developed at that time was the\nsupport-vector machine (SVM) [23] which worked well with small train-\ning data sets and could handle non-linearities through the use of kernels.\nThe machine learning εÇüeld continued to expand throug",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p009",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p009_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 9,
+    "text": "h the 2000s and\n2010s, with new approaches but also more mature software packages such\nas scikit-learn [24]. More generally, it is actually important to have in\nmind that what is currently called AI owes more to statistics (and other\nmathematical εÇüelds such as optimization in particular) than to modeling\nof brain circuitry and that even approaches that take inspiration from\nneurobiology can actually be viewed as complex statistical machineries.\n2012 saw the revival of neural networks and the beg",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p009",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p009_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 9,
+    "text": "inning of the era of\ndeep learning. It was undoubtedly propelled by the considerable improve-\nment obtained on the ImageNet recognition challenge which contains 14\nmillion natural images belonging to 20,000 categories. The solution, pro-\nposed by Alex Krizhevsky, Ilya Sutskever, and GeoεÇÇrey Hinton [25], was\na convolutional neural network with a large number of layers, hence the\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p009",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 428,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p010_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 10,
+    "text": "Introduction to machine learning\n9\nterm deep learning. The building blocks of this solution were already\npresent in the 1980s but there was not enough computing power nor\nlarge training datasets for them to work properly. In the interval, things\nhad changed. Computers had become exponentially more powerful and,\nin particular, the use of Graphical Processing Units (GPU) considerably\nsped up computations. The expansion of the Internet had provided mas-\nsive amounts of data of various sorts such as",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p010",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p010_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 10,
+    "text": " texts and images. In the\nsubsequent years, deep learning [26] approaches became increasingly so-\nphisticated. In parallel, eεÇâcient and mature software packages including\nTensorFlow [27], PyTorch [28] or Keras [29], whose development is sup-\nported by major companies such as Google and Facebook, enable deep\nlearning to be used more easily by scientists and engineers.\nArtiεÇücial intelligence in medicine as a research εÇüeld is about 50 years\nold. In 1975, an expert system, called MYCIN, was proposed",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p010",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p010_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 10,
+    "text": " to identify\nbacteria causing various infectious diseases [30]. More generally, there\nwas a growing interest in expert systems for medical applications. Med-\nical image processing also quickly became a growing εÇüeld. The εÇürst con-\nference on Information Processing in Medical Imaging (IPMI) was held\nin 1977 (it existed under a diεÇÇerent name since 1969). The εÇürst SPIE\nMedical Image Processing conference took place in 1986 and the Med-\nical Image Computing and Computer-Assisted Intervention conferen",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p010",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p010_paragraph_004",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 10,
+    "text": "ce\n(MICCAI) started in 1998. Image perception tasks, such as segmenta-\ntion or classiεÇücation, soon became among the key topics of this εÇüeld,\neven though the methods came in majority from traditional image pro-\ncessing and not from machine learning. In the 2010s, machine learning\napproaches became dominant for medical image processing and more\ngenerally in artiεÇücial intelligence in medicine.\nTo conclude this part, it is important to be clear about the diεÇÇerent\nterms, in particular those of artiεÇüc",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p010",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 4,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p010_paragraph_005",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 10,
+    "text": "ial intelligence, machine learning and\ndeep learning (Figure 6). Machine learning is one approach to artiεÇücial\nintelligence and other radically diεÇÇerent approaches exist. Deep learning\nis a speciεÇüc type of machine learning approach. It has recently obtained\nimpressive results on some types of data (in particular images and text)\nbut this does not mean that it is the universal solution to all problems.\nAs we will see in this book, there are tasks for which other types of\napproaches perform best.\n",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p010",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 5,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p010_paragraph_006",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 10,
+    "text": "3. Main machine learning concepts\nAs aforementioned, machine learning aims at making a computer capable\nof performing a task without explicitly being programmed for that task.\nMore precisely, it means that one will not write a sequence of instruc-\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p010",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 295,
+      "chunk_index": 6,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p011_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 11,
+    "text": "10\nColliot\nArtificial intelligence\nMachine learning\nDeep learning\nFigure 6: ArtiεÇücial intelligence, machine learning and deep learning\nare not synonymous. Deep learning is a type of machine learning which\ninvolves neural networks with a large number of hidden layers. Machine\nlearning is one approach to artiεÇücial intelligence, but other approaches\nexist.\ntions that will directly perform the considered task. Instead, one will\nwrite a program that allows the computer to learn how to perform the\ntas",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p011",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p011_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 11,
+    "text": "k by examining examples or experiences. The output of this learning\nprocess is a computer program itself that performs the desired task, but\nthis program was not explicitly written. Instead, it has been learned\nautomatically by the computer.\nIn 1997, Tom Mitchell gave a more precise deεÇünition of a well-posed\nmachine learning problem [31]:\nA computer program is said to learn from experience E with\nrespect to some task T and some performance measure\nP, if its performance at task T, as measured by ",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p011",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p011_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 11,
+    "text": "P, improves\nwith experience E.\nHe then provides the example of a computer that learns to play checkers:\ntask T is playing checkers, performance measure P is the proportion of\ngames won and the training experience E is playing checker games against\nitself. Very often, the experience E will not be an actual action but the\nobservation of a set of examples, for instance a set of images belonging\nto diεÇÇerent categories such as photographs of cats and dogs, or medical\nimages containing tumours or with",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p011",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p011_paragraph_004",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 11,
+    "text": "out lesions. Please refer to Box 1 for\na summary.\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p011",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 97,
+      "chunk_index": 4,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p012_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 12,
+    "text": "Introduction to machine learning\n11\nBox 1: DeεÇÇnition of machine learning\nMachine learning deεÇünition (Mitchell, 1997 [31]):\n┬╖ ΓÇ£a computer program is said to learn from experience E with\nrespect to some task T and some performance measure P,\nif its performance at task T, as measured by P, improves with\nexperience E.ΓÇ¥\nExample: learning to detect tumours from medical images\n┬╖ Task T: detect tumours from medical image\n┬╖ Performance measure P: proportion of tumours correctly\nidentiεÇüed\n┬╖ Experience E: ",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p012",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p012_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 12,
+    "text": "examining a dataset of medical images where\nthe presence of tumours has been annotated\n3.1\nTypes of learning\nOne usually considers three main types of learning: supervised learn-\ning, unsupervised learning and reinforcement learning (Box 2). In both\nsupervised and unsupervised learning, the experience E is actually the\ninspection of a set of examples, which will we refer to as training examples\nor training set.\n3.1.1. Supervised learning\nIn supervised learning, the machine learns to perform a ta",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p012",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p012_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 12,
+    "text": "sk by examin-\ning a set of examples for which the output is known (i.e. the examples\nhave been labelled). The two most common tasks in supervised learn-\ning are classiεÇücation and regression (Figure 7). ClassiεÇücation aims at\nassigning a category for each sample.\nThe examples can for instance\nbe diεÇÇerent patients and the categories are the diεÇÇerent possible diag-\nnoses. The outputs are thus discrete. Examples of common classiεÇücation\nalgorithms include logistic regression (in spite of its name, it ",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p012",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p012_paragraph_004",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 12,
+    "text": "is a classi-\nεÇücation method), linear discriminant analysis, support vector machines,\nrandom forest classiεÇüers and deep learning models for classiεÇücation. In\nregression, the output is a continuous number. This can be for example\nthe future clinical score of a patient that we are trying to predict. Ex-\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p012",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 349,
+      "chunk_index": 4,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p013_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 13,
+    "text": "12\nColliot\nBox 2: Supervised, unsupervised and reinforcement learning\n┬╖ Supervised learning.\nLearns from labelled examples, i.e.\nexamples for which the output that we are trying to learn is\nknown.\nΓÇô Example 1. The task is computer-aided diagnosis (a clas-\nsiεÇücation problem), the label can be the diagnosis of each\npatient, as deεÇüned by an expert physician.\nΓÇô Example 2. The task is the prediction of the age of a\nperson from a set of biological variables (for example a\nbrain MRI). This is a regress",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p013",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p013_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 13,
+    "text": "ion problem. The label is\nthe true age of a given person in the training set.\n┬╖ Unsupervised learning. Learns from unlabelled examples.\nΓÇô Example 1. Given a large set of newspapers articles, auto-\nmatically cluster them into groups dealing with the same\ntopic based only on the text of the article. The topics can\nfor example be economics, politics, international aεÇÇairs.\nThe topics are not known a priori.\nΓÇô Example 2.\nGiven a set of patients with autism spec-\ntrum disorders, the aim is to discover",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p013",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p013_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 13,
+    "text": " cluster of patients\nthat share the same characteristics. The clusters are not\nknown a priori. Examples 1 and 2 will be referred to as\nclustering tasks.\nΓÇô Example 3. Given a large set of medical characteristics\n(various biological measurements, clinical and cognitive\ntests, medical images), εÇünd a small set of variables that\nbest explain the variability of the dataset. This is a di-\nmensionality reduction problem.\n┬╖ Reinforcement learning. Learns by iteratively performing\nactions to maximize some",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p013",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p013_paragraph_004",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 13,
+    "text": " reward.\nΓÇô Classical approach used for learning to play games (chess,\ngo. . . ) or in the domain of robotics.\nΓÇô Currently few applications in the domain of brain dis-\neases.\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p013",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 221,
+      "chunk_index": 4,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p014_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 14,
+    "text": "Introduction to machine learning\n13\nClassiεÇîcation\n20\n30\n40\n50\n60\nAge (in years)\n17.5\n20.0\n22.5\n25.0\n27.5\n30.0\nBody mass index\nRegression\nFigure 7: Two of the main supervised learning tasks: classiεÇücation and\nregression. The upper panel presents a classiεÇücation task which aims at\nlinearly separating the orange and the blue class. Each sample is described\nby two variables. The lower panel presents a linear regression task in\nwhich the aim is to predict the body mass index from the age of a person.",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p014",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p014_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 14,
+    "text": "\nFigure courtesy of Johann Faouzi.\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p014",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 82,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p015_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 15,
+    "text": "14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p015",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p015_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 15,
+    "text": "re clustering and dimensionality\nreduction (Figure 8). Clustering aims at discovering groups within the\ntraining set but these groups are not known a priori. The objective is\nto εÇünd groups such that members of the same group are similar while\nmembers of diεÇÇerent groups are dissimilar. For example, one can aim\nto discover disease subtypes which are not known a priori. Some clas-\nsical clustering methods are k-means or spectral clustering for instance.\nDimensionality reduction aims at εÇünding a spa",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p015",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p015_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 15,
+    "text": "ce of variables (of lower\ndimension than the input space) that best explain the variability of the\ntraining data, given a larger set of input variables. This produces a new\nset of variables that, in general, are not among the input variables but\nare combinations of them. Examples of such methods include principal\ncomponent analysis, Laplacian eigenmaps or variational autoencoders.\n3.1.3. Reinforcement learning\nIn reinforcement learning, the machine will take a series of actions in\norder to maxim",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p015",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p015_paragraph_004",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 15,
+    "text": "ize a reward.\nThis can for example be the case of a\nmachine learning to play chess, which will play games against itself in\norder to maximize the number of victories. These methods are widely\nused for learning to play games or in the domain of robotics. So far, they\nhave had few applications to brain diseases and will not be covered in\nthe rest of this book.\n3.1.4. Discussion\nUnsupervised learning is obviously attractive because it does not re-\nquire labels. Indeed, acquiring labels for a traini",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p015",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 4,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p015_paragraph_005",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 15,
+    "text": "ng set is usually time-\nconsuming and expensive because the labels need to be assigned by a\nhuman. This is even more problematic in medicine because the labels\nmust be provided by experts in the εÇüeld.\nIt is thus in principle at-\ntractive to adopt unsupervised strategies, even for tasks which could be\nframed as supervised learning problems. Nevertheless, up to now, the\nperformances of supervised approaches are often vastly superior in many\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p015",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 490,
+      "chunk_index": 5,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p016_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 16,
+    "text": "Introduction to machine learning\n15\nClustering\nFigure 8: Clustering task. The algorithms automatically identiεÇües three\ngroups (corresponding to the red circles) from unlabelled examples (the\nblue dots). The groups are not known a priori. Figure courtesy of Johann\nFaouzi.\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p016",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 319,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p017_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 17,
+    "text": "16\nColliot\napplications. However, in the past years, an alternative strategy called\nself-supervised learning, where the machine itself provides its own super-\nvision, has emerged. This is a promising approach which has already led\nto impressive results in diεÇÇerent εÇüelds such as natural language process-\ning in particular [32, 33, 34].\n3.2\nOverview of the learning process\nIn this section, we aim at formalizing the main concepts underlying most\nsupervised learning methods. Some of these concepts, ",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p017",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p017_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 17,
+    "text": "with modiεÇücations,\nalso extend to unsupervised cases.\nThe task that we will consider will be to provide an output, denoted as\ny, from an input given to the computer, denoted as x. At this moment,\nthe nature of x does not matter. It can for example be any possible\nphotograph as in the example presented in Figure 9. It could be also\nbe a single number, a series of numbers, a text . . . For now, the nature\nof y can also be varied. Typically, in the case of regression, it can be\na number. In the cas",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p017",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p017_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 17,
+    "text": "e of classiεÇücation, it corresponds to a label (for\ninstance the label ΓÇ£catΓÇ¥ in our example). For now, you do not need to\nbother about how these data (images, labels . . . ) are represented in a\ncomputer. For those without a background in computer science, this will\nbe brieεÇéy covered in subsection 3.3.\nLearning will aim at εÇünding a function f that can transform x into y,\nthat is such that y = f(x). For now, f can be of any type, just imagine\nit as an operation that can associate a given x with a ",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p017",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p017_paragraph_004",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 17,
+    "text": "given y. In chapter\n3, the functions f will be artiεÇücial neural networks. Learning aims at\nεÇünding a function f which will provide the correct output for each given\ninput. Let us call the loss function and denote Γäôa function that measures\nthe error that is made by the function f. The loss function takes two\narguments: the true output y and the predicted output f(x). The lower\nthe loss function value, the closer the predicted output is to the true\noutput. An example of loss function is the classic",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p017",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 4,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p017_paragraph_005",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 17,
+    "text": "al least squares loss\nΓäô(y, f(x)) = (y ΓêÆf(x))2 but many others exist. Ideally, the best function\nf would be the one that produces the minimal error for any possible\ninput x and associated output y, not only those which we have at our\ndisposal, but any other possible new data. Of course, we do not have\nany possible data at our disposal. Thus, we are going to use a set of\ndata called the training set. In supervised learning, this set is labelled,\ni.e. for each example in this set, we know the value",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p017",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 5,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p017_paragraph_006",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 17,
+    "text": " of both x and y. Let\nus denote as (x(1), y(1)), . . ., (x(n), y(n)) the n examples of the training set\nwhich are n pairs of inputs and outputs. We are now going to search\nfor the function f that makes the minimum error over the n samples of\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p017",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 289,
+      "chunk_index": 6,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p018_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 18,
+    "text": "Introduction to machine learning\n17\nCats\nRacoons\nTrees\nTraining set: labeled examples\nInput\nOutput\nCat\nLearning\nFigure 9: Main concepts underlying supervised learning, here in the\ncase of classiεÇücation. The aim is to be able to recognize the content of\na photograph (the input x) which amounts to assigning it a label (the\noutput y).\nIn other words, we would like to have a function f that\ntransforms x into y.\nIn order to εÇünd the function f, we will make\nuse of a training set (x(1), y(1)), . . ., (",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p018",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p018_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 18,
+    "text": "x(n), y(n)) (which in our case is a\nset of photographs which have been labelled).\nAll images come from\nhttps://commons.wikimedia.org/ and have no usage restriction.\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p018",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 212,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p019_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 19,
+    "text": "18\nColliot\nthe training set. In other words, we are looking for the function which\nminimizes the average error over the training set. Let us call this average\nerror the cost function:\nJ(f) = 1\nn\nn\nεÇë\ni=1\nΓäô\nεÇÇ\ny(i), f(x(i))\nεÇü\nLearning will then aim at εÇünding the function ╦åf which minimizes the\ncost function:\n╦åf = arg min\nfΓêêF\n1\nn\nn\nεÇë\ni=1\nΓäô\nεÇÇ\ny(i), f(x(i))\nεÇü\nIn the above equation, arg min indicates that we are interested in the\nfunction f that minimizes the cost J(f) and not in the value of the cost\n",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p019",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p019_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 19,
+    "text": "itself. F is the space that contains all admissible functions. F can for\ninstance be the set of linear functions or the set of neural networks with\na given architecture.\nThe procedure that will aim at εÇünding f that minimizes the cost is\ncalled an optimization procedure. Sometimes, the minimum can be εÇünd\nanalytically (i.e. by directly solving an equation for f) but this will rarely\nbe the case. In other cases, one will resort to an iterative procedure (i.e.\nan algorithm): the function f is iterat",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p019",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p019_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 19,
+    "text": "ively modiεÇüed until we εÇünd the\nfunction which minimizes the cost. There are cases where we will have\nan algorithm that is guaranteed to εÇünd the global minimum and others\nwhere one will only εÇünd a local minimum.\nMinimizing the errors on the training set does not guarantee that\nthe trained computer will perform well on new examples which were\nnot part of the training set. A εÇürst reason may be that the training\nset is too diεÇÇerent from the general population (for instance, we have\ntrained a model o",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p019",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p019_paragraph_004",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 19,
+    "text": "n a dataset of young males and we would like to apply\nit to patients of any gender and age). Another reason is that, even if\nthe training set characteristics follow those of the general population,\nthe learned function f may be too speciεÇüc to the training set. In other\nwords, it has learned the training set ΓÇ£by heartΓÇ¥ but has not discovered a\nmore general rule that would work for other examples. This phenomenon\nis called overεÇütting and often arises when the dimensionality of the data\nis too high",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p019",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 4,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p019_paragraph_005",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 19,
+    "text": " (there are many variables to represent an input), when the\ntraining set is too small or when the function f is too εÇéexible. A way to\nprevent overεÇütting will be to modify the cost function so that it not only\nrepresents the average error across training samples but also constrains\nthe function f to have some speciεÇüc properties.\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p019",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 377,
+      "chunk_index": 5,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p020_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 20,
+    "text": "Introduction to machine learning\n19\n3.3\nInputs and features\nIn the previous section, we made no assumption on the nature of the\ninput x. It could be an image, a number, a text, etc.\nThe simplest form of input that one can consider is when x is a\nsingle number.\nExamples include age, clinical scores . . . However, for\nmost problems, characterization of a patient cannot be done with a single\nnumber but requires a large set of measurements (Table 1). In such a case,\nthe input can be a series of numb",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p020",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p020_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 20,
+    "text": "ers x1, . . . , xp which can be arranged\ninto a vector:\nx =\nεÇé\nεÇåεÇä\nx1\n...\nxp\nεÇâ\nεÇçεÇà\nTable 1: Example where the input is a series of number. Here each\npatient is characterized by several variables\nAge (years)\nHeight (cm)\nWeight (kg)\nPatient 1\n52.5\n172\n52\nPatient 2\n75.1\n182\n78\nPatient 3\n32.7\n161\n47\nPatient 4\n45\n190\n92\nHowever, there are cases where the input is not a vector of numbers.\nThis is the case when the input is a medical image, a text or a DNA\nsequence for instance. Of course, in a computer, ",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p020",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p020_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 20,
+    "text": "everything is stored as\nnumbers. An image is an array of values representing the gray-scale in-\ntensity of each pixel (Figure 10). A text is a sequence of characters which\nare each coded as a number. However, unlike in the example presented\nin Table 1, these numbers are not meaningful by themselves. For this\nreason, a common approach is to extract features, which will be series\nof numbers that meaningfully represent the input. For example, if the\ninput is a brain magnetic resonance image (MRI), ",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p020",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p020_paragraph_004",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 20,
+    "text": "relevant features could\nbe the volumes of diεÇÇerent anatomical regions of the brain (this speciεÇüc\nprocess is done using a technique called image segmentation which is cov-\nered in another chapter). This would result in a series of numbers that\nwould form an input vector. The development of eεÇâcient methods for\nextracting meaningful features from raw data is important in machine\nlearning.\nSuch an approach is often called feature engineering.\nDeep\nlearning methods allow for avoiding extracting featu",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p020",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 4,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p020_paragraph_005",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 20,
+    "text": "res by providing an\nend-to-end approach from the raw data to the output. In some areas,\nthis has made feature engineering less important but there are still ap-\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p020",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 208,
+      "chunk_index": 5,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p021_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 21,
+    "text": "20\nColliot\nplications where so-called ΓÇ£handcrafted featuresΓÇ¥ are competitive with\ndeep learning methods.\n0\n0\n0\n0\n0\n0\n1\n2\n4\n4\n6\n4\n5\n3\n5\n4\n3\n5\n5\n5\n4\n5\n4\n3\n1\n0\n0\n0\n0\n0\n0\n0\n1\n0\n0\n1\n0\n0\n0\n1\n1\n1\n1\n1\n0\n0\n0\n-1 -2 -1 -1 -1 -1\n0\n1\n1\n1\n1\n0\n0\n0\n1\n0\n0\n1\n1\n1\n1\n1\n1\n1\n1\n1\n-1 -2\n0\n7\n16 20 24 29 30 32 33 25 14\n3\n-1\n0\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n-1\n0\n14 33 50 49 44 42 38 38 35 34 33 37 45 47 27\n1\n0\n1\n1\n1\n1\n1\n1\n1\n1\n1\n0\n1\n1\n-1 11 45 51 39 37 33 33 49 61 57 60 70 61 49 46 33 46 51\n9\n-1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n-1 18 46 33",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p021",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p021_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 21,
+    "text": " 34 53 63 77 74 79 84 74 82 83 85 73 74 68 37 40 58 16 -1\n1\n1\n1\n1\n1\n1\n1\n1\n-1 18 40 37 61 70 87 89 88 87 83 83 87 86 86 88 73 81 78 72 35 33 54\n6\n0\n1\n1\n1\n1\n1\n1\n0\n8\n39 39 70 87 86 89 90 89 89 79 79 89 84 87 89 85 76 79 66 55 36 44 30 -2\n1\n1\n1\n1\n1\n1\n0\n38 38 71 84 87 84 81 80 82 84 83 92 92 85 83 84 79 75 84 70 81 56 31 45\n4\n0\n1\n1\n1\n1\n0\n12 43 54 82 83 84 76 80 89 91 90 93 94 94 91 83 80 82 90 90 86 76 78 46 39 22 -1\n1\n1\n1\n1\n-2 28 42 64 83 81 75 82 93 91 87 88 84 79 77 78 93 94 83 83 87 92 88 73 74 3",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p021",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p021_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 21,
+    "text": "6 41\n2\n1\n1\n1\n1\n-1 35 46 79 83 83 78 92 90 67 82 87 87 85 85 70 67 90 95 89 92 89 76 70 86 50 37 16 -1\n1\n1\n0\n7\n52 44 73 87 82 83 88 91 81 87 94 94 91 92 91 81 69 93 96 86 81 75 86 85 63 35 31 -1\n1\n1\n-1 15 63 26 75 88 88 86 85 90 90 85 92 95 93 91 90 89 84 93 89 81 86 90 90 81 83 38 37\n1\n1\n1\n0\n7\n61 20 27 58 77 83 83 81 79 84 84 84 91 92 87 80 88 85 86 86 86 88 90 88 85 46 39\n4\n1\n1\n1\n0\n38 74 21 19 41 43 46 51 67 67 68 66 79 90 73 71 79 78 83 86 89 90 90 87 85 53 36\n3\n1\n2\n1\n4\n17 36 30 27 10\n7\n10 12 ",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p021",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p021_paragraph_004",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 21,
+    "text": "44 106 96 74 71 83 77 82 86 81 78 78 80 87 82 82 83 44 33\n1\n1\n0\n4\n25 41 40 30 36 13\n5\n3\n5\n12 53 106 87 55 85 89 87 94 88 85 82 78 75 74 76 57 39 21 -1\n1\n13 29 49 57 37 38 35 26 12 14 29 16 20 64 68 48 67 85 86 92 92 91 87 83 80 73 40 26 48\n3\n1\n3\n50 50 66 77 50 39 21 25 27 15 33 50 50 57 39 37 39 53 76 87 89 89 88 85 84 56 28 55 27 -1\n0\n19\n26 20 23 46 44 38 40 39 47 50 40 35 72 77 62 54 41 52 83 85 86 86 85 75 52 37 76 57\n1\n0\n1\n6\n-1 29 58 64 39 37 43 36 40 41 30 19 59 76 68 55 44 58 72 73 72 65 5",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p021",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 4,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p021_paragraph_005",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 21,
+    "text": "4 52 52 73 76 20 -1\n1\n1\n1\n-1 27 73 73 29 47 50 47 72 66 36 45 58 69 65 45 51 61 89 61 60 62 75 71 75 73 58\n1\n1\n2\n2\n1\n-1 27 72 36 26 54 69 75 77 79 79 73 70 70 62 46 48 63 64 57 70 72 69 64 73 77 28 -2\n1\n1\n1\n1\n0\n23 46 46 70 74 71 71 72 73 74 73 66 64 61 42 38 59 65 57 69 67 63 69 68 67\n5\n1\n1\n1\n1\n1\n-1 44 68 39 61 62 61 63 65 69 75 73 73 67 62 47 45 46 49 60 69 61 63 67 69 40 -2\n1\n1\n1\n1\n1\n-1 20 82 33 44 64 63 62 61 62 73 73 62 67 62 50 57 53 46 56 60 56 61 65 67 20 -1\n1\n1\n1\n1\n1\n1\n5\n56 42 20 60 70 6",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p021",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 5,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p021_paragraph_006",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 21,
+    "text": "4 60 61 64 68 41 50 63 47 43 45 38 53 50 51 61 61 55\n8\n0\n1\n1\n1\n1\n1\n-1 18 58 39 27 51 67 60 55 60 59 60 35 29 58 48 44 46 40 54 53 49 59 56 42\n2\n1\n1\n1\n1\n1\n1\n-1 24 57 35 23 46 57 57 56 58 55 55 37 31 57 47 39 39 40 51 52 49 56 53 30 -1\n1\n1\n1\n1\n1\n1\n0\n8\n44 30 30 48 50 49 50 49 43 49 47 26 49 37 33 40 34 45 46 46 47 44 22\n0\n2\n1\n1\n1\n1\n1\n0\n0\n5\n17 21 24 25 24 27 26 26 23 13 12 27 23 21 24 26 28 28 30 25 25 13\n0\n1\n0\n0\n0\n0\n0\nFigure 10: In a computer, an image is represented as an array of num-\nbers. Each ",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p021",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 6,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p021_paragraph_007",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 21,
+    "text": "number corresponds to the gray-level of a given pixel. Here\nthe example is a slice of an anatomical MRI which has been severely un-\ndersampled so that the diεÇÇerent pixels are clearly visible. Note that an\nanatomical MRI is actually a 3D image and would thus be represented by\na 3D array rather than by a 2D array. Image courtesy of Ninon Burgos.\n3.4\nIllustration in a simple case\nWe will now illustrate step-by-step the above concepts in a very simple\ncase: univariate linear regression. Univariate m",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p021",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 7,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p021_paragraph_008",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 21,
+    "text": "eans that the input is a\nsingle number as in the example shown in Figure 7. Linear means that the\nmodel f will be a simple line. The input is a number x and the output is a\nnumber y. The loss will be the least squares loss: Γäô(y, f(x)) = (yΓêÆf(x))2.\nThe model f will be a linear function of x i.e. f(x) = w1x + w0 and\ncorresponds to the equation of a line, w1 being the slope of the line\nand w0 the intercept. To further simplify things, we will consider the\ncase where there is no intercept, i.e. the ",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p021",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 8,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p021_paragraph_009",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 21,
+    "text": "line passes through the origin.\nDiεÇÇerent values of w1 correspond to diεÇÇerent lines (and thus to diεÇÇerent\nfunctions f) and to diεÇÇerent values of the cost function J(f), which can\nbe in our case rewritten J(w1) since f only depends on the parameter w1\n(Figure 11). The best model is the one for which J(w1) is minimal.\nHow can we εÇünd w1 such that J(w1) is minimal? We are going to use\nthe derivative of J:\ndJ\ndw1. A minimum of J(w1) is necessarily such that\ndJ\ndw1 = 0 (in our speciεÇüc case, the inverse",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p021",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 9,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p021_paragraph_010",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 21,
+    "text": " is also true). In our case, it is\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p021",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 82,
+      "chunk_index": 10,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p022_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 22,
+    "text": "Introduction to machine learning\n21\n0\n1\nX\nX\n!\n\"\n#!\n$(#!)\n1\n2\n3\n1\n2\n3\n' \" = 0.3\"\nX\n' \" = 0.5\"\n' \" = \"\nFigure 11: We illustrate the concepts of supervised learning on a very\nsimple case: univariate linear regression with no intercept. Training sam-\nples correspond to the black circles. The diεÇÇerent models f(x) = w1x\ncorrespond to the diεÇÇerent lines. Each model (and thus each value of the\nparameter w1) corresponds to a value of the cost J(w1). The best model\n(the blue line) is the one which minimiz",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p022",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p022_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 22,
+    "text": "es J(w1), here it corresponds to\nthe line with a slope w1 = 1.\npossible to directly solve\ndJ\ndw1 = 0. This will nevertheless not be the case\nin general. Very often, it will not be possible to solve this analytically.\nWe will thus resort to an iterative algorithm.\nOne classical iterative\nmethod is gradient descent. In the general case, f depends not on only\none parameter w1 but on a set of parameters (w1, . . . , wp) which can be\nassembled into a vector w. Thus, instead of working with the deriva",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p022",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p022_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 22,
+    "text": "tive\ndJ\ndw1, we will work with the gradient ΓêçwJ. The gradient is a vector that\nindicates the direction that one should follow to climb along J. We will\nthus follow the opposite of the gradient, hence the name gradient descent.\nThis process is illustrated in Figure 12, together with the corresponding\nalgorithm.\n4. Conclusion\nThis chapter provided an introduction to machine learning (ML) for a\nnon-technical readership (e.g. physicians, neuroscientists . . . ). ML is an\napproach to artiεÇücial intell",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p022",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p022_paragraph_004",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 22,
+    "text": "igence and thus needs to be put into this larger\ncontext. We introduced the main concepts underlying ML that will be\nfurther expanded in Chapters 2 to 6. The reader can εÇünd a summary of\nthese main concepts, as well as notations, in Box 3.\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p022",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 286,
+      "chunk_index": 4,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p023_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 23,
+    "text": "22\nColliot\nX\nX\nX\nX\n$(#!)\n#!\nrepeat\nw1 w1 εÇÇΓîÿdJ\ndw1\nuntil convergence;\nFigure 12: Upper panel: Illustration of the concept of gradient descent\nin a simple case where the model f is deεÇüned using only one parameter\nw1. The value of w1 is iteratively updated by following the opposite of the\ngradient. Lower panel: gradient descent algorithm where ╬╖ is the learning\nrate, i.e. the speed at which w1 will be updated.\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p023",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 458,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p024_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 24,
+    "text": "Introduction to machine learning\n23\nBox 3: Summary of main concepts\n┬╖ The input x\n┬╖ The output y\n┬╖ The training samples (x(1), y(1)), . . ., (x(n), y(n))\n┬╖ The model: transforms the input into the output\nf such that y = f(x)\n┬╖ The set of possible models F\n┬╖ The loss: measures the error between the predicted and the\ntrue output, for a given sample\nΓäô(y, f(x))\n┬╖ The cost function: measures the average error across the train-\ning samples\nJ(f) = 1\nn\nεÇên\ni=1 Γäô\nεÇÇ\ny(i), f(x(i))\nεÇü\n┬╖ Learning process: εÇündi",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p024",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p024_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 24,
+    "text": "ng the model which minimizes the cost\nfunction\n╦åf = arg minfΓêêF J(f)\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p024",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 115,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p025_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 25,
+    "text": "24\nColliot\nAcknowledgments\nThe author would like to thank Johann Faouzi for his insightful com-\nments. This work was supported by the French government under man-\nagement of Agence Nationale de la Recherche as part of the ΓÇ£Investisse-\nments dΓÇÖavenirΓÇ¥ program, reference ANR-19-P3IA-0001 (PRAIRIE 3IA\nInstitute) and reference ANR-10-IAIHU-06 (Institut Hospitalo-Universitaire\nICM).\nReferences\n[1] Samuel AL (1959) Some studies in ma-\nchine learning using the game of checkers.\nIBM Journal of research ",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p025",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p025_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 25,
+    "text": "and development\n3(3):210ΓÇô229\n[2] Russell S, Norvig P (2002) ArtiεÇücial intelli-\ngence: a modern approach. Pearson\n[3] McCulloch WS, Pitts W (1943) A logical\ncalculus of the ideas immanent in nervous\nactivity. The bulletin of mathematical bio-\nphysics 5(4):115ΓÇô133\n[4] Wiener N (1948) Cybernetics or Control\nand Communication in the Animal and the\nMachine. MIT press\n[5] Hebb DO (1949) The organization of behav-\nior. Wiley\n[6] Turing AM (1950) Computing machinery\nand intelligence. Mind 59(236):433ΓÇô36",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p025",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p025_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 25,
+    "text": "0\n[7] McCarthy J, Minsky ML, Rochester N,\nShannon CE (1955) A proposal for the\ndartmouth\nsummer\nresearch\nproject\non\nartiεÇücial intelligence. Research Report URL\nhttp://raysolomonoff.com/dartmouth/\nboxa/dart564props.pdf\n[8] Newell A, Simon H (1956) The logic theory\nmachineΓÇôa complex information processing\nsystem. IRE Transactions on information\ntheory 2(3):61ΓÇô79\n[9] Rosenblatt F (1958) The perceptron:\na\nprobabilistic model for information storage\nand organization in the brain. Psychological\nreview",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p025",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p025_paragraph_004",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 25,
+    "text": " 65(6):386\n[10] Buchanan BG, ShortliεÇÇe EH (1984) Rule-\nbased expert systems: the MYCIN exper-\niments of the Stanford Heuristic Program-\nming Project. Addison-Wesley\n[11] McCarthy J (1960) Recursive functions of\nsymbolic expressions and their computation\nby machine, part I. Communications of the\nACM 3(4):184ΓÇô195\n[12] Cardon\nD,\nCointet\nJP,\nMazi`eres\nA,\nLibbrecht\nE\n(2018)\nNeurons\nspike\nback.\nReseaux\n5:173ΓÇô220,\nURL\nhttps://neurovenge.antonomase.fr/\nRevengeNeurons_Reseaux.pdf\n[13] Rumelhart DE, Hinto",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p025",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 4,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p025_paragraph_005",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 25,
+    "text": "n GE, Williams RJ\n(1986) Learning representations by back-\npropagating errors. Nature 323(6088):533ΓÇô\n536\n[14] Le\nCun\nY\n(1985)\nUne\nproc┬┤edure\ndΓÇÖapprentissage\npour\nr┬┤eseau\n`a\nseuil\nas-\nsym┬┤etrique. Cognitiva 85:599ΓÇô604\n[15] LeCun Y, Boser B, Denker JS, Henderson\nD, Howard RE, Hubbard W, Jackel LD\n(1989) Backpropagation applied to hand-\nwritten zip code recognition. Neural com-\nputation 1(4):541ΓÇô551\n[16] Matan O, Baird HS, Bromley J, Burges\nCJC, Denker JS, Jackel LD, Le Cun Y, Ped-\nnault EPD, Satte",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p025",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 5,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p025_paragraph_006",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 25,
+    "text": "rεÇüeld WD, Stenard CE,\net al (1992) Reading handwritten digits:\nA zip code recognition system. Computer\n25(7):59ΓÇô63\n[17] Legendre AM (1806) Nouvelles m┬┤ethodes\npour\nla\nd┬┤etermination\ndes\norbites\ndes\ncom`etes. Firmin Didot\n[18] Pearson K (1901) On lines and planes of\nclosest εÇüt to systems of points in space.\nThe London, Edinburgh, and Dublin philo-\nsophical magazine and journal of science\n2(11):559ΓÇô572\n[19] Fisher RA (1936) The use of multiple mea-\nsurements in taxonomic problems. Annals\nof eugeni",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p025",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 6,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p025_paragraph_007",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 25,
+    "text": "cs 7(2):179ΓÇô188\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p025",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 63,
+      "chunk_index": 7,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p026_paragraph_001",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 26,
+    "text": "Introduction to machine learning\n25\n[20] Loh WY (2014) Fifty years of classiεÇücation\nand regression trees. International Statisti-\ncal Review 82(3):329ΓÇô348\n[21] Quinlan JR (1986) Induction of decision\ntrees. Machine learning 1(1):81ΓÇô106\n[22] Vapnik V (1999) The nature of statistical\nlearning theory. Springer\n[23] Boser BE, Guyon IM, Vapnik VN (1992) A\ntraining algorithm for optimal margin clas-\nsiεÇüers. In: Proceedings of the εÇüfth annual\nworkshop on Computational learning the-\nory, pp 144ΓÇô152\n[24]",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p026",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p026_paragraph_002",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 26,
+    "text": " Pedregosa\nF,\nVaroquaux\nG,\nGramfort\nA,\nMichel\nV,\nThirion\nB,\net\nal\n(2011)\nScikit-learn:\nMachine learning in python.\nthe Journal of machine Learning research\n12:2825ΓÇô2830\n[25] Krizhevsky\nA,\nSutskever\nI,\nHinton\nGE\n(2012) Imagenet classiεÇücation with deep\nconvolutional neural networks. In:\nAd-\nvances in neural information processing sys-\ntems, vol 25, pp 1097ΓÇô1105\n[26] LeCun Y, Bengio Y, Hinton G (2015) Deep\nlearning. Nature 521(7553):436ΓÇô444\n[27] Abadi M, Agarwal A, et al (2015) Ten-\nsorFlow:\nLarge-",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p026",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 2,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p026_paragraph_003",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 26,
+    "text": "scale machine learning on\nheterogeneous systems. URL https://www.\ntensorflow.org/, software available from\ntensorεÇéow.org\n[28] Paszke A, Gross S, Massa F, Lerer A,\nBradbury J, Chanan G, Killeen T, Lin\nZ, Gimelshein N, Antiga L, et al (2019)\nPytorch:\nAn\nimperative\nstyle,\nhigh-\nperformance deep learning library. In: Ad-\nvances in neural information processing sys-\ntems, vol 32, pp 8026ΓÇô8037\n[29] Chollet F, et al (2015) Keras. URL https:\n//github.com/fchollet/keras\n[30] ShortliεÇÇe E (1976) Computer-b",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p026",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 3,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p026_paragraph_004",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 26,
+    "text": "ased medical\nconsultations: MYCIN. Elsevier\n[31] Mitchell T (1997) Machine learning. Mc-\nGraw Hill\n[32] Mikolov T, Chen K, Corrado G, Dean J\n(2013) EεÇâcient estimation of word repre-\nsentations in vector space. arXiv preprint\narXiv:13013781\n[33] Radford\nA,\nNarasimhan\nK,\nSali-\nmans\nT,\nSutskever\nI\n(2018)\nImprov-\ning\nlanguage\nunderstanding\nby\ngen-\nerative\npre-training.\nURL\nhttps:\n//cdn.openai.com/research-covers/\nlanguage-unsupervised/language_\nunderstanding_paper.pdf\n[34] Devlin J, Chang MW, Lee K,",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p026",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 500,
+      "chunk_index": 4,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "colliot_ml_2023_p026_paragraph_005",
+    "source_id": "colliot_ml_2023",
+    "source": "https://hal.science/hal-03957125v3",
+    "page": 26,
+    "text": " Toutanova\nK (2018) Bert: Pre-training of deep bidi-\nrectional transformers for language under-\nstanding. arXiv preprint arXiv:181004805\nMachine Learning for Brain Disorders, Chapter 1",
+    "metadata": {
+      "no_text": false,
+      "page_id": "colliot_ml_2023_p026",
+      "needs_ocr": false,
+      "source_id": "colliot_ml_2023",
+      "char_count": 184,
+      "chunk_index": 5,
+      "document_type": "book_chapter",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "uow_ai_ml_p001_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 1,
+    "text": "A Gentle Introduction to\nArtificial Intelligence and\nMachine Learning\nCentre for AI ΓÇô Faculty of Engineering and Information Sciences\n1 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p001",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 140,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "uow_ai_ml_p002_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 2,
+    "text": "Content\n1\nCentre for ArtiεÇücial Intelligence\n2\nIntroduction\nArtiεÇücial Intelligence\n3\nMachine Learning\nAI enabled by learning\nData\n4\nLearning Paradigms\nSupervised learning\nUnsupervised learning\nSemi-supervised learning\nTransfer learning\nReinforcement learning\nGenerative learning\n< 15 minute break >\n5\nArtiεÇücial neural network\n6\nSome Applications\n7\nGrand Challenges\n8\nQ & A\n2 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p002",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 378,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "uow_ai_ml_p003_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 3,
+    "text": "Presenters\nProfessor Philip O. Ogunbona, School of Computing and\nInformation Technology\nPhD in Electrical engineering, Imperial College, London\nResearch and development: Image & Signal Processing;\nMachine Learning; Computer Vision;\nAssociate Professor Markus Hagenbuchner, School of\nComputing and Information Technology\nPhD in Computer Science in 2002\nWorking in AI for over 25 years: Development of machine\nlearning algorithms and neural networks, with applications\nto Data Mining and Big Data.\nAsso",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p003",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "uow_ai_ml_p003_paragraph_002",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 3,
+    "text": "ciate Professor Wanqing Li, School of Computing\nand Information Technology\nPhD in Computer Science; Uni Western Australia\nResearch & Development of machine learning algorithms\nand neural networks, with applications to Computer\nVision and Image Processing.\n3 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p003",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 262,
+      "chunk_index": 2,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "uow_ai_ml_p004_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 4,
+    "text": "Centre for AI - Who are we?\nWe focus on pioneering research to develop innovative theories and techniques\nof AI, and transferring the knowledge and technologies to industry, community\nand society. CAI oεÇÇers expertise in:\nMachine Learning\nComputer Vision\nMulti-agent Systems\nBig data and Applications\nMultimedia Signal Analysis\nProbabilistic Model Checking\nNatural Language Processing\nDistributed Computing\nand their applications to a wide range of real-world problems.\nhttps://uow.info/cai\n4 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p004",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 496,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "uow_ai_ml_p005_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 5,
+    "text": "Introduction\nWhat is ArtiεÇücial Intelligence (AI)?\nArtiεÇücial intelligence is a constellation of many diεÇÇerent\ntechnologies working together to enable machines to sense,\ncomprehend, act, and learn with human-like levels of intelligence.\nAI isnΓÇÖt just one thing. (https://accenture.com)\n5 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p005",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 290,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p006_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 6,
+    "text": "Introduction\nWhat is ArtiεÇücial Intelligence (AI)?\nArtiεÇücial intelligence is the simulation of human intelligence\nprocesses by machines, especially computer systems. These\nprocesses include learning (the acquisition of information or rules\nfor using the information), reasoning (using the rules to reach\napproximate or deεÇünite conclusions), and self-correction.\n(https://exploreai.org/p/ai-definition)\n5 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p006",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 407,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p007_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 7,
+    "text": "Introduction\nWhat is ArtiεÇücial Intelligence (AI)?\nHuman intelligence? - Take One!\nHuman intelligence is a mental quality that consists of the abilities\nto learn from experience, adapt to new situations, understand and\nhandle abstract concepts, and use knowledge to manipulate oneΓÇÖs\nenvironment (https://www.britannica.com).\nHuman intelligence? - Take two!\nThrough intelligence, humans possess the cognitive abilities to\nlearn, form concepts, understand, apply logic and reason, including\nthe capaciti",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p007",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p007_paragraph_002",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 7,
+    "text": "es to recognize patterns, plan, innovate, solve\nproblems, make decisions, retain information, and to communicate\ninformation (https://www.wikipedia.com).\n5 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p007",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 160,
+      "chunk_index": 2,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p008_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 8,
+    "text": "A bit of history\nDarthmouth meeting - 1956\nFigure: Founding Fathers of ArtiεÇücial Intelligence\n6 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p008",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 100,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p009_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 9,
+    "text": "A bit of history\nFigure: Paper proposing the AI project\n7 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p009",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 62,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "uow_ai_ml_p010_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 10,
+    "text": "Strong vs Weak AI\nStrong AI\nStrong artiεÇücial intelligence (AI), also known as artiεÇücial general\nintelligence (AGI) or general AI, is a theoretical form of AI used to\ndescribe a certain mindset of AI development.\nStrong AI aims to create intelligent machines that are indistinguishable\nfrom the human mind.\n(https://www.ibm.com/cloud/learn/strong-ai)\nWeak AI\nWeak AI, also known as narrow AI, focuses on performing a speciεÇüc task,\nsuch as answering questions based on user input or playing chess.\nIt c",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p010",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p010_paragraph_002",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 10,
+    "text": "an perform one type of task, but not both, whereas Strong AI can\nperform a variety of functions, eventually teaching itself to solve for new\nproblems.\nWeak AI relies on human interference to deεÇüne the parameters of its\nlearning algorithms and to provide the relevant training data to ensure\naccuracy. (https://www.ibm.com/cloud/learn/strong-ai)\n8 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p010",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 351,
+      "chunk_index": 2,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p011_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 11,
+    "text": "Strong vs Weak AI\nStrong AI\nStrong artiεÇücial intelligence (AI), also known as artiεÇücial general\nintelligence (AGI) or general AI, is a theoretical form of AI used to\ndescribe a certain mindset of AI development.\nStrong AI aims to create intelligent machines that are indistinguishable\nfrom the human mind.\n(https://www.ibm.com/cloud/learn/strong-ai)\nWeak AI\nWeak AI, also known as narrow AI, focuses on performing a speciεÇüc task,\nsuch as answering questions based on user input or playing chess.\nIt c",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p011",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "uow_ai_ml_p011_paragraph_002",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 11,
+    "text": "an perform one type of task, but not both, whereas Strong AI can\nperform a variety of functions, eventually teaching itself to solve for new\nproblems.\nWeak AI relies on human interference to deεÇüne the parameters of its\nlearning algorithms and to provide the relevant training data to ensure\naccuracy. (https://www.ibm.com/cloud/learn/strong-ai)\n8 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p011",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 351,
+      "chunk_index": 2,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "uow_ai_ml_p012_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 12,
+    "text": "Conceptualisation of contemporary AI\nFigure: A view of AI and its components\n(https://www2.deloitte.com/)\n9 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p012",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 112,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p013_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 13,
+    "text": "Conceptualisation of contemporary AI\nFigure: A view of technologies comprising AI\n(https://wiredelta.com/)\n9 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p013",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 113,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p014_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 14,
+    "text": "AI enabled by learning\nAI and Machine Learning\nOne of the key components of ArtiεÇücial Intelligence is learning.\nMachine learning allows the concept of learning from data.\nFigure: Machine learning: a new programming paradigm\n10 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p014",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 231,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p015_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 15,
+    "text": "Life cycle of AI\nSix phases\n1\nDiscovery, Data collection and annotation/labeling\n2\nData preparation (preprocessing)\n3\nModel planning (methods, techniques, workεÇéow, variables,\nrelationships, models)\n4\nModel building (training and test datasets, software and\nhardware, analysis of results)\n5\nCommunication of results (identify key εÇündings)\n6\nOperationalize (delivery, pilot project)\n11 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p015",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 388,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p016_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 16,
+    "text": "Data [is king]\nIn general data drives model building and needs to be treated\ncarefully.\nData quality issues:\nNoisy data\nData that contains a large amount of conεÇéicting or misleading\ninformation.\n12 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p016",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 202,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p017_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 17,
+    "text": "Data [is king]\nIn general data drives model building and needs to be treated\ncarefully.\nData quality issues:\nDirty data\nData that contains missing values, categorical and character\nfeatures with many levels, and inconsistent and erroneous values\n12 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p017",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 253,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p018_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 18,
+    "text": "Data [is king]\nIn general data drives model building and needs to be treated\ncarefully.\nData quality issues:\nSparse data\nData that contains very few actual values, and is instead com-\nposed of mostly zeros or missing values\nInadequate data\nData that is either incomplete or biased\n12 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p018",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 288,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p019_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 19,
+    "text": "Data [is king]\nFeature Engineering\n1\nFeature selection : selecting the most useful features to train\non among existing features\n2\nFeature extraction: combining existing features to produce a\nmore useful one\n3\nCreating new features by gathering new data\n13 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p019",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 260,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p020_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 20,
+    "text": "Supervised learning\nWhat is it?\nIn this learning scenario, there are examples of appropriate\noutput data for speciεÇüc input data.\nThe problem is how to learn the best model of the relationship\nbetween the input and output from the example data.\n14 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p020",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 251,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p021_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 21,
+    "text": "Supervised learning\nHow to do it?\nCollect an appropriate amount of data.\nSeparate data into three distinct subsets.\n- training, test, and validation dataset.\nThere is an implied model whose parameters can be learned.\nTrain the model using an appropriate methodology.\nThere is a method of judging goodness of the model.\n- Optimize model by using the validation data.\nTest the model on the test data (not part of training set).\n14 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p021",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 433,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p022_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 22,
+    "text": "Supervised learning\nSimple general science experiment - linear regression\nA science teacher wanted to explore the relationship between time and\nthe height a bean can grown from time of planting.\nStudents brought clear jam jars and were asked to place bean seeds in\nwet cotton wool set in the jar.\nJars were placed on the window sill of the class and left to grow over\nseveral weeks; plant was watered appropriately.\nData collected; measure height of plant over time.\n(a) Day 1\n(b) Day 3\n(c) Day 7\n(d)",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p022",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p022_paragraph_002",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 22,
+    "text": " Day\n12\n(e) Day\n20\nFigure: Bean seed sprouting over days\n15 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p022",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 64,
+      "chunk_index": 2,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p023_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 23,
+    "text": "Data Collected\nDay\nHeight (cm)\n1\n0\n2\n0.4\n3\n0.5\n4\n0.7\n5\n1.0\n6\n1.5\n7\n1.9\n8\n2.5\n9\n3.1\n10\n3.6\n..\n..\n..\n..\n20\n4.4\n0\n5\n10\n15\n20\n0\n2\n4\nDays\nHeight\nScatter plot of data\nWhen we draw the line of best εÇüt to the data, we are building a model\nthat explains the height of beans sprouting over time. The line can be\nused to predict height at future times. This is regression problem.\n16 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p023",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 377,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p024_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 24,
+    "text": "Supervised learning\nDistinguish between Salmon and Bass εÇÇshes - classiεÇÇcation\nA commercial εÇüshing company goes to sea to catch εÇüsh.\nThey catch both salmon and bass.\nDuring packaging they need to distinguish salmon and bass, otherwise\nthey lose money.\nDesign a AI system that will automatically sort and package the εÇüsh with\nminimum error.\nSalmon\nBass\nData collection (using appropriate sensors)\nLightness\nWidth\n17 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p024",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 418,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p025_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 25,
+    "text": "Unsupervised learning\nWhat is it?\nIn this learning scenario, there are example data, but they are\nnot identiεÇüed with a speciεÇüc label beforehand.\nThe problem is how to learn the underlying model that can\nbest separate the data into meaningful clusters of categories.\nWe want to uncover the pattern inherent in the data.\nWe may not know how many clusters of categories are\nappropriate or makes sense.\n18 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p025",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 406,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p026_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 26,
+    "text": "Unsupervised learning\nFigure: The samples are unlabeled and the model is trained to identify\nunderlying pattern. DiεÇÇerent properties (features) of the data are\nused. The neural network may discover the appropriate features.\n18 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p026",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 231,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p027_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 27,
+    "text": "Unsupervised learning\nFigure: A popular method of achieving data clustering employs the\nk-means algorithm.\n18 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p027",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 114,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p028_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 28,
+    "text": "Unsupervised learning\nMarket basket analysis\nMarket Basket Analysis is one of the key techniques used by\nlarge retailers to uncover associations between items.\nIt works by looking for combinations of items that occur\ntogether frequently in transactions.\nIn general, the machine learning tool used is called association\nrules mining and it is an unsupervised learning method.\n19 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p028",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 382,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p029_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 29,
+    "text": "Unsupervised learning\nFigure: Market basket (Credits -\nwww.towardscience.com)\nAssociation rules mining\n1\nAnalyse data for patterns or co-occurrence\n2\nRule has two parts: an antecedent (if)\nand a consequent (then)\n3\nSearch data for frequent if-then patterns\n4\nUse the criteria support and conεÇüdence to\nidentify the most important relationships.\n5\nSupport is an indication of how frequently\nthe items appear in the data.\n6\nConεÇüdence indicates the number of times\nthe if-then statements are found true.\n",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p029",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p029_paragraph_002",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 29,
+    "text": "7\nA third metric lift, can be used to\ncompare conεÇüdence with expected\nconεÇüdence\n19 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p029",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 87,
+      "chunk_index": 2,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p030_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 30,
+    "text": "Semi-supervised learning\nWhat is it?\nIn this learning scenario, there are a few labeled example data\nand many unlabelled data.\nlabeling data is expensive; there is abundance of unlabelled\ndata.\nThe problem is how to learn the underlying model that can\nbest classify the whole data into given categories despite lack\nof many labeled data.\n20 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p030",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 345,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p031_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 31,
+    "text": "Semi-supervised learning\nHow to do it?\nFigure: Semi-supervised self training (Credits- altexsoft.com)\n20 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p031",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 109,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p032_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 32,
+    "text": "Transfer learning\nWhat is it?\nIn this learning scenario, the focus is on storing knowledge\ngained while solving one problem and applying it to a diεÇÇerent\nbut related problem.\nTransfer learning method uses the similarity of data, tasks,\nmodels in diεÇÇerent domains and applies the knowledge from\none domain to another domain.\n21 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p032",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 331,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p033_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 33,
+    "text": "Transfer learning\nHow to do it?\nFigure: Transfer learning compared to conventional learning (Credits -\nhttps://towardsdatascience.com/)\n21 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p033",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 143,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p034_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 34,
+    "text": "Reinforcement learning\nWhat is it?\nIn this scenario the problem is modeled as the interaction between an\nagent and an environment.\nThe idea is to come up with a set of actions that maximise a cumulative\nreward.\nAn agent is connected to its environment via perception and action\nOn each step of interaction the agent receives as input, some indication\nof the current state of the environment\nThe agent then chooses an action as its output\nThe action changes the state of the environment, and the value",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p034",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p034_paragraph_002",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 34,
+    "text": " of this\nstate transition is communicated to the agent as some reinforcement\nsignal\nThe output in this learning paradigm is the action performed by the agent\n(i.e. the AI)\n22 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p034",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 179,
+      "chunk_index": 2,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p035_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 35,
+    "text": "Reinforcement learning\nFigure: Reinforcement learning (Credits - Wikipedia)\n22 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p035",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 83,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p036_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 36,
+    "text": "Reinforcement learning\nConceptual dialogue between the agent and the environment1\nEnvironment: You are in state 65. You have 4 possible actions\nAgent: IΓÇÖll take action 2.\nEnvironment:\nYou received a reinforcement of 7 units. You are now in state\n15. You have 2 possible actions.\nAgent: IΓÇÖll take action 1.\nEnvironment:\nYou received a reinforcement of -4 units. You are now in state\n65. You have 4 possible actions.\nAgent:\nAgent: IΓÇÖll take action 2.\nEnvironment:\nYou received a reinforcement of 5 unit",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p036",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p036_paragraph_002",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 36,
+    "text": "s. You are now in state\n44. You have 5 possible actions.\nAgent: ...\nEnvironment:\n...\n1Journal of ArtiεÇücial Intelligence Research 4 (1996) 237-285\n22 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p036",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 153,
+      "chunk_index": 2,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p037_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 37,
+    "text": "Generative learning\nWhat is it?\nA generative model describes how a dataset is generated, in\nterms of a probabilistic model.\nBy sampling from this model, we are able to generate new\ndata.\n23 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p037",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 194,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p038_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 38,
+    "text": "Generative learning\nScenario\nSuppose we have a dataset containing images of horses. We may\nwish to build a model that can generate a new image of a horse\nthat has never existed but still looks real because the model has\nlearned the general rules that govern the appearance of a horse.\nThis is the kind of problem that can be solved using generative\nmodeling.\n23 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p038",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 366,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p039_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 39,
+    "text": "Generative learning\nFigure: Generative modeling that can create new samples from examples.\n23 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p039",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 98,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p040_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 40,
+    "text": "ArtiεÇÇcial neural network\nArtiεÇÇcial neural networks\nArtiεÇücial Neural Networks are by far the most successful ML\ntechnique.\nInspired the way a biological brain works.\nBrain ΓÇ£learnsΓÇ¥ by adjusting the connecting links (Axons and\nsynaptic weights)\nFigure: Biological neuron of mammalian brain (G┬┤eron, 2019).\n24 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p040",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 311,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p041_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 41,
+    "text": "ArtiεÇÇcial neural network\nFor simplicity, neurons are organized in one or more layers -\nInput, hidden, and output layers\nLayers are fully connected by weighted links\nInput signal travels from input to output neurons\nFigure: ArtiεÇücial neural network (G┬┤eron, 2019)\n25 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p041",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 270,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p042_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 42,
+    "text": "Deep Learning\nAll Deep Learning methods are Neural Networks\nNetworks with many layers are said to be ΓÇ£DeepΓÇ¥\n- Can have hundreds of layers\nThe corresponding training algorithms are called ΓÇ£deep\nlearningΓÇ¥.\n26 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p042",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 211,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p043_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 43,
+    "text": "ArtiεÇÇcial neural network\nThe success of artiεÇücial neural networks lies in their ability to approximate\nthe functional relationship the input data and the desired output.\nThe approximation is encoded in the weights of the neural network.\nThe process of training consists of using the given data to successively\nmodify the value of the weights.\nFigure: Historical timeline of development of ANN\n27 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p043",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 400,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p044_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 44,
+    "text": "Some Applications\nMarket basket analysis\nHow to increase sales by better\nunderstanding customer purchasing\npatterns. Use large data sets (e.g.\npurchase history) to discover product\ngroupings, & co-purchase pattern\nMachine Learning Tool\nModel problem as a basket-item link\nprediction task and employ graph\nconvolutional neural network for\nanalysis (Liu, Wan, Guo, Achan, & Yu,\n2020)\nFigure: Basket recommendation;\nUser-basket-item graph;\nuser-basket, basket-item, and\nuser-item interactions.(Liu et al",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p044",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p044_paragraph_002",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 44,
+    "text": ".,\n2020)\n28 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p044",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 16,
+      "chunk_index": 2,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p045_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 45,
+    "text": "Some applications\nPrison term prediction\nJudgment prediction aims at\nautomatically predicting the judgment\nresult given a textual description of a\nlegal case.\nMachine Learning Tool\nBased on the observation that\nεÇüne-grained feature selection is the key\nto achieving good performance, a Deep\nGating Network (DGN) is proposed for\ncharge-speciεÇüc feature selection and\naggregation.\n(Chen, Cai, Dai, Dai, &\nDing, 2019)\nFigure: (Chen et al., 2019).\n29 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p045",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 449,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p046_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 46,
+    "text": "Some Applications\nAutomated news generation\n1\nHow can we use data and\nalgorithms to lower the costs of\ndiscovering stories?\n2\nHow do we tell stories in more\npersonalized and engaging ways?\nMachine Learning Tools\n1\nKnowledge representation\n2\nDocument classiεÇücation\n3\nNatural language generation\n4\nMachine translation\nΓÇ£DemocracyΓÇÖs DetectivesΓÇ¥\nInvestigative journalism is underprovided\nin the market, but new combinations of\ndata and algorithms may make it easier\nfor journalists to discover and tell th",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p046",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p046_paragraph_002",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 46,
+    "text": "e\nstories that hold institutions\naccountable - James T. Hamilton\nFigure:\nhttp://cjlab.stanford.edu/.\n30 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p046",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 108,
+      "chunk_index": 2,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p047_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 47,
+    "text": "Some Applications\nSentiment analysis\n1\nHow do we computationally\nidentify and categorize opinions\nexpressed in a piece of text?\n2\nHow to determine whether the\nwriterΓÇÖs attitude towards a\nparticular topic, product, etc. is\npositive, negative, or neutral\nMachine Learning Tools\n1\nWord representation / embedding\n2\nSelf-attention network\n3\nFully connected neural network\nAspect-based sentiment analysis\nThe aspect-based sentiment analysis\n(ABSA) consists of two conceptual\ntasks, namely an aspect extrac",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p047",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p047_paragraph_002",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 47,
+    "text": "tion and\nan aspect sentiment classiεÇücation (Phan\n& Ogunbona, 2020)\nFigure: Aspect-based sentiment\nanalysis (Phan & Ogunbona,\n2020).\n31 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p047",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 139,
+      "chunk_index": 2,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p048_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 48,
+    "text": "Some Applications\nNetwork Intrusion Detection\n1\nIdentify attacks before damage.\n2\nIdentify eεÇÇectiveness of a security\npolicy.\n3\nIdentify eεÇÇectiveness of security\nmechanisms.\n4\nIdentify zero-day attacks.\nMachine Learning Tools\n1\nHybrid ensemble systems.\n2\nNonlinear classiεÇücation methods.\n3\nVisual analytics.\nEnsemble intrusion detection\nsystem\nCombine SOM (for clustering,\nvisualization and data\naugmentation) and DL (for\nclassiεÇücation).\nFigure: Intrusion Detection System by\nA.Saraswati, M.Hagenbuch",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p048",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p048_paragraph_002",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 48,
+    "text": "ner, and\nA.C.Tsoi (submitted 2022).\n32 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p048",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 43,
+      "chunk_index": 2,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p049_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 49,
+    "text": "Some Applications\nBig Data\n1\nWorking with data streams.\n2\nWorking with unreliable data.\n3\nWorking with changing data.\n4\nWorking with diεÇÇerent forms of\ndata.\nMachine Learning Tools\n1\nScalable, just-in-time learning and\nprocessing methods.\n2\nMassive parallel methods.\n3\nAdaptive systems.\n4\nSimple methods.\nLocation Analytics\nFind spatio-temporal patterns\nindicative of physical activities or\nsocial behavior.\nInformation enrichment: add\nmaps, imagery, demographics,\nconsumer and lifestyle data,\nenviron",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p049",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p049_paragraph_002",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 49,
+    "text": "ment and weather, etc.\nFigure: Location Analytics (Source:\nhttp://www.esri.com/software/\nlocation-analytics.\n33 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p049",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 116,
+      "chunk_index": 2,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p050_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 50,
+    "text": "Grand challenges\nSome Grand Challenges\n1\nModeling Our PlanetΓÇÖs Systems: Assessing global warming\nand determining mitigating actions\n2\nConfronting Existential Risk: What is the impact of a\ndangerous genetically modiεÇüed pathogen\n3\nExploring Transhumanism: What is the impact of embedded\nnanotechnology, genetic therapy, and ΓÇ£smartΓÇ¥ prosthetics?\n4\nThe Singularity? What happens when systems approach the\nlevel of human intelligence? Emotional intelligence?\n5\nDealing EεÇÇectively with Globalism: Modeling ",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p050",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p050_paragraph_002",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 50,
+    "text": "the\ninterconnected of human societies/organizations\n6\nHow do we keep AI accountable? Issues of ethics and bias.\n34 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p050",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 119,
+      "chunk_index": 2,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": true
+    }
+  },
+  {
+    "id": "uow_ai_ml_p051_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 51,
+    "text": "Q & A\nQUESTIONS & ANSWERS\n35 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p051",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 33,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "uow_ai_ml_p052_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 52,
+    "text": "Subsequent lectures\nModule 2: A gentle introduction to Deep Learning\n(Thursday 1/December/2022)\nModule 3: A gentle introduction to tools and systems of AI, ML\nand DL\n(14/February/2022)\nModule 4: A gentle introduction to Natural Language\nProcessing\n(16/February/2022)\n36 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p052",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 274,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "uow_ai_ml_p053_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 53,
+    "text": "Consultation\nWe are available to oεÇÇer advise and consultation services.\nExplore opportunities to solve problems in your area of\nresearch/work by using AI.\nThe power of joined expertise.\nContact us. Visit https://uow.info/cai\n37 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p053",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 232,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "uow_ai_ml_p054_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 54,
+    "text": "Bibliography I\nChen, H., Cai, D., Dai, W., Dai, Z., & Ding, Y. (2019, November\n3 - 7). Charge-based prison term prediction with deep gating\nnetwork. In Proceedings, 2019 ACL conference on empirical\nmethods in natural language processing and the 9th\ninternational joint conference on natural language processing\n(p. 6362 - 6367). Hong Kong, China.\nG┬┤eron, A. (2019). Hands-on machine learning with scikit-learn,\nkeras & tensorεÇÇow concepts, tools, and techniques to build\nintelligent systems. Boston, B",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p054",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 500,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "uow_ai_ml_p054_paragraph_002",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 54,
+    "text": "eijing, Tokyo: OΓÇÖReilly.\nGoodfellow, I., Bengio, Y., & Courville, A. (2016). Deep learning.\nBoston Massachusettes, London England: The MIT Press.\nLiu, Z., Wan, M., Guo, S., Achan, K., & Yu, P. S. (2020).\nBasConv: Aggregating heterogeneous interactions for basket\nrecommendation with graph convolutional neural network.\nCoRR, abs/2001.09900. Retrieved from\nhttps://arxiv.org/abs/2001.09900\n38 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p054",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 396,
+      "chunk_index": 2,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "uow_ai_ml_p055_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 55,
+    "text": "Bibliography II\nMurphy, K. P. (2012). Machine learning: A probabilistic\nperspective. Boston Massachusettes, London England: The\nMIT Press.\nPhan, M. H., & Ogunbona, P. O. (2020, July 5 - 10). Modelling\ncontext and syntactical features for aspect-based sentiment\nanalysis. In Proceedings of the 58th annual meeting of the\nassociation for computational linguistics (pp. 3211ΓÇô3220).\nSeatle, Washington, USA.\n39 / 40",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p055",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 411,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  },
+  {
+    "id": "uow_ai_ml_p056_paragraph_001",
+    "source_id": "uow_ai_ml",
+    "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+    "page": 56,
+    "text": "Thank you",
+    "metadata": {
+      "no_text": false,
+      "page_id": "uow_ai_ml_p056",
+      "needs_ocr": false,
+      "source_id": "uow_ai_ml",
+      "char_count": 9,
+      "chunk_index": 1,
+      "document_type": "lecture_slides",
+      "chunk_strategy": "paragraph",
+      "verified_content_page": false
+    }
+  }
+]

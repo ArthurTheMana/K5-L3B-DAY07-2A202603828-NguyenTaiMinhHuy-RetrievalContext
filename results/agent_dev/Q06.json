@@ -1,0 +1,185 @@
+{
+  "status": "answered",
+  "answer": "The three data subsets recommended for supervised learning in the UOW slides are training, test, and validation [uow_ai_ml_p021_paragraph_001].",
+  "citations": [
+    "uow_ai_ml_p021_paragraph_001"
+  ],
+  "events": [
+    {
+      "event": "search",
+      "query": "UOW supervised learning data subsets recommended",
+      "filter": null,
+      "results": [
+        {
+          "id": "colliot_ml_2023_p012_paragraph_002",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 12,
+          "text": "examining a dataset of medical images where\nthe presence of tumours has been annotated\n3.1\nTypes of learning\nOne usually considers three main types of learning: supervised learn-\ning, unsupervised learning and reinforcement learning (Box 2). In both\nsupervised and unsupervised learning, the experience E is actually the\ninspection of a set of examples, which will we refer to as training examples\nor training set.\n3.1.1. Supervised learning\nIn supervised learning, the machine learns to perform a ta",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p012",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 2,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.031746031746031744,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "uow_ai_ml_p021_paragraph_001",
+          "source_id": "uow_ai_ml",
+          "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+          "page": 21,
+          "text": "Supervised learning\nHow to do it?\nCollect an appropriate amount of data.\nSeparate data into three distinct subsets.\n- training, test, and validation dataset.\nThere is an implied model whose parameters can be learned.\nTrain the model using an appropriate methodology.\nThere is a method of judging goodness of the model.\n- Optimize model by using the validation data.\nTest the model on the test data (not part of training set).\n14 / 40",
+          "metadata": {
+            "no_text": false,
+            "page_id": "uow_ai_ml_p021",
+            "needs_ocr": false,
+            "source_id": "uow_ai_ml",
+            "char_count": 433,
+            "chunk_index": 1,
+            "document_type": "lecture_slides",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.031544957774465976,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "uow_ai_ml_p030_paragraph_001",
+          "source_id": "uow_ai_ml",
+          "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+          "page": 30,
+          "text": "Semi-supervised learning\nWhat is it?\nIn this learning scenario, there are a few labeled example data\nand many unlabelled data.\nlabeling data is expensive; there is abundance of unlabelled\ndata.\nThe problem is how to learn the underlying model that can\nbest classify the whole data into given categories despite lack\nof many labeled data.\n20 / 40",
+          "metadata": {
+            "no_text": false,
+            "page_id": "uow_ai_ml_p030",
+            "needs_ocr": false,
+            "source_id": "uow_ai_ml",
+            "char_count": 345,
+            "chunk_index": 1,
+            "document_type": "lecture_slides",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03125,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p012_paragraph_002 | https://hal.science/hal-03957125v3 | page 12]\nexamining a dataset of medical images where\nthe presence of tumours has been annotated\n3.1\nTypes of learning\nOne usually considers three main types of learning: supervised learn-\ning, unsupervised learning and reinforcement learning (Box 2). In both\nsupervised and unsupervised learning, the experience E is actually the\ninspection of a set of examples, which will we refer to as training examples\nor training set.\n3.1.1. Supervised learning\nIn supervised learning, the machine learns to perform a ta\n\n[colliot_ml_2023_p012_paragraph_003 | https://hal.science/hal-03957125v3 | page 12]\nsk by examin-\ning a set of examples for which the output is known (i.e. the examples\nhave been labelled). The two most common tasks in supervised learn-\ning are classiεÇücation and regression (Figure 7). ClassiεÇücation aims at\nassigning a category for each sample.\nThe examples can for instance\nbe diεÇÇerent patients and the categories are the diεÇÇerent possible diag-\nnoses. The outputs are thus discrete. Examples of common classiεÇücation\nalgorithms include logistic regression (in spite of its name, it ",
+      "context_ids": [
+        "colliot_ml_2023_p012_paragraph_002",
+        "colliot_ml_2023_p012_paragraph_003"
+      ]
+    },
+    {
+      "event": "search",
+      "query": "three data subsets supervised learning",
+      "filter": null,
+      "results": [
+        {
+          "id": "uow_ai_ml_p021_paragraph_001",
+          "source_id": "uow_ai_ml",
+          "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+          "page": 21,
+          "text": "Supervised learning\nHow to do it?\nCollect an appropriate amount of data.\nSeparate data into three distinct subsets.\n- training, test, and validation dataset.\nThere is an implied model whose parameters can be learned.\nTrain the model using an appropriate methodology.\nThere is a method of judging goodness of the model.\n- Optimize model by using the validation data.\nTest the model on the test data (not part of training set).\n14 / 40",
+          "metadata": {
+            "no_text": false,
+            "page_id": "uow_ai_ml_p021",
+            "needs_ocr": false,
+            "source_id": "uow_ai_ml",
+            "char_count": 433,
+            "chunk_index": 1,
+            "document_type": "lecture_slides",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03278688524590164,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p012_paragraph_002",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 12,
+          "text": "examining a dataset of medical images where\nthe presence of tumours has been annotated\n3.1\nTypes of learning\nOne usually considers three main types of learning: supervised learn-\ning, unsupervised learning and reinforcement learning (Box 2). In both\nsupervised and unsupervised learning, the experience E is actually the\ninspection of a set of examples, which will we refer to as training examples\nor training set.\n3.1.1. Supervised learning\nIn supervised learning, the machine learns to perform a ta",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p012",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 2,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03225806451612903,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "uow_ai_ml_p030_paragraph_001",
+          "source_id": "uow_ai_ml",
+          "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+          "page": 30,
+          "text": "Semi-supervised learning\nWhat is it?\nIn this learning scenario, there are a few labeled example data\nand many unlabelled data.\nlabeling data is expensive; there is abundance of unlabelled\ndata.\nThe problem is how to learn the underlying model that can\nbest classify the whole data into given categories despite lack\nof many labeled data.\n20 / 40",
+          "metadata": {
+            "no_text": false,
+            "page_id": "uow_ai_ml_p030",
+            "needs_ocr": false,
+            "source_id": "uow_ai_ml",
+            "char_count": 345,
+            "chunk_index": 1,
+            "document_type": "lecture_slides",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.030330882352941176,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[uow_ai_ml_p021_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 21]\nSupervised learning\nHow to do it?\nCollect an appropriate amount of data.\nSeparate data into three distinct subsets.\n- training, test, and validation dataset.\nThere is an implied model whose parameters can be learned.\nTrain the model using an appropriate methodology.\nThere is a method of judging goodness of the model.\n- Optimize model by using the validation data.\nTest the model on the test data (not part of training set).\n14 / 40\n\n[colliot_ml_2023_p012_paragraph_002 | https://hal.science/hal-03957125v3 | page 12]\nexamining a dataset of medical images where\nthe presence of tumours has been annotated\n3.1\nTypes of learning\nOne usually considers three main types of learning: supervised learn-\ning, unsupervised learning and reinforcement learning (Box 2). In both\nsupervised and unsupervised learning, the experience E is actually the\ninspection of a set of examples, which will we refer to as training examples\nor training set.\n3.1.1. Supervised learning\nIn supervised learning, the machine learns to perform a ta",
+      "context_ids": [
+        "uow_ai_ml_p021_paragraph_001",
+        "colliot_ml_2023_p012_paragraph_002"
+      ]
+    },
+    {
+      "event": "answer"
+    }
+  ],
+  "query_id": "Q06",
+  "model": "nvidia/nemotron-3.5-lightning:free",
+  "llm_calls": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 25005.65749999987,
+      "finish_reason": "stop",
+      "prompt_tokens": 65,
+      "completion_tokens": 350,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 18300.767100000485,
+      "finish_reason": "stop",
+      "prompt_tokens": 597,
+      "completion_tokens": 3291,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 6349.986799999897,
+      "finish_reason": "stop",
+      "prompt_tokens": 553,
+      "completion_tokens": 1013,
+      "cost_usd": 0
+    }
+  ],
+  "elapsed_ms": 49676.08709999968
+}

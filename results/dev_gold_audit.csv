@@ -1,0 +1,182 @@
+﻿question_id,status,best_match_percent,best_chunk_id,gold_evidence,chunk_text
+Q01,NEEDS_REVIEW,75.4,uow_ai_ml_p005_paragraph_001,"dierent technologies working together to enable machines to sense, comprehend, act, and learn with human-like levels of intelligence. AI isn’t just one thing. (https://accenture.com)","Introduction
+What is ArtiεÇücial Intelligence (AI)?
+ArtiεÇücial intelligence is a constellation of many diεÇÇerent
+technologies working together to enable machines to sense,
+comprehend, act, and learn with human-like levels of intelligence.
+AI isnΓÇÖt just one thing. (https://accenture.com)
+5 / 40"
+Q02,NEEDS_REVIEW,80.8,uow_ai_ml_p010_paragraph_001,"Strong AI Strong articial intelligence (AI), also known as articial general intelligence (AGI) or general AI, is a theoretical form of AI used to describe a certain mindset of AI development. Strong AI aims to create intelligent machines that are indistinguishable from the human mind. (https://www.ibm.com/cloud/learn/strong-ai) Weak AI","Strong vs Weak AI
+Strong AI
+Strong artiεÇücial intelligence (AI), also known as artiεÇücial general
+intelligence (AGI) or general AI, is a theoretical form of AI used to
+describe a certain mindset of AI development.
+Strong AI aims to create intelligent machines that are indistinguishable
+from the human mind.
+(https://www.ibm.com/cloud/learn/strong-ai)
+Weak AI
+Weak AI, also known as narrow AI, focuses on performing a speciεÇüc task,
+such as answering questions based on user input or playing chess.
+It c"
+Q03,NEEDS_REVIEW,46.6,uow_ai_ml_p015_paragraph_001,"Six phases 1 Discovery, Data collection and annotation/labeling 2 Data preparation (preprocessing) 3 Model planning (methods, techniques, workow, variables, relationships, models) 4 Model building (training and test datasets, software and hardware, analysis of results) 5 Communication of results (identify key ndings) 6 Operationalize (delivery, pilot project)","Life cycle of AI
+Six phases
+1
+Discovery, Data collection and annotation/labeling
+2
+Data preparation (preprocessing)
+3
+Model planning (methods, techniques, workεÇéow, variables,
+relationships, models)
+4
+Model building (training and test datasets, software and
+hardware, analysis of results)
+5
+Communication of results (identify key εÇündings)
+6
+Operationalize (delivery, pilot project)
+11 / 40"
+Q04,NORMALIZED,100.0,uow_ai_ml_p019_paragraph_001,Feature selection : selecting the most useful features to train on among existing features 2 Feature extraction: combining existing features to produce a more useful one 3 Creating new features by gathering new data 13 / 40,"Data [is king]
+Feature Engineering
+1
+Feature selection : selecting the most useful features to train
+on among existing features
+2
+Feature extraction: combining existing features to produce a
+more useful one
+3
+Creating new features by gathering new data
+13 / 40"
+Q05,NEEDS_REVIEW,49.7,uow_ai_ml_p020_paragraph_001,"What is it? In this learning scenario, there are examples of appropriate output data for specic input data. The problem is how to learn the best model of the relationship between the input","Supervised learning
+What is it?
+In this learning scenario, there are examples of appropriate
+output data for speciεÇüc input data.
+The problem is how to learn the best model of the relationship
+between the input and output from the example data.
+14 / 40"
+Q06,NORMALIZED,100.0,uow_ai_ml_p021_paragraph_001,"data into three distinct subsets. - training, test, and validation dataset. There is an implied model whose parameters can be learned. Train the model using an appropriate methodology. There","Supervised learning
+How to do it?
+Collect an appropriate amount of data.
+Separate data into three distinct subsets.
+- training, test, and validation dataset.
+There is an implied model whose parameters can be learned.
+Train the model using an appropriate methodology.
+There is a method of judging goodness of the model.
+- Optimize model by using the validation data.
+Test the model on the test data (not part of training set).
+14 / 40"
+Q07,NEEDS_REVIEW,61.0,uow_ai_ml_p025_paragraph_001,"there are example data, but they are not identied with a specic label beforehand. The problem is how to learn the underlying model that can best separate the data","Unsupervised learning
+What is it?
+In this learning scenario, there are example data, but they are
+not identiεÇüed with a speciεÇüc label beforehand.
+The problem is how to learn the underlying model that can
+best separate the data into meaningful clusters of categories.
+We want to uncover the pattern inherent in the data.
+We may not know how many clusters of categories are
+appropriate or makes sense.
+18 / 40"
+Q08,NORMALIZED,100.0,uow_ai_ml_p030_paragraph_001,"In this learning scenario, there are a few labeled example data and many unlabelled data. labeling data is expensive; there is abundance of unlabelled data. The problem is how to","Semi-supervised learning
+What is it?
+In this learning scenario, there are a few labeled example data
+and many unlabelled data.
+labeling data is expensive; there is abundance of unlabelled
+data.
+The problem is how to learn the underlying model that can
+best classify the whole data into given categories despite lack
+of many labeled data.
+20 / 40"
+Q11,NEEDS_REVIEW,59.9,colliot_ml_2023_p011_paragraph_001,"with a large number of hidden layers. Machine learning is one approach to articial intelligence, but other approaches exist. tions that will directly perform the considered task. Instead, one will","10
+Colliot
+Artificial intelligence
+Machine learning
+Deep learning
+Figure 6: ArtiεÇücial intelligence, machine learning and deep learning
+are not synonymous. Deep learning is a type of machine learning which
+involves neural networks with a large number of hidden layers. Machine
+learning is one approach to artiεÇücial intelligence, but other approaches
+exist.
+tions that will directly perform the considered task. Instead, one will
+write a program that allows the computer to learn how to perform the
+tas"
+Q12,NEEDS_REVIEW,94.9,colliot_ml_2023_p012_paragraph_001,"computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance at task T, as measured by P, improves with experience E.” Example:","Introduction to machine learning
+11
+Box 1: DeεÇÇnition of machine learning
+Machine learning deεÇünition (Mitchell, 1997 [31]):
+┬╖ ΓÇ£a computer program is said to learn from experience E with
+respect to some task T and some performance measure P,
+if its performance at task T, as measured by P, improves with
+experience E.ΓÇ¥
+Example: learning to detect tumours from medical images
+┬╖ Task T: detect tumours from medical image
+┬╖ Performance measure P: proportion of tumours correctly
+identiεÇüed
+┬╖ Experience E: "
+Q13,NEEDS_REVIEW,25.0,colliot_ml_2023_p013_paragraph_001,"Supervised learning. Learns from labelled examples, i.e. examples for which the output that we are trying to learn is known. – Example 1. The task is computer-aided diagnosis (a clas- sication problem), the label can be the diagnosis of each patient, as dened by an expert physician. – Example 2. The task is the prediction of the age of a person from a set of biological variables (for example a brain MRI). This is a regression problem. The label is the true age of a given person in the training set. · Unsupervised learning. Learns from unlabelled examples.","12
+Colliot
+Box 2: Supervised, unsupervised and reinforcement learning
+┬╖ Supervised learning.
+Learns from labelled examples, i.e.
+examples for which the output that we are trying to learn is
+known.
+ΓÇô Example 1. The task is computer-aided diagnosis (a clas-
+siεÇücation problem), the label can be the diagnosis of each
+patient, as deεÇüned by an expert physician.
+ΓÇô Example 2. The task is the prediction of the age of a
+person from a set of biological variables (for example a
+brain MRI). This is a regress"
+Q14,NEEDS_REVIEW,82.1,colliot_ml_2023_p015_paragraph_002,tasks in unsupervised learning are clustering and dimensionality reduction (Figure 8). Clustering aims at discovering groups within the training set but these groups are not known,"re clustering and dimensionality
+reduction (Figure 8). Clustering aims at discovering groups within the
+training set but these groups are not known a priori. The objective is
+to εÇünd groups such that members of the same group are similar while
+members of diεÇÇerent groups are dissimilar. For example, one can aim
+to discover disease subtypes which are not known a priori. Some clas-
+sical clustering methods are k-means or spectral clustering for instance.
+Dimensionality reduction aims at εÇünding a spa"
+Q15,NEEDS_REVIEW,93.5,colliot_ml_2023_p017_paragraph_001,"self-supervised learning, where the machine itself provides its own super- vision, has emerged. This is a promising approach which has already led to impressive results in dierent elds","16
+Colliot
+applications. However, in the past years, an alternative strategy called
+self-supervised learning, where the machine itself provides its own super-
+vision, has emerged. This is a promising approach which has already led
+to impressive results in diεÇÇerent εÇüelds such as natural language process-
+ing in particular [32, 33, 34].
+3.2
+Overview of the learning process
+In this section, we aim at formalizing the main concepts underlying most
+supervised learning methods. Some of these concepts, "
+Q16,NEEDS_REVIEW,72.9,colliot_ml_2023_p019_paragraph_001,"for the function which minimizes the average error over the training set. Let us call this average error the cost function: J(f) = 1 n n  i=1 ℓ  y(i), f(x(i))  Learning will then aim at","18
+Colliot
+the training set. In other words, we are looking for the function which
+minimizes the average error over the training set. Let us call this average
+error the cost function:
+J(f) = 1
+n
+n
+εÇë
+i=1
+Γäô
+εÇÇ
+y(i), f(x(i))
+εÇü
+Learning will then aim at εÇünding the function ╦åf which minimizes the
+cost function:
+╦åf = arg min
+fΓêêF
+1
+n
+n
+εÇë
+i=1
+Γäô
+εÇÇ
+y(i), f(x(i))
+εÇü
+In the above equation, arg min indicates that we are interested in the
+function f that minimizes the cost J(f) and not in the value of the cost
+"
+Q17,NEEDS_REVIEW,65.5,colliot_ml_2023_p019_paragraph_004,"In other words, it has learned the training set “by heart” but has not discovered a more general rule that would work for other examples. This phenomenon is called over","n a dataset of young males and we would like to apply
+it to patients of any gender and age). Another reason is that, even if
+the training set characteristics follow those of the general population,
+the learned function f may be too speciεÇüc to the training set. In other
+words, it has learned the training set ΓÇ£by heartΓÇ¥ but has not discovered a
+more general rule that would work for other examples. This phenomenon
+is called overεÇütting and often arises when the dimensionality of the data
+is too high"

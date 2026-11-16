@@ -1,0 +1,1364 @@
+[
+  {
+    "query_id": "Q01",
+    "split": "dev",
+    "question": "According to the University of Wollongong lecture, what abilities does AI aim to enable?",
+    "strategy": "hybrid_rrf",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 5,
+        "evidence": "technologies working together to enable machines to sense,\ncomprehend, act, and learn with human-like levels of intelligence."
+      }
+    ],
+    "results": [
+      {
+        "id": "uow_ai_ml_p005_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 5,
+        "text": "Introduction\nWhat is ArtiεÇücial Intelligence (AI)?\nArtiεÇücial intelligence is a constellation of many diεÇÇerent\ntechnologies working together to enable machines to sense,\ncomprehend, act, and learn with human-like levels of intelligence.\nAI isnΓÇÖt just one thing. (https://accenture.com)\n5 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p005",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 290,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03278688524590164,
+        "strategy": "hybrid_rrf",
+        "hit": true
+      },
+      {
+        "id": "uow_ai_ml_p007_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 7,
+        "text": "Introduction\nWhat is ArtiεÇücial Intelligence (AI)?\nHuman intelligence? - Take One!\nHuman intelligence is a mental quality that consists of the abilities\nto learn from experience, adapt to new situations, understand and\nhandle abstract concepts, and use knowledge to manipulate oneΓÇÖs\nenvironment (https://www.britannica.com).\nHuman intelligence? - Take two!\nThrough intelligence, humans possess the cognitive abilities to\nlearn, form concepts, understand, apply logic and reason, including\nthe capaciti",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p007",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 500,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03200204813108039,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      },
+      {
+        "id": "uow_ai_ml_p010_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 10,
+        "text": "Strong vs Weak AI\nStrong AI\nStrong artiεÇücial intelligence (AI), also known as artiεÇücial general\nintelligence (AGI) or general AI, is a theoretical form of AI used to\ndescribe a certain mindset of AI development.\nStrong AI aims to create intelligent machines that are indistinguishable\nfrom the human mind.\n(https://www.ibm.com/cloud/learn/strong-ai)\nWeak AI\nWeak AI, also known as narrow AI, focuses on performing a speciεÇüc task,\nsuch as answering questions based on user input or playing chess.\nIt c",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p010",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 500,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03125763125763126,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      }
+    ],
+    "context": "[uow_ai_ml_p005_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 5]\nIntroduction\nWhat is ArtiεÇücial Intelligence (AI)?\nArtiεÇücial intelligence is a constellation of many diεÇÇerent\ntechnologies working together to enable machines to sense,\ncomprehend, act, and learn with human-like levels of intelligence.\nAI isnΓÇÖt just one thing. (https://accenture.com)\n5 / 40\n\n[uow_ai_ml_p007_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 7]\nIntroduction\nWhat is ArtiεÇücial Intelligence (AI)?\nHuman intelligence? - Take One!\nHuman intelligence is a mental quality that consists of the abilities\nto learn from experience, adapt to new situations, understand and\nhandle abstract concepts, and use knowledge to manipulate oneΓÇÖs\nenvironment (https://www.britannica.com).\nHuman intelligence? - Take two!\nThrough intelligence, humans possess the cognitive abilities to\nlearn, form concepts, understand, apply logic and reason, including\nthe capaciti",
+    "context_ids": [
+      "uow_ai_ml_p005_paragraph_001",
+      "uow_ai_ml_p007_paragraph_001"
+    ],
+    "context_chars": 960,
+    "elapsed_ms": 22.195000005012844,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q02",
+    "split": "dev",
+    "question": "How do the UOW slides distinguish Strong AI from Weak AI?",
+    "strategy": "hybrid_rrf",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 10,
+        "evidence": "Strong AI aims to create intelligent machines that are indistinguishable\nfrom the human mind.\n(https://www.ibm.com/cloud/learn/strong-ai)\nWeak AI\nWeak AI, also known as narrow AI, focuses on performing a speciεÇüc task,\nsuch as answering questions based on user input or playing chess."
+      }
+    ],
+    "results": [
+      {
+        "id": "uow_ai_ml_p010_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 10,
+        "text": "Strong vs Weak AI\nStrong AI\nStrong artiεÇücial intelligence (AI), also known as artiεÇücial general\nintelligence (AGI) or general AI, is a theoretical form of AI used to\ndescribe a certain mindset of AI development.\nStrong AI aims to create intelligent machines that are indistinguishable\nfrom the human mind.\n(https://www.ibm.com/cloud/learn/strong-ai)\nWeak AI\nWeak AI, also known as narrow AI, focuses on performing a speciεÇüc task,\nsuch as answering questions based on user input or playing chess.\nIt c",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p010",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 500,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.032266458495966696,
+        "strategy": "hybrid_rrf",
+        "hit": true
+      },
+      {
+        "id": "uow_ai_ml_p010_paragraph_002",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 10,
+        "text": "an perform one type of task, but not both, whereas Strong AI can\nperform a variety of functions, eventually teaching itself to solve for new\nproblems.\nWeak AI relies on human interference to deεÇüne the parameters of its\nlearning algorithms and to provide the relevant training data to ensure\naccuracy. (https://www.ibm.com/cloud/learn/strong-ai)\n8 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p010",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 351,
+          "chunk_index": 2,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.032266458495966696,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      },
+      {
+        "id": "uow_ai_ml_p011_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 11,
+        "text": "Strong vs Weak AI\nStrong AI\nStrong artiεÇücial intelligence (AI), also known as artiεÇücial general\nintelligence (AGI) or general AI, is a theoretical form of AI used to\ndescribe a certain mindset of AI development.\nStrong AI aims to create intelligent machines that are indistinguishable\nfrom the human mind.\n(https://www.ibm.com/cloud/learn/strong-ai)\nWeak AI\nWeak AI, also known as narrow AI, focuses on performing a speciεÇüc task,\nsuch as answering questions based on user input or playing chess.\nIt c",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p011",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 500,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": false
+        },
+        "score": 0.031754032258064516,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      }
+    ],
+    "context": "[uow_ai_ml_p010_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 10]\nStrong vs Weak AI\nStrong AI\nStrong artiεÇücial intelligence (AI), also known as artiεÇücial general\nintelligence (AGI) or general AI, is a theoretical form of AI used to\ndescribe a certain mindset of AI development.\nStrong AI aims to create intelligent machines that are indistinguishable\nfrom the human mind.\n(https://www.ibm.com/cloud/learn/strong-ai)\nWeak AI\nWeak AI, also known as narrow AI, focuses on performing a speciεÇüc task,\nsuch as answering questions based on user input or playing chess.\nIt c\n\n[uow_ai_ml_p010_paragraph_002 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 10]\nan perform one type of task, but not both, whereas Strong AI can\nperform a variety of functions, eventually teaching itself to solve for new\nproblems.\nWeak AI relies on human interference to deεÇüne the parameters of its\nlearning algorithms and to provide the relevant training data to ensure\naccuracy. (https://www.ibm.com/cloud/learn/strong-ai)\n8 / 40",
+    "context_ids": [
+      "uow_ai_ml_p010_paragraph_001",
+      "uow_ai_ml_p010_paragraph_002"
+    ],
+    "context_chars": 1019,
+    "elapsed_ms": 18.072099999699276,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q03",
+    "split": "dev",
+    "question": "Which six phases are listed in the UOW AI lifecycle?",
+    "strategy": "hybrid_rrf",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 15,
+        "evidence": "Six phases\n1\nDiscovery, Data collection and annotation/labeling\n2\nData preparation (preprocessing)\n3\nModel planning (methods, techniques, workεÇéow, variables,\nrelationships, models)\n4\nModel building (training and test datasets, software and\nhardware, analysis of results)\n5\nCommunication of results (identify key εÇündings)\n6\nOperationalize (delivery, pilot project)"
+      }
+    ],
+    "results": [
+      {
+        "id": "uow_ai_ml_p015_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 15,
+        "text": "Life cycle of AI\nSix phases\n1\nDiscovery, Data collection and annotation/labeling\n2\nData preparation (preprocessing)\n3\nModel planning (methods, techniques, workεÇéow, variables,\nrelationships, models)\n4\nModel building (training and test datasets, software and\nhardware, analysis of results)\n5\nCommunication of results (identify key εÇündings)\n6\nOperationalize (delivery, pilot project)\n11 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p015",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 388,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03278688524590164,
+        "strategy": "hybrid_rrf",
+        "hit": true
+      },
+      {
+        "id": "colliot_ml_2023_p007_paragraph_001",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 7,
+        "text": "6\nColliot\n1st AI\nwinter\n2nd AI\nwinter\nExpert\nsystems\nMachine\nlearning\nEarly research\n2000\n1950\n1960\n1970\n1980\n1990\n2020\n2010\n1940\nFigure 3: Summers and winters of AI.\nsets of rules. They were diεÇâcult to maintain and update. They also had\npoor performances in perception tasks such as image and speech recogni-\ntion. Academic and industrial funding subsequently dropped. This was\nthe second AI winter.\nAt this stage, it is probably useful to come back to the two main\nfamilies of AI: symbolic and conn",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p007",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 1,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.0304147465437788,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      },
+      {
+        "id": "uow_ai_ml_p034_paragraph_002",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 34,
+        "text": " of this\nstate transition is communicated to the agent as some reinforcement\nsignal\nThe output in this learning paradigm is the action performed by the agent\n(i.e. the AI)\n22 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p034",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 179,
+          "chunk_index": 2,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.029206349206349208,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      }
+    ],
+    "context": "[uow_ai_ml_p015_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 15]\nLife cycle of AI\nSix phases\n1\nDiscovery, Data collection and annotation/labeling\n2\nData preparation (preprocessing)\n3\nModel planning (methods, techniques, workεÇéow, variables,\nrelationships, models)\n4\nModel building (training and test datasets, software and\nhardware, analysis of results)\n5\nCommunication of results (identify key εÇündings)\n6\nOperationalize (delivery, pilot project)\n11 / 40\n\n[colliot_ml_2023_p007_paragraph_001 | https://hal.science/hal-03957125v3 | page 7]\n6\nColliot\n1st AI\nwinter\n2nd AI\nwinter\nExpert\nsystems\nMachine\nlearning\nEarly research\n2000\n1950\n1960\n1970\n1980\n1990\n2020\n2010\n1940\nFigure 3: Summers and winters of AI.\nsets of rules. They were diεÇâcult to maintain and update. They also had\npoor performances in perception tasks such as image and speech recogni-\ntion. Academic and industrial funding subsequently dropped. This was\nthe second AI winter.\nAt this stage, it is probably useful to come back to the two main\nfamilies of AI: symbolic and conn",
+    "context_ids": [
+      "uow_ai_ml_p015_paragraph_001",
+      "colliot_ml_2023_p007_paragraph_001"
+    ],
+    "context_chars": 1058,
+    "elapsed_ms": 12.264200006029569,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q04",
+    "split": "dev",
+    "question": "Which three approaches to feature engineering are listed in the lecture?",
+    "strategy": "hybrid_rrf",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 19,
+        "evidence": "Feature selection : selecting the most useful features to train\non among existing features\n2\nFeature extraction: combining existing features to produce a\nmore useful one\n3\nCreating new features by gathering new data"
+      }
+    ],
+    "results": [
+      {
+        "id": "uow_ai_ml_p019_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 19,
+        "text": "Data [is king]\nFeature Engineering\n1\nFeature selection : selecting the most useful features to train\non among existing features\n2\nFeature extraction: combining existing features to produce a\nmore useful one\n3\nCreating new features by gathering new data\n13 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p019",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 260,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03278688524590164,
+        "strategy": "hybrid_rrf",
+        "hit": true
+      },
+      {
+        "id": "colliot_ml_2023_p020_paragraph_004",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 20,
+        "text": "relevant features could\nbe the volumes of diεÇÇerent anatomical regions of the brain (this speciεÇüc\nprocess is done using a technique called image segmentation which is cov-\nered in another chapter). This would result in a series of numbers that\nwould form an input vector. The development of eεÇâcient methods for\nextracting meaningful features from raw data is important in machine\nlearning.\nSuch an approach is often called feature engineering.\nDeep\nlearning methods allow for avoiding extracting featu",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p020",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 4,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03149801587301587,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      },
+      {
+        "id": "colliot_ml_2023_p020_paragraph_005",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 20,
+        "text": "res by providing an\nend-to-end approach from the raw data to the output. In some areas,\nthis has made feature engineering less important but there are still ap-\nMachine Learning for Brain Disorders, Chapter 1",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p020",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 208,
+          "chunk_index": 5,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03128054740957967,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      }
+    ],
+    "context": "[uow_ai_ml_p019_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 19]\nData [is king]\nFeature Engineering\n1\nFeature selection : selecting the most useful features to train\non among existing features\n2\nFeature extraction: combining existing features to produce a\nmore useful one\n3\nCreating new features by gathering new data\n13 / 40\n\n[colliot_ml_2023_p020_paragraph_004 | https://hal.science/hal-03957125v3 | page 20]\nrelevant features could\nbe the volumes of diεÇÇerent anatomical regions of the brain (this speciεÇüc\nprocess is done using a technique called image segmentation which is cov-\nered in another chapter). This would result in a series of numbers that\nwould form an input vector. The development of eεÇâcient methods for\nextracting meaningful features from raw data is important in machine\nlearning.\nSuch an approach is often called feature engineering.\nDeep\nlearning methods allow for avoiding extracting featu",
+    "context_ids": [
+      "uow_ai_ml_p019_paragraph_001",
+      "colliot_ml_2023_p020_paragraph_004"
+    ],
+    "context_chars": 931,
+    "elapsed_ms": 14.8068000053172,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q05",
+    "split": "dev",
+    "question": "What is supervised learning according to the UOW lecture slides?",
+    "strategy": "hybrid_rrf",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 20,
+        "evidence": "In this learning scenario, there are examples of appropriate\noutput data for speciεÇüc input data.\nThe problem is how to learn the best model of the relationship\nbetween the input and output from the example data."
+      }
+    ],
+    "results": [
+      {
+        "id": "uow_ai_ml_p020_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 20,
+        "text": "Supervised learning\nWhat is it?\nIn this learning scenario, there are examples of appropriate\noutput data for speciεÇüc input data.\nThe problem is how to learn the best model of the relationship\nbetween the input and output from the example data.\n14 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p020",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 251,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.032266458495966696,
+        "strategy": "hybrid_rrf",
+        "hit": true
+      },
+      {
+        "id": "colliot_ml_2023_p013_paragraph_001",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 13,
+        "text": "12\nColliot\nBox 2: Supervised, unsupervised and reinforcement learning\n┬╖ Supervised learning.\nLearns from labelled examples, i.e.\nexamples for which the output that we are trying to learn is\nknown.\nΓÇô Example 1. The task is computer-aided diagnosis (a clas-\nsiεÇücation problem), the label can be the diagnosis of each\npatient, as deεÇüned by an expert physician.\nΓÇô Example 2. The task is the prediction of the age of a\nperson from a set of biological variables (for example a\nbrain MRI). This is a regress",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p013",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 1,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03177805800756621,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      },
+      {
+        "id": "uow_ai_ml_p030_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 30,
+        "text": "Semi-supervised learning\nWhat is it?\nIn this learning scenario, there are a few labeled example data\nand many unlabelled data.\nlabeling data is expensive; there is abundance of unlabelled\ndata.\nThe problem is how to learn the underlying model that can\nbest classify the whole data into given categories despite lack\nof many labeled data.\n20 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p030",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 345,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.031754032258064516,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      }
+    ],
+    "context": "[uow_ai_ml_p020_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 20]\nSupervised learning\nWhat is it?\nIn this learning scenario, there are examples of appropriate\noutput data for speciεÇüc input data.\nThe problem is how to learn the best model of the relationship\nbetween the input and output from the example data.\n14 / 40\n\n[colliot_ml_2023_p013_paragraph_001 | https://hal.science/hal-03957125v3 | page 13]\n12\nColliot\nBox 2: Supervised, unsupervised and reinforcement learning\n┬╖ Supervised learning.\nLearns from labelled examples, i.e.\nexamples for which the output that we are trying to learn is\nknown.\nΓÇô Example 1. The task is computer-aided diagnosis (a clas-\nsiεÇücation problem), the label can be the diagnosis of each\npatient, as deεÇüned by an expert physician.\nΓÇô Example 2. The task is the prediction of the age of a\nperson from a set of biological variables (for example a\nbrain MRI). This is a regress",
+    "context_ids": [
+      "uow_ai_ml_p020_paragraph_001",
+      "colliot_ml_2023_p013_paragraph_001"
+    ],
+    "context_chars": 927,
+    "elapsed_ms": 12.351700002909638,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q06",
+    "split": "dev",
+    "question": "What three data subsets are recommended for supervised learning in the UOW slides?",
+    "strategy": "hybrid_rrf",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 21,
+        "evidence": "Separate data into three distinct subsets.\n- training, test, and validation dataset."
+      }
+    ],
+    "results": [
+      {
+        "id": "colliot_ml_2023_p012_paragraph_002",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 12,
+        "text": "examining a dataset of medical images where\nthe presence of tumours has been annotated\n3.1\nTypes of learning\nOne usually considers three main types of learning: supervised learn-\ning, unsupervised learning and reinforcement learning (Box 2). In both\nsupervised and unsupervised learning, the experience E is actually the\ninspection of a set of examples, which will we refer to as training examples\nor training set.\n3.1.1. Supervised learning\nIn supervised learning, the machine learns to perform a ta",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p012",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 2,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03225806451612903,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      },
+      {
+        "id": "uow_ai_ml_p021_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 21,
+        "text": "Supervised learning\nHow to do it?\nCollect an appropriate amount of data.\nSeparate data into three distinct subsets.\n- training, test, and validation dataset.\nThere is an implied model whose parameters can be learned.\nTrain the model using an appropriate methodology.\nThere is a method of judging goodness of the model.\n- Optimize model by using the validation data.\nTest the model on the test data (not part of training set).\n14 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p021",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 433,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.031024531024531024,
+        "strategy": "hybrid_rrf",
+        "hit": true
+      },
+      {
+        "id": "uow_ai_ml_p025_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 25,
+        "text": "Unsupervised learning\nWhat is it?\nIn this learning scenario, there are example data, but they are\nnot identiεÇüed with a speciεÇüc label beforehand.\nThe problem is how to learn the underlying model that can\nbest separate the data into meaningful clusters of categories.\nWe want to uncover the pattern inherent in the data.\nWe may not know how many clusters of categories are\nappropriate or makes sense.\n18 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p025",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 406,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.031009615384615385,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      }
+    ],
+    "context": "[colliot_ml_2023_p012_paragraph_002 | https://hal.science/hal-03957125v3 | page 12]\nexamining a dataset of medical images where\nthe presence of tumours has been annotated\n3.1\nTypes of learning\nOne usually considers three main types of learning: supervised learn-\ning, unsupervised learning and reinforcement learning (Box 2). In both\nsupervised and unsupervised learning, the experience E is actually the\ninspection of a set of examples, which will we refer to as training examples\nor training set.\n3.1.1. Supervised learning\nIn supervised learning, the machine learns to perform a ta\n\n[uow_ai_ml_p021_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 21]\nSupervised learning\nHow to do it?\nCollect an appropriate amount of data.\nSeparate data into three distinct subsets.\n- training, test, and validation dataset.\nThere is an implied model whose parameters can be learned.\nTrain the model using an appropriate methodology.\nThere is a method of judging goodness of the model.\n- Optimize model by using the validation data.\nTest the model on the test data (not part of training set).\n14 / 40",
+    "context_ids": [
+      "colliot_ml_2023_p012_paragraph_002",
+      "uow_ai_ml_p021_paragraph_001"
+    ],
+    "context_chars": 1098,
+    "elapsed_ms": 15.368199994554743,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q07",
+    "split": "dev",
+    "question": "How does the UOW lecture define unsupervised learning?",
+    "strategy": "hybrid_rrf",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 25,
+        "evidence": "In this learning scenario, there are example data, but they are\nnot identiεÇüed with a speciεÇüc label beforehand.\nThe problem is how to learn the underlying model that can\nbest separate the data into meaningful clusters of categories.\nWe want to uncover the pattern inherent in the data."
+      }
+    ],
+    "results": [
+      {
+        "id": "uow_ai_ml_p025_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 25,
+        "text": "Unsupervised learning\nWhat is it?\nIn this learning scenario, there are example data, but they are\nnot identiεÇüed with a speciεÇüc label beforehand.\nThe problem is how to learn the underlying model that can\nbest separate the data into meaningful clusters of categories.\nWe want to uncover the pattern inherent in the data.\nWe may not know how many clusters of categories are\nappropriate or makes sense.\n18 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p025",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 406,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03278688524590164,
+        "strategy": "hybrid_rrf",
+        "hit": true
+      },
+      {
+        "id": "colliot_ml_2023_p015_paragraph_001",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 15,
+        "text": "14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p015",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 1,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03200204813108039,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      },
+      {
+        "id": "colliot_ml_2023_p015_paragraph_004",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 15,
+        "text": "ize a reward.\nThis can for example be the case of a\nmachine learning to play chess, which will play games against itself in\norder to maximize the number of victories. These methods are widely\nused for learning to play games or in the domain of robotics. So far, they\nhave had few applications to brain diseases and will not be covered in\nthe rest of this book.\n3.1.4. Discussion\nUnsupervised learning is obviously attractive because it does not re-\nquire labels. Indeed, acquiring labels for a traini",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p015",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 4,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.031754032258064516,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      }
+    ],
+    "context": "[uow_ai_ml_p025_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 25]\nUnsupervised learning\nWhat is it?\nIn this learning scenario, there are example data, but they are\nnot identiεÇüed with a speciεÇüc label beforehand.\nThe problem is how to learn the underlying model that can\nbest separate the data into meaningful clusters of categories.\nWe want to uncover the pattern inherent in the data.\nWe may not know how many clusters of categories are\nappropriate or makes sense.\n18 / 40\n\n[colliot_ml_2023_p015_paragraph_001 | https://hal.science/hal-03957125v3 | page 15]\n14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a",
+    "context_ids": [
+      "uow_ai_ml_p025_paragraph_001",
+      "colliot_ml_2023_p015_paragraph_001"
+    ],
+    "context_chars": 1075,
+    "elapsed_ms": 15.023100000689737,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q08",
+    "split": "dev",
+    "question": "What combination of labeled and unlabeled data is used in semi-supervised learning, according to the UOW slides?",
+    "strategy": "hybrid_rrf",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "gold": [
+      {
+        "source_id": "uow_ai_ml",
+        "page": 30,
+        "evidence": "In this learning scenario, there are a few labeled example data\nand many unlabelled data."
+      }
+    ],
+    "results": [
+      {
+        "id": "uow_ai_ml_p030_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 30,
+        "text": "Semi-supervised learning\nWhat is it?\nIn this learning scenario, there are a few labeled example data\nand many unlabelled data.\nlabeling data is expensive; there is abundance of unlabelled\ndata.\nThe problem is how to learn the underlying model that can\nbest classify the whole data into given categories despite lack\nof many labeled data.\n20 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p030",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 345,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03278688524590164,
+        "strategy": "hybrid_rrf",
+        "hit": true
+      },
+      {
+        "id": "uow_ai_ml_p031_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 31,
+        "text": "Semi-supervised learning\nHow to do it?\nFigure: Semi-supervised self training (Credits- altexsoft.com)\n20 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p031",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 109,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03200204813108039,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      },
+      {
+        "id": "uow_ai_ml_p026_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 26,
+        "text": "Unsupervised learning\nFigure: The samples are unlabeled and the model is trained to identify\nunderlying pattern. DiεÇÇerent properties (features) of the data are\nused. The neural network may discover the appropriate features.\n18 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p026",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 231,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.031754032258064516,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      }
+    ],
+    "context": "[uow_ai_ml_p030_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 30]\nSemi-supervised learning\nWhat is it?\nIn this learning scenario, there are a few labeled example data\nand many unlabelled data.\nlabeling data is expensive; there is abundance of unlabelled\ndata.\nThe problem is how to learn the underlying model that can\nbest classify the whole data into given categories despite lack\nof many labeled data.\n20 / 40\n\n[uow_ai_ml_p031_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 31]\nSemi-supervised learning\nHow to do it?\nFigure: Semi-supervised self training (Credits- altexsoft.com)\n20 / 40\n\n[uow_ai_ml_p026_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 26]\nUnsupervised learning\nFigure: The samples are unlabeled and the model is trained to identify\nunderlying pattern. DiεÇÇerent properties (features) of the data are\nused. The neural network may discover the appropriate features.\n18 / 40",
+    "context_ids": [
+      "uow_ai_ml_p030_paragraph_001",
+      "uow_ai_ml_p031_paragraph_001",
+      "uow_ai_ml_p026_paragraph_001"
+    ],
+    "context_chars": 928,
+    "elapsed_ms": 17.901399995025713,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q11",
+    "split": "dev",
+    "question": "How are AI, machine learning, and deep learning related in Colliot’s chapter?",
+    "strategy": "hybrid_rrf",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "gold": [
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 11,
+        "evidence": "Deep learning is a type of machine learning which\ninvolves neural networks with a large number of hidden layers. Machine\nlearning is one approach to artiεÇücial intelligence, but other approaches\nexist."
+      }
+    ],
+    "results": [
+      {
+        "id": "colliot_ml_2023_p011_paragraph_001",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 11,
+        "text": "10\nColliot\nArtificial intelligence\nMachine learning\nDeep learning\nFigure 6: ArtiεÇücial intelligence, machine learning and deep learning\nare not synonymous. Deep learning is a type of machine learning which\ninvolves neural networks with a large number of hidden layers. Machine\nlearning is one approach to artiεÇücial intelligence, but other approaches\nexist.\ntions that will directly perform the considered task. Instead, one will\nwrite a program that allows the computer to learn how to perform the\ntas",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p011",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 1,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03278688524590164,
+        "strategy": "hybrid_rrf",
+        "hit": true
+      },
+      {
+        "id": "colliot_ml_2023_p010_paragraph_005",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 10,
+        "text": "ial intelligence, machine learning and\ndeep learning (Figure 6). Machine learning is one approach to artiεÇücial\nintelligence and other radically diεÇÇerent approaches exist. Deep learning\nis a speciεÇüc type of machine learning approach. It has recently obtained\nimpressive results on some types of data (in particular images and text)\nbut this does not mean that it is the universal solution to all problems.\nAs we will see in this book, there are tasks for which other types of\napproaches perform best.\n",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p010",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 5,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.031009615384615385,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      },
+      {
+        "id": "uow_ai_ml_p014_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 14,
+        "text": "AI enabled by learning\nAI and Machine Learning\nOne of the key components of ArtiεÇücial Intelligence is learning.\nMachine learning allows the concept of learning from data.\nFigure: Machine learning: a new programming paradigm\n10 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p014",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 231,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.030621785881252923,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      }
+    ],
+    "context": "[colliot_ml_2023_p011_paragraph_001 | https://hal.science/hal-03957125v3 | page 11]\n10\nColliot\nArtificial intelligence\nMachine learning\nDeep learning\nFigure 6: ArtiεÇücial intelligence, machine learning and deep learning\nare not synonymous. Deep learning is a type of machine learning which\ninvolves neural networks with a large number of hidden layers. Machine\nlearning is one approach to artiεÇücial intelligence, but other approaches\nexist.\ntions that will directly perform the considered task. Instead, one will\nwrite a program that allows the computer to learn how to perform the\ntas\n\n[colliot_ml_2023_p010_paragraph_005 | https://hal.science/hal-03957125v3 | page 10]\nial intelligence, machine learning and\ndeep learning (Figure 6). Machine learning is one approach to artiεÇücial\nintelligence and other radically diεÇÇerent approaches exist. Deep learning\nis a speciεÇüc type of machine learning approach. It has recently obtained\nimpressive results on some types of data (in particular images and text)\nbut this does not mean that it is the universal solution to all problems.\nAs we will see in this book, there are tasks for which other types of\napproaches perform best.\n",
+    "context_ids": [
+      "colliot_ml_2023_p011_paragraph_001",
+      "colliot_ml_2023_p010_paragraph_005"
+    ],
+    "context_chars": 1180,
+    "elapsed_ms": 17.377700001816265,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q12",
+    "split": "dev",
+    "question": "In the 2023 book chapter, what do E, T, and P represent in Mitchell’s ML definition?",
+    "strategy": "hybrid_rrf",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "gold": [
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 12,
+        "evidence": "a computer program is said to learn from experience E with\nrespect to some task T and some performance measure P,\nif its performance at task T, as measured by P, improves with\nexperience E."
+      }
+    ],
+    "results": [
+      {
+        "id": "colliot_ml_2023_p012_paragraph_001",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 12,
+        "text": "Introduction to machine learning\n11\nBox 1: DeεÇÇnition of machine learning\nMachine learning deεÇünition (Mitchell, 1997 [31]):\n┬╖ ΓÇ£a computer program is said to learn from experience E with\nrespect to some task T and some performance measure P,\nif its performance at task T, as measured by P, improves with\nexperience E.ΓÇ¥\nExample: learning to detect tumours from medical images\n┬╖ Task T: detect tumours from medical image\n┬╖ Performance measure P: proportion of tumours correctly\nidentiεÇüed\n┬╖ Experience E: ",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p012",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 1,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03252247488101534,
+        "strategy": "hybrid_rrf",
+        "hit": true
+      },
+      {
+        "id": "colliot_ml_2023_p011_paragraph_002",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 11,
+        "text": "k by examining examples or experiences. The output of this learning\nprocess is a computer program itself that performs the desired task, but\nthis program was not explicitly written. Instead, it has been learned\nautomatically by the computer.\nIn 1997, Tom Mitchell gave a more precise deεÇünition of a well-posed\nmachine learning problem [31]:\nA computer program is said to learn from experience E with\nrespect to some task T and some performance measure\nP, if its performance at task T, as measured by ",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p011",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 2,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03128054740957967,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      },
+      {
+        "id": "colliot_ml_2023_p022_paragraph_004",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 22,
+        "text": "igence and thus needs to be put into this larger\ncontext. We introduced the main concepts underlying ML that will be\nfurther expanded in Chapters 2 to 6. The reader can εÇünd a summary of\nthese main concepts, as well as notations, in Box 3.\nMachine Learning for Brain Disorders, Chapter 1",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p022",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 286,
+          "chunk_index": 4,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03028233151183971,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      }
+    ],
+    "context": "[colliot_ml_2023_p012_paragraph_001 | https://hal.science/hal-03957125v3 | page 12]\nIntroduction to machine learning\n11\nBox 1: DeεÇÇnition of machine learning\nMachine learning deεÇünition (Mitchell, 1997 [31]):\n┬╖ ΓÇ£a computer program is said to learn from experience E with\nrespect to some task T and some performance measure P,\nif its performance at task T, as measured by P, improves with\nexperience E.ΓÇ¥\nExample: learning to detect tumours from medical images\n┬╖ Task T: detect tumours from medical image\n┬╖ Performance measure P: proportion of tumours correctly\nidentiεÇüed\n┬╖ Experience E: \n\n[colliot_ml_2023_p011_paragraph_002 | https://hal.science/hal-03957125v3 | page 11]\nk by examining examples or experiences. The output of this learning\nprocess is a computer program itself that performs the desired task, but\nthis program was not explicitly written. Instead, it has been learned\nautomatically by the computer.\nIn 1997, Tom Mitchell gave a more precise deεÇünition of a well-posed\nmachine learning problem [31]:\nA computer program is said to learn from experience E with\nrespect to some task T and some performance measure\nP, if its performance at task T, as measured by ",
+    "context_ids": [
+      "colliot_ml_2023_p012_paragraph_001",
+      "colliot_ml_2023_p011_paragraph_002"
+    ],
+    "context_chars": 1186,
+    "elapsed_ms": 17.068299996026326,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q13",
+    "split": "dev",
+    "question": "What distinguishes supervised learning from unsupervised learning in Colliot’s examples?",
+    "strategy": "hybrid_rrf",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "gold": [
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 13,
+        "evidence": "Learns from labelled examples, i.e.\nexamples for which the output that we are trying to learn is\nknown."
+      },
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 13,
+        "evidence": "Unsupervised learning. Learns from unlabelled examples."
+      }
+    ],
+    "results": [
+      {
+        "id": "colliot_ml_2023_p015_paragraph_001",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 15,
+        "text": "14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p015",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 1,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03225806451612903,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      },
+      {
+        "id": "colliot_ml_2023_p013_paragraph_001",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 13,
+        "text": "12\nColliot\nBox 2: Supervised, unsupervised and reinforcement learning\n┬╖ Supervised learning.\nLearns from labelled examples, i.e.\nexamples for which the output that we are trying to learn is\nknown.\nΓÇô Example 1. The task is computer-aided diagnosis (a clas-\nsiεÇücation problem), the label can be the diagnosis of each\npatient, as deεÇüned by an expert physician.\nΓÇô Example 2. The task is the prediction of the age of a\nperson from a set of biological variables (for example a\nbrain MRI). This is a regress",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p013",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 1,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.032018442622950824,
+        "strategy": "hybrid_rrf",
+        "hit": true
+      },
+      {
+        "id": "colliot_ml_2023_p012_paragraph_002",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 12,
+        "text": "examining a dataset of medical images where\nthe presence of tumours has been annotated\n3.1\nTypes of learning\nOne usually considers three main types of learning: supervised learn-\ning, unsupervised learning and reinforcement learning (Box 2). In both\nsupervised and unsupervised learning, the experience E is actually the\ninspection of a set of examples, which will we refer to as training examples\nor training set.\n3.1.1. Supervised learning\nIn supervised learning, the machine learns to perform a ta",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p012",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 2,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03177805800756621,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      }
+    ],
+    "context": "[colliot_ml_2023_p015_paragraph_001 | https://hal.science/hal-03957125v3 | page 15]\n14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a\n\n[colliot_ml_2023_p013_paragraph_001 | https://hal.science/hal-03957125v3 | page 13]\n12\nColliot\nBox 2: Supervised, unsupervised and reinforcement learning\n┬╖ Supervised learning.\nLearns from labelled examples, i.e.\nexamples for which the output that we are trying to learn is\nknown.\nΓÇô Example 1. The task is computer-aided diagnosis (a clas-\nsiεÇücation problem), the label can be the diagnosis of each\npatient, as deεÇüned by an expert physician.\nΓÇô Example 2. The task is the prediction of the age of a\nperson from a set of biological variables (for example a\nbrain MRI). This is a regress",
+    "context_ids": [
+      "colliot_ml_2023_p015_paragraph_001",
+      "colliot_ml_2023_p013_paragraph_001"
+    ],
+    "context_chars": 1179,
+    "elapsed_ms": 17.03560000169091,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q14",
+    "split": "dev",
+    "question": "What two tasks are most common in unsupervised learning in Colliot’s chapter?",
+    "strategy": "hybrid_rrf",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "gold": [
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 15,
+        "evidence": "In unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a"
+      },
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 15,
+        "evidence": "re clustering and dimensionality\nreduction (Figure 8)."
+      }
+    ],
+    "results": [
+      {
+        "id": "colliot_ml_2023_p015_paragraph_001",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 15,
+        "text": "14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p015",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 1,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.032266458495966696,
+        "strategy": "hybrid_rrf",
+        "hit": true
+      },
+      {
+        "id": "colliot_ml_2023_p003_paragraph_001",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 3,
+        "text": "2\nColliot\nwhich are easy to perform for a human and are inherently diεÇâcult for a\ncomputer are for instance recognizing objects, faces or animals in pho-\ntographs, or recognizing words in speech. On the other hand, there are\nalso tasks which are inherently easy for a computer and diεÇâcult for a hu-\nman, such as computing with large numbers or memorizing exactly huge\namounts of text. Machine learning is the AI technique that has achieved\nthe most impressive successes over the past years. However, i",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p003",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 1,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03125763125763126,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      },
+      {
+        "id": "uow_ai_ml_p025_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 25,
+        "text": "Unsupervised learning\nWhat is it?\nIn this learning scenario, there are example data, but they are\nnot identiεÇüed with a speciεÇüc label beforehand.\nThe problem is how to learn the underlying model that can\nbest separate the data into meaningful clusters of categories.\nWe want to uncover the pattern inherent in the data.\nWe may not know how many clusters of categories are\nappropriate or makes sense.\n18 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p025",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 406,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.031009615384615385,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      }
+    ],
+    "context": "[colliot_ml_2023_p015_paragraph_001 | https://hal.science/hal-03957125v3 | page 15]\n14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a\n\n[colliot_ml_2023_p003_paragraph_001 | https://hal.science/hal-03957125v3 | page 3]\n2\nColliot\nwhich are easy to perform for a human and are inherently diεÇâcult for a\ncomputer are for instance recognizing objects, faces or animals in pho-\ntographs, or recognizing words in speech. On the other hand, there are\nalso tasks which are inherently easy for a computer and diεÇâcult for a hu-\nman, such as computing with large numbers or memorizing exactly huge\namounts of text. Machine learning is the AI technique that has achieved\nthe most impressive successes over the past years. However, i",
+    "context_ids": [
+      "colliot_ml_2023_p015_paragraph_001",
+      "colliot_ml_2023_p003_paragraph_001"
+    ],
+    "context_chars": 1173,
+    "elapsed_ms": 20.239799996488728,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q15",
+    "split": "dev",
+    "question": "What does self-supervised learning do according to the chapter?",
+    "strategy": "hybrid_rrf",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "gold": [
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 17,
+        "evidence": "self-supervised learning, where the machine itself provides its own super-\nvision, has emerged."
+      }
+    ],
+    "results": [
+      {
+        "id": "uow_ai_ml_p031_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 31,
+        "text": "Semi-supervised learning\nHow to do it?\nFigure: Semi-supervised self training (Credits- altexsoft.com)\n20 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p031",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 109,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.032266458495966696,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      },
+      {
+        "id": "colliot_ml_2023_p017_paragraph_001",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 17,
+        "text": "16\nColliot\napplications. However, in the past years, an alternative strategy called\nself-supervised learning, where the machine itself provides its own super-\nvision, has emerged. This is a promising approach which has already led\nto impressive results in diεÇÇerent εÇüelds such as natural language process-\ning in particular [32, 33, 34].\n3.2\nOverview of the learning process\nIn this section, we aim at formalizing the main concepts underlying most\nsupervised learning methods. Some of these concepts, ",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p017",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 1,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.032018442622950824,
+        "strategy": "hybrid_rrf",
+        "hit": true
+      },
+      {
+        "id": "uow_ai_ml_p020_paragraph_001",
+        "source_id": "uow_ai_ml",
+        "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+        "page": 20,
+        "text": "Supervised learning\nWhat is it?\nIn this learning scenario, there are examples of appropriate\noutput data for speciεÇüc input data.\nThe problem is how to learn the best model of the relationship\nbetween the input and output from the example data.\n14 / 40",
+        "metadata": {
+          "no_text": false,
+          "page_id": "uow_ai_ml_p020",
+          "needs_ocr": false,
+          "source_id": "uow_ai_ml",
+          "char_count": 251,
+          "chunk_index": 1,
+          "document_type": "lecture_slides",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.031024531024531024,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      }
+    ],
+    "context": "[uow_ai_ml_p031_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 31]\nSemi-supervised learning\nHow to do it?\nFigure: Semi-supervised self training (Credits- altexsoft.com)\n20 / 40\n\n[colliot_ml_2023_p017_paragraph_001 | https://hal.science/hal-03957125v3 | page 17]\n16\nColliot\napplications. However, in the past years, an alternative strategy called\nself-supervised learning, where the machine itself provides its own super-\nvision, has emerged. This is a promising approach which has already led\nto impressive results in diεÇÇerent εÇüelds such as natural language process-\ning in particular [32, 33, 34].\n3.2\nOverview of the learning process\nIn this section, we aim at formalizing the main concepts underlying most\nsupervised learning methods. Some of these concepts, \n\n[uow_ai_ml_p020_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 20]\nSupervised learning\nWhat is it?\nIn this learning scenario, there are examples of appropriate\noutput data for speciεÇüc input data.\nThe problem is how to learn the best model of the relationship\nbetween the input and output from the example data.\n14 / 40",
+    "context_ids": [
+      "uow_ai_ml_p031_paragraph_001",
+      "colliot_ml_2023_p017_paragraph_001",
+      "uow_ai_ml_p020_paragraph_001"
+    ],
+    "context_chars": 1112,
+    "elapsed_ms": 16.289799998048693,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q16",
+    "split": "dev",
+    "question": "What does the cost function measure in the learning process?",
+    "strategy": "hybrid_rrf",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "gold": [
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 19,
+        "evidence": "minimizes the average error over the training set. Let us call this average\nerror the cost function:"
+      }
+    ],
+    "results": [
+      {
+        "id": "colliot_ml_2023_p019_paragraph_001",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 19,
+        "text": "18\nColliot\nthe training set. In other words, we are looking for the function which\nminimizes the average error over the training set. Let us call this average\nerror the cost function:\nJ(f) = 1\nn\nn\nεÇë\ni=1\nΓäô\nεÇÇ\ny(i), f(x(i))\nεÇü\nLearning will then aim at εÇünding the function ╦åf which minimizes the\ncost function:\n╦åf = arg min\nfΓêêF\n1\nn\nn\nεÇë\ni=1\nΓäô\nεÇÇ\ny(i), f(x(i))\nεÇü\nIn the above equation, arg min indicates that we are interested in the\nfunction f that minimizes the cost J(f) and not in the value of the cost\n",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p019",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 1,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03278688524590164,
+        "strategy": "hybrid_rrf",
+        "hit": true
+      },
+      {
+        "id": "colliot_ml_2023_p017_paragraph_004",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 17,
+        "text": "given y. In chapter\n3, the functions f will be artiεÇücial neural networks. Learning aims at\nεÇünding a function f which will provide the correct output for each given\ninput. Let us call the loss function and denote Γäôa function that measures\nthe error that is made by the function f. The loss function takes two\narguments: the true output y and the predicted output f(x). The lower\nthe loss function value, the closer the predicted output is to the true\noutput. An example of loss function is the classic",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p017",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 4,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.0315136476426799,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      },
+      {
+        "id": "colliot_ml_2023_p019_paragraph_005",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 19,
+        "text": " (there are many variables to represent an input), when the\ntraining set is too small or when the function f is too εÇéexible. A way to\nprevent overεÇütting will be to modify the cost function so that it not only\nrepresents the average error across training samples but also constrains\nthe function f to have some speciεÇüc properties.\nMachine Learning for Brain Disorders, Chapter 1",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p019",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 377,
+          "chunk_index": 5,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.03149801587301587,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      }
+    ],
+    "context": "[colliot_ml_2023_p019_paragraph_001 | https://hal.science/hal-03957125v3 | page 19]\n18\nColliot\nthe training set. In other words, we are looking for the function which\nminimizes the average error over the training set. Let us call this average\nerror the cost function:\nJ(f) = 1\nn\nn\nεÇë\ni=1\nΓäô\nεÇÇ\ny(i), f(x(i))\nεÇü\nLearning will then aim at εÇünding the function ╦åf which minimizes the\ncost function:\n╦åf = arg min\nfΓêêF\n1\nn\nn\nεÇë\ni=1\nΓäô\nεÇÇ\ny(i), f(x(i))\nεÇü\nIn the above equation, arg min indicates that we are interested in the\nfunction f that minimizes the cost J(f) and not in the value of the cost\n\n\n[colliot_ml_2023_p017_paragraph_004 | https://hal.science/hal-03957125v3 | page 17]\ngiven y. In chapter\n3, the functions f will be artiεÇücial neural networks. Learning aims at\nεÇünding a function f which will provide the correct output for each given\ninput. Let us call the loss function and denote Γäôa function that measures\nthe error that is made by the function f. The loss function takes two\narguments: the true output y and the predicted output f(x). The lower\nthe loss function value, the closer the predicted output is to the true\noutput. An example of loss function is the classic",
+    "context_ids": [
+      "colliot_ml_2023_p019_paragraph_001",
+      "colliot_ml_2023_p017_paragraph_004"
+    ],
+    "context_chars": 1198,
+    "elapsed_ms": 17.481399998359848,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q17",
+    "split": "dev",
+    "question": "What is overfitting according to Colliot’s chapter?",
+    "strategy": "hybrid_rrf",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "gold": [
+      {
+        "source_id": "colliot_ml_2023",
+        "page": 19,
+        "evidence": "the learned function f may be too speciεÇüc to the training set. In other\nwords, it has learned the training set ΓÇ£by heartΓÇ¥ but has not discovered a\nmore general rule that would work for other examples."
+      }
+    ],
+    "results": [
+      {
+        "id": "colliot_ml_2023_p001_paragraph_002",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 1,
+        "text": "├⌐s ou non, ├⌐manant\ndes ├⌐tablissements dΓÇÖenseignement et de recherche\nfran├ºais ou ├⌐trangers, des laboratoires publics ou\npriv├⌐s.\nDistributed under a Creative Commons CC BY 4.0 - Attribution - International License\nA non-technical introduction to machine learning\nOlivier Colliot\nTo cite this version:\nOlivier Colliot. A non-technical introduction to machine learning. Olivier Colliot. Machine Learning for\nBrain Disorders, Springer, 2023. Γƒ¿hal-03957125v3Γƒ⌐",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p001",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 454,
+          "chunk_index": 2,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": false
+        },
+        "score": 0.029906956136464335,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      },
+      {
+        "id": "colliot_ml_2023_p021_paragraph_010",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 21,
+        "text": " is also true). In our case, it is\nMachine Learning for Brain Disorders, Chapter 1",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p021",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 82,
+          "chunk_index": 10,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.028958333333333336,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      },
+      {
+        "id": "colliot_ml_2023_p013_paragraph_001",
+        "source_id": "colliot_ml_2023",
+        "source": "https://hal.science/hal-03957125v3",
+        "page": 13,
+        "text": "12\nColliot\nBox 2: Supervised, unsupervised and reinforcement learning\n┬╖ Supervised learning.\nLearns from labelled examples, i.e.\nexamples for which the output that we are trying to learn is\nknown.\nΓÇô Example 1. The task is computer-aided diagnosis (a clas-\nsiεÇücation problem), the label can be the diagnosis of each\npatient, as deεÇüned by an expert physician.\nΓÇô Example 2. The task is the prediction of the age of a\nperson from a set of biological variables (for example a\nbrain MRI). This is a regress",
+        "metadata": {
+          "no_text": false,
+          "page_id": "colliot_ml_2023_p013",
+          "needs_ocr": false,
+          "source_id": "colliot_ml_2023",
+          "char_count": 500,
+          "chunk_index": 1,
+          "document_type": "book_chapter",
+          "chunk_strategy": "paragraph",
+          "verified_content_page": true
+        },
+        "score": 0.02844551282051282,
+        "strategy": "hybrid_rrf",
+        "hit": false
+      }
+    ],
+    "context": "[colliot_ml_2023_p001_paragraph_002 | https://hal.science/hal-03957125v3 | page 1]\n├⌐s ou non, ├⌐manant\ndes ├⌐tablissements dΓÇÖenseignement et de recherche\nfran├ºais ou ├⌐trangers, des laboratoires publics ou\npriv├⌐s.\nDistributed under a Creative Commons CC BY 4.0 - Attribution - International License\nA non-technical introduction to machine learning\nOlivier Colliot\nTo cite this version:\nOlivier Colliot. A non-technical introduction to machine learning. Olivier Colliot. Machine Learning for\nBrain Disorders, Springer, 2023. Γƒ¿hal-03957125v3Γƒ⌐\n\n[colliot_ml_2023_p021_paragraph_010 | https://hal.science/hal-03957125v3 | page 21]\n is also true). In our case, it is\nMachine Learning for Brain Disorders, Chapter 1",
+    "context_ids": [
+      "colliot_ml_2023_p001_paragraph_002",
+      "colliot_ml_2023_p021_paragraph_010"
+    ],
+    "context_chars": 717,
+    "elapsed_ms": 16.47870000306284,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  }
+]

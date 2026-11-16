@@ -1,0 +1,343 @@
+{
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng để trả lời.",
+  "citations": [],
+  "events": [
+    {
+      "event": "search",
+      "query": "Colliot chapter unsupervised learning most common tasks",
+      "filter": null,
+      "results": [
+        {
+          "id": "colliot_ml_2023_p015_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 15,
+          "text": "14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p015",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03278688524590164,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p002_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 2,
+          "text": "Chapter 1\nA non-technical introduction\nto machine learning\nOlivier Colliot*1\n1Sorbonne Universit┬┤e, Institut du Cerveau - Paris Brain Institute - ICM,\nCNRS, Inria, Inserm, AP-HP, H╦åopital de la Piti┬┤e-Salp╦åetri`ere, F-75013, Paris,\nFrance\n*Corresponding author: e-mail address: olivier.colliot@cnrs.fr\nAbstract\nThis chapter provides an introduction to machine learning for a non-\ntechnical readership. Machine learning is an approach to artiεÇücial intelli-\ngence. The chapter thus starts with a brief ",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p002",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.029709507042253523,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p012_paragraph_003",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 12,
+          "text": "sk by examin-\ning a set of examples for which the output is known (i.e. the examples\nhave been labelled). The two most common tasks in supervised learn-\ning are classiεÇücation and regression (Figure 7). ClassiεÇücation aims at\nassigning a category for each sample.\nThe examples can for instance\nbe diεÇÇerent patients and the categories are the diεÇÇerent possible diag-\nnoses. The outputs are thus discrete. Examples of common classiεÇücation\nalgorithms include logistic regression (in spite of its name, it ",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p012",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 3,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.02964254577157803,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p015_paragraph_001 | https://hal.science/hal-03957125v3 | page 15]\n14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a\n\n[colliot_ml_2023_p002_paragraph_001 | https://hal.science/hal-03957125v3 | page 2]\nChapter 1\nA non-technical introduction\nto machine learning\nOlivier Colliot*1\n1Sorbonne Universit┬┤e, Institut du Cerveau - Paris Brain Institute - ICM,\nCNRS, Inria, Inserm, AP-HP, H╦åopital de la Piti┬┤e-Salp╦åetri`ere, F-75013, Paris,\nFrance\n*Corresponding author: e-mail address: olivier.colliot@cnrs.fr\nAbstract\nThis chapter provides an introduction to machine learning for a non-\ntechnical readership. Machine learning is an approach to artiεÇücial intelli-\ngence. The chapter thus starts with a brief ",
+      "context_ids": [
+        "colliot_ml_2023_p015_paragraph_001",
+        "colliot_ml_2023_p002_paragraph_001"
+      ]
+    },
+    {
+      "event": "search",
+      "query": "Colliot unsupervised learning two most common tasks",
+      "filter": null,
+      "results": [
+        {
+          "id": "colliot_ml_2023_p015_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 15,
+          "text": "14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p015",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03278688524590164,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p003_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 3,
+          "text": "2\nColliot\nwhich are easy to perform for a human and are inherently diεÇâcult for a\ncomputer are for instance recognizing objects, faces or animals in pho-\ntographs, or recognizing words in speech. On the other hand, there are\nalso tasks which are inherently easy for a computer and diεÇâcult for a hu-\nman, such as computing with large numbers or memorizing exactly huge\namounts of text. Machine learning is the AI technique that has achieved\nthe most impressive successes over the past years. However, i",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p003",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.030090497737556562,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p017_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 17,
+          "text": "16\nColliot\napplications. However, in the past years, an alternative strategy called\nself-supervised learning, where the machine itself provides its own super-\nvision, has emerged. This is a promising approach which has already led\nto impressive results in diεÇÇerent εÇüelds such as natural language process-\ning in particular [32, 33, 34].\n3.2\nOverview of the learning process\nIn this section, we aim at formalizing the main concepts underlying most\nsupervised learning methods. Some of these concepts, ",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p017",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.029910714285714284,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p015_paragraph_001 | https://hal.science/hal-03957125v3 | page 15]\n14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a\n\n[colliot_ml_2023_p002_paragraph_001 | https://hal.science/hal-03957125v3 | page 2]\nChapter 1\nA non-technical introduction\nto machine learning\nOlivier Colliot*1\n1Sorbonne Universit┬┤e, Institut du Cerveau - Paris Brain Institute - ICM,\nCNRS, Inria, Inserm, AP-HP, H╦åopital de la Piti┬┤e-Salp╦åetri`ere, F-75013, Paris,\nFrance\n*Corresponding author: e-mail address: olivier.colliot@cnrs.fr\nAbstract\nThis chapter provides an introduction to machine learning for a non-\ntechnical readership. Machine learning is an approach to artiεÇücial intelli-\ngence. The chapter thus starts with a brief ",
+      "context_ids": [
+        "colliot_ml_2023_p015_paragraph_001",
+        "colliot_ml_2023_p002_paragraph_001"
+      ]
+    },
+    {
+      "event": "search",
+      "query": "Colliot unsupervised learning two most common tasks chapter 3",
+      "filter": null,
+      "results": [
+        {
+          "id": "colliot_ml_2023_p015_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 15,
+          "text": "14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p015",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03278688524590164,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p017_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 17,
+          "text": "16\nColliot\napplications. However, in the past years, an alternative strategy called\nself-supervised learning, where the machine itself provides its own super-\nvision, has emerged. This is a promising approach which has already led\nto impressive results in diεÇÇerent εÇüelds such as natural language process-\ning in particular [32, 33, 34].\n3.2\nOverview of the learning process\nIn this section, we aim at formalizing the main concepts underlying most\nsupervised learning methods. Some of these concepts, ",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p017",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.030330882352941176,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p002_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 2,
+          "text": "Chapter 1\nA non-technical introduction\nto machine learning\nOlivier Colliot*1\n1Sorbonne Universit┬┤e, Institut du Cerveau - Paris Brain Institute - ICM,\nCNRS, Inria, Inserm, AP-HP, H╦åopital de la Piti┬┤e-Salp╦åetri`ere, F-75013, Paris,\nFrance\n*Corresponding author: e-mail address: olivier.colliot@cnrs.fr\nAbstract\nThis chapter provides an introduction to machine learning for a non-\ntechnical readership. Machine learning is an approach to artiεÇücial intelli-\ngence. The chapter thus starts with a brief ",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p002",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.029857397504456328,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p015_paragraph_001 | https://hal.science/hal-03957125v3 | page 15]\n14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a\n\n[colliot_ml_2023_p002_paragraph_001 | https://hal.science/hal-03957125v3 | page 2]\nChapter 1\nA non-technical introduction\nto machine learning\nOlivier Colliot*1\n1Sorbonne Universit┬┤e, Institut du Cerveau - Paris Brain Institute - ICM,\nCNRS, Inria, Inserm, AP-HP, H╦åopital de la Piti┬┤e-Salp╦åetri`ere, F-75013, Paris,\nFrance\n*Corresponding author: e-mail address: olivier.colliot@cnrs.fr\nAbstract\nThis chapter provides an introduction to machine learning for a non-\ntechnical readership. Machine learning is an approach to artiεÇücial intelli-\ngence. The chapter thus starts with a brief ",
+      "context_ids": [
+        "colliot_ml_2023_p015_paragraph_001",
+        "colliot_ml_2023_p002_paragraph_001"
+      ]
+    },
+    {
+      "event": "search",
+      "query": "two most common tasks unsupervised learning Colliot",
+      "filter": null,
+      "results": [
+        {
+          "id": "colliot_ml_2023_p015_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 15,
+          "text": "14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p015",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03278688524590164,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p003_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 3,
+          "text": "2\nColliot\nwhich are easy to perform for a human and are inherently diεÇâcult for a\ncomputer are for instance recognizing objects, faces or animals in pho-\ntographs, or recognizing words in speech. On the other hand, there are\nalso tasks which are inherently easy for a computer and diεÇâcult for a hu-\nman, such as computing with large numbers or memorizing exactly huge\namounts of text. Machine learning is the AI technique that has achieved\nthe most impressive successes over the past years. However, i",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p003",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.030090497737556562,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p012_paragraph_003",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 12,
+          "text": "sk by examin-\ning a set of examples for which the output is known (i.e. the examples\nhave been labelled). The two most common tasks in supervised learn-\ning are classiεÇücation and regression (Figure 7). ClassiεÇücation aims at\nassigning a category for each sample.\nThe examples can for instance\nbe diεÇÇerent patients and the categories are the diεÇÇerent possible diag-\nnoses. The outputs are thus discrete. Examples of common classiεÇücation\nalgorithms include logistic regression (in spite of its name, it ",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p012",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 3,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.029827662395050816,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p015_paragraph_001 | https://hal.science/hal-03957125v3 | page 15]\n14\nColliot\namples of common regression methods include simple or multiple linear\nregression, penalized regression, and random forest regression. Finally,\nthere are many other tasks that can be framed as a supervised learning\nproblem, including for example data synthesis, image segmentation and\nmany others which will be described in other chapters of this book.\n3.1.2. Unsupervised learning\nIn unsupervised learning, the examples are not labeled. The two most\ncommon tasks in unsupervised learning a\n\n[colliot_ml_2023_p002_paragraph_001 | https://hal.science/hal-03957125v3 | page 2]\nChapter 1\nA non-technical introduction\nto machine learning\nOlivier Colliot*1\n1Sorbonne Universit┬┤e, Institut du Cerveau - Paris Brain Institute - ICM,\nCNRS, Inria, Inserm, AP-HP, H╦åopital de la Piti┬┤e-Salp╦åetri`ere, F-75013, Paris,\nFrance\n*Corresponding author: e-mail address: olivier.colliot@cnrs.fr\nAbstract\nThis chapter provides an introduction to machine learning for a non-\ntechnical readership. Machine learning is an approach to artiεÇücial intelli-\ngence. The chapter thus starts with a brief ",
+      "context_ids": [
+        "colliot_ml_2023_p015_paragraph_001",
+        "colliot_ml_2023_p002_paragraph_001"
+      ]
+    },
+    {
+      "event": "search_limit"
+    }
+  ],
+  "query_id": "Q14",
+  "model": "nvidia/nemotron-3.5-lightning:free",
+  "llm_calls": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 10994.417899999917,
+      "finish_reason": "stop",
+      "prompt_tokens": 67,
+      "completion_tokens": 531,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 25616.61499999991,
+      "finish_reason": "stop",
+      "prompt_tokens": 621,
+      "completion_tokens": 3324,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 7797.64090000026,
+      "finish_reason": "stop",
+      "prompt_tokens": 621,
+      "completion_tokens": 894,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 12360.078600000179,
+      "finish_reason": "stop",
+      "prompt_tokens": 621,
+      "completion_tokens": 1999,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 13359.329200000047,
+      "finish_reason": "stop",
+      "prompt_tokens": 621,
+      "completion_tokens": 2384,
+      "cost_usd": 0
+    }
+  ],
+  "elapsed_ms": 70177.66269999993
+}

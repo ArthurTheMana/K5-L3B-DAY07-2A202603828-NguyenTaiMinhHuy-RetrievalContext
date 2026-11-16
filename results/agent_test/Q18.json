@@ -1,0 +1,106 @@
+{
+  "status": "answered",
+  "answer": "Feature engineering is used for selecting the most useful features among existing ones, combining existing features to produce more useful ones, and creating new features by gathering new data [uow_ai_ml_p019_paragraph_001]. It is also used to extract meaningful features from raw data for machine learning, such as brain region volumes from imaging [colliot_ml_2023_p020_paragraph_004].",
+  "citations": [
+    "uow_ai_ml_p019_paragraph_001",
+    "colliot_ml_2023_p020_paragraph_004"
+  ],
+  "events": [
+    {
+      "event": "search",
+      "query": "feature engineering used for in machine learning chapter",
+      "filter": null,
+      "results": [
+        {
+          "id": "uow_ai_ml_p019_paragraph_001",
+          "source_id": "uow_ai_ml",
+          "source": "data\\raw\\ai_ml_fundamentals_uow.pdf",
+          "page": 19,
+          "text": "Data [is king]\nFeature Engineering\n1\nFeature selection : selecting the most useful features to train\non among existing features\n2\nFeature extraction: combining existing features to produce a\nmore useful one\n3\nCreating new features by gathering new data\n13 / 40",
+          "metadata": {
+            "no_text": false,
+            "page_id": "uow_ai_ml_p019",
+            "needs_ocr": false,
+            "source_id": "uow_ai_ml",
+            "char_count": 260,
+            "chunk_index": 1,
+            "document_type": "lecture_slides",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03252247488101534,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p020_paragraph_004",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 20,
+          "text": "relevant features could\nbe the volumes of diεÇÇerent anatomical regions of the brain (this speciεÇüc\nprocess is done using a technique called image segmentation which is cov-\nered in another chapter). This would result in a series of numbers that\nwould form an input vector. The development of eεÇâcient methods for\nextracting meaningful features from raw data is important in machine\nlearning.\nSuch an approach is often called feature engineering.\nDeep\nlearning methods allow for avoiding extracting featu",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p020",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 4,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03200204813108039,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p020_paragraph_005",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 20,
+          "text": "res by providing an\nend-to-end approach from the raw data to the output. In some areas,\nthis has made feature engineering less important but there are still ap-\nMachine Learning for Brain Disorders, Chapter 1",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p020",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 208,
+            "chunk_index": 5,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03177805800756621,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[uow_ai_ml_p019_paragraph_001 | data\\raw\\ai_ml_fundamentals_uow.pdf | page 19]\nData [is king]\nFeature Engineering\n1\nFeature selection : selecting the most useful features to train\non among existing features\n2\nFeature extraction: combining existing features to produce a\nmore useful one\n3\nCreating new features by gathering new data\n13 / 40\n\n[colliot_ml_2023_p020_paragraph_004 | https://hal.science/hal-03957125v3 | page 20]\nrelevant features could\nbe the volumes of diεÇÇerent anatomical regions of the brain (this speciεÇüc\nprocess is done using a technique called image segmentation which is cov-\nered in another chapter). This would result in a series of numbers that\nwould form an input vector. The development of eεÇâcient methods for\nextracting meaningful features from raw data is important in machine\nlearning.\nSuch an approach is often called feature engineering.\nDeep\nlearning methods allow for avoiding extracting featu",
+      "context_ids": [
+        "uow_ai_ml_p019_paragraph_001",
+        "colliot_ml_2023_p020_paragraph_004"
+      ]
+    },
+    {
+      "event": "answer"
+    }
+  ],
+  "query_id": "Q18",
+  "model": "nvidia/nemotron-3.5-lightning:free",
+  "llm_calls": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 14097.237100000712,
+      "finish_reason": "stop",
+      "prompt_tokens": 60,
+      "completion_tokens": 721,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 10176.084900000205,
+      "finish_reason": "stop",
+      "prompt_tokens": 508,
+      "completion_tokens": 1606,
+      "cost_usd": 0
+    }
+  ],
+  "elapsed_ms": 24283.553600000232
+}

@@ -1,0 +1,105 @@
+{
+  "status": "answered",
+  "answer": "The cost function measures the average error between the model's predictions and the actual targets over the training set. As stated in the document, 'we are looking for the function which minimizes the average error over the training set. Let us call this average error the cost function' [colliot_ml_2023_p019_paragraph_001].",
+  "citations": [
+    "colliot_ml_2023_p019_paragraph_001"
+  ],
+  "events": [
+    {
+      "event": "search",
+      "query": "cost function machine learning learning process",
+      "filter": null,
+      "results": [
+        {
+          "id": "colliot_ml_2023_p024_paragraph_002",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 24,
+          "text": "ng the model which minimizes the cost\nfunction\n╦åf = arg minfΓêêF J(f)\nMachine Learning for Brain Disorders, Chapter 1",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p024",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 115,
+            "chunk_index": 2,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03278688524590164,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p019_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 19,
+          "text": "18\nColliot\nthe training set. In other words, we are looking for the function which\nminimizes the average error over the training set. Let us call this average\nerror the cost function:\nJ(f) = 1\nn\nn\nεÇë\ni=1\nΓäô\nεÇÇ\ny(i), f(x(i))\nεÇü\nLearning will then aim at εÇünding the function ╦åf which minimizes the\ncost function:\n╦åf = arg min\nfΓêêF\n1\nn\nn\nεÇë\ni=1\nΓäô\nεÇÇ\ny(i), f(x(i))\nεÇü\nIn the above equation, arg min indicates that we are interested in the\nfunction f that minimizes the cost J(f) and not in the value of the cost\n",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p019",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03225806451612903,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p019_paragraph_005",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 19,
+          "text": " (there are many variables to represent an input), when the\ntraining set is too small or when the function f is too εÇéexible. A way to\nprevent overεÇütting will be to modify the cost function so that it not only\nrepresents the average error across training samples but also constrains\nthe function f to have some speciεÇüc properties.\nMachine Learning for Brain Disorders, Chapter 1",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p019",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 377,
+            "chunk_index": 5,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03125763125763126,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p024_paragraph_002 | https://hal.science/hal-03957125v3 | page 24]\nng the model which minimizes the cost\nfunction\n╦åf = arg minfΓêêF J(f)\nMachine Learning for Brain Disorders, Chapter 1\n\n[colliot_ml_2023_p019_paragraph_001 | https://hal.science/hal-03957125v3 | page 19]\n18\nColliot\nthe training set. In other words, we are looking for the function which\nminimizes the average error over the training set. Let us call this average\nerror the cost function:\nJ(f) = 1\nn\nn\nεÇë\ni=1\nΓäô\nεÇÇ\ny(i), f(x(i))\nεÇü\nLearning will then aim at εÇünding the function ╦åf which minimizes the\ncost function:\n╦åf = arg min\nfΓêêF\n1\nn\nn\nεÇë\ni=1\nΓäô\nεÇÇ\ny(i), f(x(i))\nεÇü\nIn the above equation, arg min indicates that we are interested in the\nfunction f that minimizes the cost J(f) and not in the value of the cost\n",
+      "context_ids": [
+        "colliot_ml_2023_p024_paragraph_002",
+        "colliot_ml_2023_p019_paragraph_001"
+      ]
+    },
+    {
+      "event": "answer"
+    }
+  ],
+  "query_id": "Q16",
+  "model": "nvidia/nemotron-3.5-lightning:free",
+  "llm_calls": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 6363.883600000008,
+      "finish_reason": "stop",
+      "prompt_tokens": 61,
+      "completion_tokens": 481,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 14241.477399999894,
+      "finish_reason": "stop",
+      "prompt_tokens": 499,
+      "completion_tokens": 2520,
+      "cost_usd": 0
+    }
+  ],
+  "elapsed_ms": 20618.013299999802
+}

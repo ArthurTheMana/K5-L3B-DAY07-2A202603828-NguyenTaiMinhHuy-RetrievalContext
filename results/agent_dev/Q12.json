@@ -1,0 +1,108 @@
+{
+  "status": "answered",
+  "answer": "In the 2023 book chapter, Mitchell's definition states that E represents experience, T represents the task, and P represents the performance measure [colliot_ml_2023_p012_paragraph_001]. The chapter further presents the definition as: \"a computer program is said to learn from experience E with respect to some task T and some performance measure P\" [colliot_ml_2023_p011_paragraph_002].",
+  "citations": [
+    "colliot_ml_2023_p011_paragraph_002",
+    "colliot_ml_2023_p012_paragraph_001"
+  ],
+  "events": [
+    {
+      "event": "search",
+      "query": "Mitchell machine learning definition E T P 2023 book chapter",
+      "filter": {
+        "document_type": "book_chapter"
+      },
+      "results": [
+        {
+          "id": "colliot_ml_2023_p011_paragraph_002",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 11,
+          "text": "k by examining examples or experiences. The output of this learning\nprocess is a computer program itself that performs the desired task, but\nthis program was not explicitly written. Instead, it has been learned\nautomatically by the computer.\nIn 1997, Tom Mitchell gave a more precise deεÇünition of a well-posed\nmachine learning problem [31]:\nA computer program is said to learn from experience E with\nrespect to some task T and some performance measure\nP, if its performance at task T, as measured by ",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p011",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 2,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03252247488101534,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p012_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 12,
+          "text": "Introduction to machine learning\n11\nBox 1: DeεÇÇnition of machine learning\nMachine learning deεÇünition (Mitchell, 1997 [31]):\n┬╖ ΓÇ£a computer program is said to learn from experience E with\nrespect to some task T and some performance measure P,\nif its performance at task T, as measured by P, improves with\nexperience E.ΓÇ¥\nExample: learning to detect tumours from medical images\n┬╖ Task T: detect tumours from medical image\n┬╖ Performance measure P: proportion of tumours correctly\nidentiεÇüed\n┬╖ Experience E: ",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p012",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03177805800756621,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p002_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 2,
+          "text": "Chapter 1\nA non-technical introduction\nto machine learning\nOlivier Colliot*1\n1Sorbonne Universit┬┤e, Institut du Cerveau - Paris Brain Institute - ICM,\nCNRS, Inria, Inserm, AP-HP, H╦åopital de la Piti┬┤e-Salp╦åetri`ere, F-75013, Paris,\nFrance\n*Corresponding author: e-mail address: olivier.colliot@cnrs.fr\nAbstract\nThis chapter provides an introduction to machine learning for a non-\ntechnical readership. Machine learning is an approach to artiεÇücial intelli-\ngence. The chapter thus starts with a brief ",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p002",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.0315136476426799,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p011_paragraph_002 | https://hal.science/hal-03957125v3 | page 11]\nk by examining examples or experiences. The output of this learning\nprocess is a computer program itself that performs the desired task, but\nthis program was not explicitly written. Instead, it has been learned\nautomatically by the computer.\nIn 1997, Tom Mitchell gave a more precise deεÇünition of a well-posed\nmachine learning problem [31]:\nA computer program is said to learn from experience E with\nrespect to some task T and some performance measure\nP, if its performance at task T, as measured by \n\n[colliot_ml_2023_p012_paragraph_001 | https://hal.science/hal-03957125v3 | page 12]\nIntroduction to machine learning\n11\nBox 1: DeεÇÇnition of machine learning\nMachine learning deεÇünition (Mitchell, 1997 [31]):\n┬╖ ΓÇ£a computer program is said to learn from experience E with\nrespect to some task T and some performance measure P,\nif its performance at task T, as measured by P, improves with\nexperience E.ΓÇ¥\nExample: learning to detect tumours from medical images\n┬╖ Task T: detect tumours from medical image\n┬╖ Performance measure P: proportion of tumours correctly\nidentiεÇüed\n┬╖ Experience E: ",
+      "context_ids": [
+        "colliot_ml_2023_p011_paragraph_002",
+        "colliot_ml_2023_p012_paragraph_001"
+      ]
+    },
+    {
+      "event": "answer"
+    }
+  ],
+  "query_id": "Q12",
+  "model": "nvidia/nemotron-3.5-lightning:free",
+  "llm_calls": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 3440.553699998418,
+      "finish_reason": "stop",
+      "prompt_tokens": 75,
+      "completion_tokens": 460,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 10034.587499998452,
+      "finish_reason": "stop",
+      "prompt_tokens": 555,
+      "completion_tokens": 2107,
+      "cost_usd": 0
+    }
+  ],
+  "elapsed_ms": 13492.56559999776
+}

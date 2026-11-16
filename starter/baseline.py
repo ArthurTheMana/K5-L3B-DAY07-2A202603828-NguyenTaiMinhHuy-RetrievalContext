@@ -46,10 +46,18 @@ def validate(chunks, questions):
             if not any(hit(c, [g]) for c in chunks):
                 raise ValueError(f"question {q['id']}: gold không nằm trọn trong chunk đúng nguồn/trang")
 
+def normalize_evidence(text):
+    text = unicodedata.normalize("NFKC", text).casefold()
+    return re.sub(r"\s+", " ", text).strip()
 
 def hit(chunk, gold):
-    return any(chunk['source_id'] == g['source_id'] and chunk['page'] == g['page'] and g['evidence'] in chunk['text'] for g in gold)
-
+    return any(
+        chunk["source_id"] == g["source_id"]
+        and chunk["page"] == g["page"]
+        and normalize_evidence(g["evidence"])
+            in normalize_evidence(chunk["text"])
+        for g in gold
+    )
 
 class TfidfIndex:
     def __init__(self, chunks):
@@ -99,9 +107,9 @@ def evaluate(index, questions, budget=800):
                        'strategy': 'tfidf', 'top_k': 3, 'budget_chars': budget,
                        'gold': q['gold'], 'results': marked, 'context': context, 'context_ids': ids,
                        'context_chars': len(context), 'elapsed_ms': elapsed_ms,
-                       'hit1': bool(marked and marked[0]['hit']),
-                       'hit3': any(c['hit'] for c in marked),
-                       'context_hit': any(c['hit'] and c['id'] in ids for c in marked)})
+                       'hit1': bool(marked) and all(hit(marked[0], [g]) for g in q['gold']),
+                       'hit3': all(any(hit(c, [g]) for c in marked) for g in q['gold']),
+                       'context_hit': all(any(hit(c, [g]) and c['id'] in ids for c in marked) for g in q['gold'])})
     return traces
 
 

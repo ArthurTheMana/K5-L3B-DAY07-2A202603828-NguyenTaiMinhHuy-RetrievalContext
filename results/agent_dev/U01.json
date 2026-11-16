@@ -1,0 +1,103 @@
+{
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng để trả lời.",
+  "citations": [],
+  "events": [
+    {
+      "event": "search",
+      "query": "UOW lecture Random Forest MNIST test accuracy",
+      "filter": null,
+      "results": [
+        {
+          "id": "colliot_ml_2023_p012_paragraph_004",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 12,
+          "text": "is a classi-\nεÇücation method), linear discriminant analysis, support vector machines,\nrandom forest classiεÇüers and deep learning models for classiεÇücation. In\nregression, the output is a continuous number. This can be for example\nthe future clinical score of a patient that we are trying to predict. Ex-\nMachine Learning for Brain Disorders, Chapter 1",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p012",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 349,
+            "chunk_index": 4,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03252247488101534,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p004_paragraph_003",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 4,
+          "text": "intro-\nduced a test (the famous ΓÇ£Turing testΓÇ¥) for deciding if a machine can\nthink [6]. Actually, since the question can a machine think? is ill-posed\nand depends on the deεÇünition of thinking, Turing proposed to replace\nit with a practical test. The idea is that of a game in which an inter-\nrogator is given the task of determining which of two players A and B\nis a computer and which is a human (by using only responses to writ-\nten questions). In 1956, the mathematician John McCarthy organized\nwh",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p004",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 3,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.030117753623188408,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p026_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 26,
+          "text": "Introduction to machine learning\n25\n[20] Loh WY (2014) Fifty years of classiεÇücation\nand regression trees. International Statisti-\ncal Review 82(3):329ΓÇô348\n[21] Quinlan JR (1986) Induction of decision\ntrees. Machine learning 1(1):81ΓÇô106\n[22] Vapnik V (1999) The nature of statistical\nlearning theory. Springer\n[23] Boser BE, Guyon IM, Vapnik VN (1992) A\ntraining algorithm for optimal margin clas-\nsiεÇüers. In: Proceedings of the εÇüfth annual\nworkshop on Computational learning the-\nory, pp 144ΓÇô152\n[24]",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p026",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": false
+          },
+          "score": 0.01639344262295082,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p012_paragraph_004 | https://hal.science/hal-03957125v3 | page 12]\nis a classi-\nεÇücation method), linear discriminant analysis, support vector machines,\nrandom forest classiεÇüers and deep learning models for classiεÇücation. In\nregression, the output is a continuous number. This can be for example\nthe future clinical score of a patient that we are trying to predict. Ex-\nMachine Learning for Brain Disorders, Chapter 1\n\n[colliot_ml_2023_p004_paragraph_003 | https://hal.science/hal-03957125v3 | page 4]\nintro-\nduced a test (the famous ΓÇ£Turing testΓÇ¥) for deciding if a machine can\nthink [6]. Actually, since the question can a machine think? is ill-posed\nand depends on the deεÇünition of thinking, Turing proposed to replace\nit with a practical test. The idea is that of a game in which an inter-\nrogator is given the task of determining which of two players A and B\nis a computer and which is a human (by using only responses to writ-\nten questions). In 1956, the mathematician John McCarthy organized\nwh",
+      "context_ids": [
+        "colliot_ml_2023_p012_paragraph_004",
+        "colliot_ml_2023_p004_paragraph_003"
+      ]
+    },
+    {
+      "event": "invalid_or_missing_citations"
+    }
+  ],
+  "query_id": "U01",
+  "model": "nvidia/nemotron-3.5-lightning:free",
+  "llm_calls": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 11515.760300000693,
+      "finish_reason": "stop",
+      "prompt_tokens": 72,
+      "completion_tokens": 582,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 8785.295200001201,
+      "finish_reason": "stop",
+      "prompt_tokens": 575,
+      "completion_tokens": 1410,
+      "cost_usd": 0
+    }
+  ],
+  "elapsed_ms": 20311.74529999953
+}

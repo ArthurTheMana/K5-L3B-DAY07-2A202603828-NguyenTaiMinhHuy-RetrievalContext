@@ -1,0 +1,263 @@
+{
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng để trả lời.",
+  "citations": [],
+  "events": [
+    {
+      "event": "search",
+      "query": "Colliot overfitting chapter",
+      "filter": null,
+      "results": [
+        {
+          "id": "colliot_ml_2023_p001_paragraph_002",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 1,
+          "text": "├⌐s ou non, ├⌐manant\ndes ├⌐tablissements dΓÇÖenseignement et de recherche\nfran├ºais ou ├⌐trangers, des laboratoires publics ou\npriv├⌐s.\nDistributed under a Creative Commons CC BY 4.0 - Attribution - International License\nA non-technical introduction to machine learning\nOlivier Colliot\nTo cite this version:\nOlivier Colliot. A non-technical introduction to machine learning. Olivier Colliot. Machine Learning for\nBrain Disorders, Springer, 2023. Γƒ¿hal-03957125v3Γƒ⌐",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p001",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 454,
+            "chunk_index": 2,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": false
+          },
+          "score": 0.0315136476426799,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p014_paragraph_002",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 14,
+          "text": "\nFigure courtesy of Johann Faouzi.\nMachine Learning for Brain Disorders, Chapter 1",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p014",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 82,
+            "chunk_index": 2,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03149801587301587,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p023_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 23,
+          "text": "22\nColliot\nX\nX\nX\nX\n$(#!)\n#!\nrepeat\nw1 w1 εÇÇΓîÿdJ\ndw1\nuntil convergence;\nFigure 12: Upper panel: Illustration of the concept of gradient descent\nin a simple case where the model f is deεÇüned using only one parameter\nw1. The value of w1 is iteratively updated by following the opposite of the\ngradient. Lower panel: gradient descent algorithm where ╬╖ is the learning\nrate, i.e. the speed at which w1 will be updated.\nMachine Learning for Brain Disorders, Chapter 1",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p023",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 458,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.030886196246139225,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p001_paragraph_002 | https://hal.science/hal-03957125v3 | page 1]\n├⌐s ou non, ├⌐manant\ndes ├⌐tablissements dΓÇÖenseignement et de recherche\nfran├ºais ou ├⌐trangers, des laboratoires publics ou\npriv├⌐s.\nDistributed under a Creative Commons CC BY 4.0 - Attribution - International License\nA non-technical introduction to machine learning\nOlivier Colliot\nTo cite this version:\nOlivier Colliot. A non-technical introduction to machine learning. Olivier Colliot. Machine Learning for\nBrain Disorders, Springer, 2023. Γƒ¿hal-03957125v3Γƒ⌐\n\n[colliot_ml_2023_p014_paragraph_002 | https://hal.science/hal-03957125v3 | page 14]\n\nFigure courtesy of Johann Faouzi.\nMachine Learning for Brain Disorders, Chapter 1",
+      "context_ids": [
+        "colliot_ml_2023_p001_paragraph_002",
+        "colliot_ml_2023_p014_paragraph_002"
+      ]
+    },
+    {
+      "event": "search",
+      "query": "overfitting Colliot chapter 1 machine learning",
+      "filter": null,
+      "results": [
+        {
+          "id": "colliot_ml_2023_p002_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 2,
+          "text": "Chapter 1\nA non-technical introduction\nto machine learning\nOlivier Colliot*1\n1Sorbonne Universit┬┤e, Institut du Cerveau - Paris Brain Institute - ICM,\nCNRS, Inria, Inserm, AP-HP, H╦åopital de la Piti┬┤e-Salp╦åetri`ere, F-75013, Paris,\nFrance\n*Corresponding author: e-mail address: olivier.colliot@cnrs.fr\nAbstract\nThis chapter provides an introduction to machine learning for a non-\ntechnical readership. Machine learning is an approach to artiεÇücial intelli-\ngence. The chapter thus starts with a brief ",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p002",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.03278688524590164,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p025_paragraph_007",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 25,
+          "text": "cs 7(2):179ΓÇô188\nMachine Learning for Brain Disorders, Chapter 1",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p025",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 63,
+            "chunk_index": 7,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": false
+          },
+          "score": 0.030798389007344232,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p001_paragraph_002",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 1,
+          "text": "├⌐s ou non, ├⌐manant\ndes ├⌐tablissements dΓÇÖenseignement et de recherche\nfran├ºais ou ├⌐trangers, des laboratoires publics ou\npriv├⌐s.\nDistributed under a Creative Commons CC BY 4.0 - Attribution - International License\nA non-technical introduction to machine learning\nOlivier Colliot\nTo cite this version:\nOlivier Colliot. A non-technical introduction to machine learning. Olivier Colliot. Machine Learning for\nBrain Disorders, Springer, 2023. Γƒ¿hal-03957125v3Γƒ⌐",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p001",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 454,
+            "chunk_index": 2,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": false
+          },
+          "score": 0.030621785881252923,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p002_paragraph_001 | https://hal.science/hal-03957125v3 | page 2]\nChapter 1\nA non-technical introduction\nto machine learning\nOlivier Colliot*1\n1Sorbonne Universit┬┤e, Institut du Cerveau - Paris Brain Institute - ICM,\nCNRS, Inria, Inserm, AP-HP, H╦åopital de la Piti┬┤e-Salp╦åetri`ere, F-75013, Paris,\nFrance\n*Corresponding author: e-mail address: olivier.colliot@cnrs.fr\nAbstract\nThis chapter provides an introduction to machine learning for a non-\ntechnical readership. Machine learning is an approach to artiεÇücial intelli-\ngence. The chapter thus starts with a brief \n\n[colliot_ml_2023_p002_paragraph_002 | https://hal.science/hal-03957125v3 | page 2]\nhistory of artiεÇücial intelligence\nin order to put machine learning into this broader scientiεÇüc context. We\nthen describe the main general concepts of machine learning. Readers\nwith a background in computer science may skip this chapter.\nKeywords: machine learning, artiεÇÇcial intelligence, supervised learn-\ning, unsupervised learning\n1. Introduction\nMachine learning (ML) is a scientiεÇüc domain which aims at allowing\ncomputers to perform tasks without being explicitly programmed to do\nso [1]. To tha",
+      "context_ids": [
+        "colliot_ml_2023_p002_paragraph_001",
+        "colliot_ml_2023_p002_paragraph_002"
+      ]
+    },
+    {
+      "event": "search",
+      "query": "overfitting Colliot",
+      "filter": null,
+      "results": [
+        {
+          "id": "colliot_ml_2023_p001_paragraph_002",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 1,
+          "text": "├⌐s ou non, ├⌐manant\ndes ├⌐tablissements dΓÇÖenseignement et de recherche\nfran├ºais ou ├⌐trangers, des laboratoires publics ou\npriv├⌐s.\nDistributed under a Creative Commons CC BY 4.0 - Attribution - International License\nA non-technical introduction to machine learning\nOlivier Colliot\nTo cite this version:\nOlivier Colliot. A non-technical introduction to machine learning. Olivier Colliot. Machine Learning for\nBrain Disorders, Springer, 2023. Γƒ¿hal-03957125v3Γƒ⌐",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p001",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 454,
+            "chunk_index": 2,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": false
+          },
+          "score": 0.031099324975891997,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p017_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 17,
+          "text": "16\nColliot\napplications. However, in the past years, an alternative strategy called\nself-supervised learning, where the machine itself provides its own super-\nvision, has emerged. This is a promising approach which has already led\nto impressive results in diεÇÇerent εÇüelds such as natural language process-\ning in particular [32, 33, 34].\n3.2\nOverview of the learning process\nIn this section, we aim at formalizing the main concepts underlying most\nsupervised learning methods. Some of these concepts, ",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p017",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.031024531024531024,
+          "strategy": "hybrid_rrf"
+        },
+        {
+          "id": "colliot_ml_2023_p009_paragraph_001",
+          "source_id": "colliot_ml_2023",
+          "source": "https://hal.science/hal-03957125v3",
+          "page": 9,
+          "text": "8\nColliot\n!!\n!\"\n!#\n&$\n&\"\n&!\n&%!\n'\"!\n'\"\"\nOutputs\nInputs\nHidden\nFigure 5: A multilayer perceptron model (here with only one hidden\nlayer, but there can be many more).\nthe statistical theory of learning (in particular the works of Vladimir\nVapnik [22]).\nA landmark algorithm developed at that time was the\nsupport-vector machine (SVM) [23] which worked well with small train-\ning data sets and could handle non-linearities through the use of kernels.\nThe machine learning εÇüeld continued to expand throug",
+          "metadata": {
+            "no_text": false,
+            "page_id": "colliot_ml_2023_p009",
+            "needs_ocr": false,
+            "source_id": "colliot_ml_2023",
+            "char_count": 500,
+            "chunk_index": 1,
+            "document_type": "book_chapter",
+            "chunk_strategy": "paragraph",
+            "verified_content_page": true
+          },
+          "score": 0.030776515151515152,
+          "strategy": "hybrid_rrf"
+        }
+      ],
+      "context": "[colliot_ml_2023_p001_paragraph_002 | https://hal.science/hal-03957125v3 | page 1]\n├⌐s ou non, ├⌐manant\ndes ├⌐tablissements dΓÇÖenseignement et de recherche\nfran├ºais ou ├⌐trangers, des laboratoires publics ou\npriv├⌐s.\nDistributed under a Creative Commons CC BY 4.0 - Attribution - International License\nA non-technical introduction to machine learning\nOlivier Colliot\nTo cite this version:\nOlivier Colliot. A non-technical introduction to machine learning. Olivier Colliot. Machine Learning for\nBrain Disorders, Springer, 2023. Γƒ¿hal-03957125v3Γƒ⌐\n\n[colliot_ml_2023_p017_paragraph_001 | https://hal.science/hal-03957125v3 | page 17]\n16\nColliot\napplications. However, in the past years, an alternative strategy called\nself-supervised learning, where the machine itself provides its own super-\nvision, has emerged. This is a promising approach which has already led\nto impressive results in diεÇÇerent εÇüelds such as natural language process-\ning in particular [32, 33, 34].\n3.2\nOverview of the learning process\nIn this section, we aim at formalizing the main concepts underlying most\nsupervised learning methods. Some of these concepts, ",
+      "context_ids": [
+        "colliot_ml_2023_p001_paragraph_002",
+        "colliot_ml_2023_p017_paragraph_001"
+      ]
+    },
+    {
+      "event": "invalid_or_missing_citations"
+    }
+  ],
+  "query_id": "Q17",
+  "model": "nvidia/nemotron-3.5-lightning:free",
+  "llm_calls": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 11408.440900000642,
+      "finish_reason": "stop",
+      "prompt_tokens": 62,
+      "completion_tokens": 603,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 17984.017900000254,
+      "finish_reason": "stop",
+      "prompt_tokens": 520,
+      "completion_tokens": 2613,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 17257.00920000054,
+      "finish_reason": "stop",
+      "prompt_tokens": 626,
+      "completion_tokens": 2750,
+      "cost_usd": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "elapsed_ms": 10257.350200000474,
+      "finish_reason": "stop",
+      "prompt_tokens": 626,
+      "completion_tokens": 1577,
+      "cost_usd": 0
+    }
+  ],
+  "elapsed_ms": 56931.4317999997
+}

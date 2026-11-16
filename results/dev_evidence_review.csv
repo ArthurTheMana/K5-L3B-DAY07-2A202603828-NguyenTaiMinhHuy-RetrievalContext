@@ -1,0 +1,493 @@
+﻿question_id,question,expected_answer,source_id,page,status,matching_chunk_ids,gold_evidence,matching_chunk_texts
+Q01,"According to the University of Wollongong lecture, what abilities does AI aim to enable?","To sense, comprehend, act and learn with human-like levels of intelligence.",uow_ai_ml,5,NEEDS_REVIEW,uow_ai_ml_p005_paragraph_001,"dierent technologies working together to enable machines to sense, comprehend, act, and learn with human-like levels of intelligence. AI isn’t just one thing. (https://accenture.com)","[uow_ai_ml_p005_paragraph_001]
+Introduction
+What is ArtiεÇücial Intelligence (AI)?
+ArtiεÇücial intelligence is a constellation of many diεÇÇerent
+technologies working together to enable machines to sense,
+comprehend, act, and learn with human-like levels of intelligence.
+AI isnΓÇÖt just one thing. (https://accenture.com)
+5 / 40"
+Q02,How do the UOW slides distinguish Strong AI from Weak AI?,Strong AI aims at general human-like capabilities; Weak AI focuses on specific tasks.,uow_ai_ml,10,NEEDS_REVIEW,uow_ai_ml_p010_paragraph_001 | uow_ai_ml_p010_paragraph_002,"Strong AI Strong articial intelligence (AI), also known as articial general intelligence (AGI) or general AI, is a theoretical form of AI used to describe a certain mindset of AI development. Strong AI aims to create intelligent machines that are indistinguishable from the human mind. (https://www.ibm.com/cloud/learn/strong-ai) Weak AI","[uow_ai_ml_p010_paragraph_001]
+Strong vs Weak AI
+Strong AI
+Strong artiεÇücial intelligence (AI), also known as artiεÇücial general
+intelligence (AGI) or general AI, is a theoretical form of AI used to
+describe a certain mindset of AI development.
+Strong AI aims to create intelligent machines that are indistinguishable
+from the human mind.
+(https://www.ibm.com/cloud/learn/strong-ai)
+Weak AI
+Weak AI, also known as narrow AI, focuses on performing a speciεÇüc task,
+such as answering questions based on user input or playing chess.
+It c
+
+[uow_ai_ml_p010_paragraph_002]
+an perform one type of task, but not both, whereas Strong AI can
+perform a variety of functions, eventually teaching itself to solve for new
+problems.
+Weak AI relies on human interference to deεÇüne the parameters of its
+learning algorithms and to provide the relevant training data to ensure
+accuracy. (https://www.ibm.com/cloud/learn/strong-ai)
+8 / 40"
+Q03,Which six phases are listed in the UOW AI lifecycle?,Discovery/data collection/labeling; preparation; planning; building; communication of results; operationalization.,uow_ai_ml,15,NEEDS_REVIEW,uow_ai_ml_p015_paragraph_001,"Six phases 1 Discovery, Data collection and annotation/labeling 2 Data preparation (preprocessing) 3 Model planning (methods, techniques, workow, variables, relationships, models) 4 Model building (training and test datasets, software and hardware, analysis of results) 5 Communication of results (identify key ndings) 6 Operationalize (delivery, pilot project)","[uow_ai_ml_p015_paragraph_001]
+Life cycle of AI
+Six phases
+1
+Discovery, Data collection and annotation/labeling
+2
+Data preparation (preprocessing)
+3
+Model planning (methods, techniques, workεÇéow, variables,
+relationships, models)
+4
+Model building (training and test datasets, software and
+hardware, analysis of results)
+5
+Communication of results (identify key εÇündings)
+6
+Operationalize (delivery, pilot project)
+11 / 40"
+Q04,Which three approaches to feature engineering are listed in the lecture?,"Feature selection, feature extraction, and creating new features by gathering data.",uow_ai_ml,19,NORMALIZED_MATCH,uow_ai_ml_p019_paragraph_001,Feature selection : selecting the most useful features to train on among existing features 2 Feature extraction: combining existing features to produce a more useful one 3 Creating new features by gathering new data 13 / 40,"[uow_ai_ml_p019_paragraph_001]
+Data [is king]
+Feature Engineering
+1
+Feature selection : selecting the most useful features to train
+on among existing features
+2
+Feature extraction: combining existing features to produce a
+more useful one
+3
+Creating new features by gathering new data
+13 / 40"
+Q05,What is supervised learning according to the UOW lecture slides?,Learning a relationship from input data paired with appropriate output examples.,uow_ai_ml,20,NEEDS_REVIEW,uow_ai_ml_p020_paragraph_001,"What is it? In this learning scenario, there are examples of appropriate output data for specic input data. The problem is how to learn the best model of the relationship between the input","[uow_ai_ml_p020_paragraph_001]
+Supervised learning
+What is it?
+In this learning scenario, there are examples of appropriate
+output data for speciεÇüc input data.
+The problem is how to learn the best model of the relationship
+between the input and output from the example data.
+14 / 40"
+Q06,What three data subsets are recommended for supervised learning in the UOW slides?,"Training, test and validation datasets.",uow_ai_ml,21,NORMALIZED_MATCH,uow_ai_ml_p021_paragraph_001,"data into three distinct subsets. - training, test, and validation dataset. There is an implied model whose parameters can be learned. Train the model using an appropriate methodology. There","[uow_ai_ml_p021_paragraph_001]
+Supervised learning
+How to do it?
+Collect an appropriate amount of data.
+Separate data into three distinct subsets.
+- training, test, and validation dataset.
+There is an implied model whose parameters can be learned.
+Train the model using an appropriate methodology.
+There is a method of judging goodness of the model.
+- Optimize model by using the validation data.
+Test the model on the test data (not part of training set).
+14 / 40"
+Q07,How does the UOW lecture define unsupervised learning?,Learning from examples without predefined labels to discover patterns or meaningful clusters.,uow_ai_ml,25,NEEDS_REVIEW,uow_ai_ml_p025_paragraph_001,"there are example data, but they are not identied with a specic label beforehand. The problem is how to learn the underlying model that can best separate the data","[uow_ai_ml_p025_paragraph_001]
+Unsupervised learning
+What is it?
+In this learning scenario, there are example data, but they are
+not identiεÇüed with a speciεÇüc label beforehand.
+The problem is how to learn the underlying model that can
+best separate the data into meaningful clusters of categories.
+We want to uncover the pattern inherent in the data.
+We may not know how many clusters of categories are
+appropriate or makes sense.
+18 / 40"
+Q08,"What combination of labeled and unlabeled data is used in semi-supervised learning, according to the UOW slides?",A few labeled examples and many unlabeled examples.,uow_ai_ml,30,NORMALIZED_MATCH,uow_ai_ml_p030_paragraph_001,"In this learning scenario, there are a few labeled example data and many unlabelled data. labeling data is expensive; there is abundance of unlabelled data. The problem is how to","[uow_ai_ml_p030_paragraph_001]
+Semi-supervised learning
+What is it?
+In this learning scenario, there are a few labeled example data
+and many unlabelled data.
+labeling data is expensive; there is abundance of unlabelled
+data.
+The problem is how to learn the underlying model that can
+best classify the whole data into given categories despite lack
+of many labeled data.
+20 / 40"
+Q11,"How are AI, machine learning, and deep learning related in Colliot’s chapter?",Deep learning is a type of machine learning; machine learning is one approach to AI.,colliot_ml_2023,11,NEEDS_REVIEW,colliot_ml_2023_p011_paragraph_001 | colliot_ml_2023_p011_paragraph_002 | colliot_ml_2023_p011_paragraph_003 | colliot_ml_2023_p011_paragraph_004,"with a large number of hidden layers. Machine learning is one approach to articial intelligence, but other approaches exist. tions that will directly perform the considered task. Instead, one will","[colliot_ml_2023_p011_paragraph_001]
+10
+Colliot
+Artificial intelligence
+Machine learning
+Deep learning
+Figure 6: ArtiεÇücial intelligence, machine learning and deep learning
+are not synonymous. Deep learning is a type of machine learning which
+involves neural networks with a large number of hidden layers. Machine
+learning is one approach to artiεÇücial intelligence, but other approaches
+exist.
+tions that will directly perform the considered task. Instead, one will
+write a program that allows the computer to learn how to perform the
+tas
+
+[colliot_ml_2023_p011_paragraph_002]
+k by examining examples or experiences. The output of this learning
+process is a computer program itself that performs the desired task, but
+this program was not explicitly written. Instead, it has been learned
+automatically by the computer.
+In 1997, Tom Mitchell gave a more precise deεÇünition of a well-posed
+machine learning problem [31]:
+A computer program is said to learn from experience E with
+respect to some task T and some performance measure
+P, if its performance at task T, as measured by 
+
+[colliot_ml_2023_p011_paragraph_003]
+P, improves
+with experience E.
+He then provides the example of a computer that learns to play checkers:
+task T is playing checkers, performance measure P is the proportion of
+games won and the training experience E is playing checker games against
+itself. Very often, the experience E will not be an actual action but the
+observation of a set of examples, for instance a set of images belonging
+to diεÇÇerent categories such as photographs of cats and dogs, or medical
+images containing tumours or with
+
+[colliot_ml_2023_p011_paragraph_004]
+out lesions. Please refer to Box 1 for
+a summary.
+Machine Learning for Brain Disorders, Chapter 1"
+Q12,"In the 2023 book chapter, what do E, T, and P represent in Mitchell’s ML definition?","E is experience, T is task, P is performance measure.",colliot_ml_2023,12,NEEDS_REVIEW,colliot_ml_2023_p012_paragraph_001 | colliot_ml_2023_p012_paragraph_002 | colliot_ml_2023_p012_paragraph_003 | colliot_ml_2023_p012_paragraph_004,"computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance at task T, as measured by P, improves with experience E.” Example:","[colliot_ml_2023_p012_paragraph_001]
+Introduction to machine learning
+11
+Box 1: DeεÇÇnition of machine learning
+Machine learning deεÇünition (Mitchell, 1997 [31]):
+┬╖ ΓÇ£a computer program is said to learn from experience E with
+respect to some task T and some performance measure P,
+if its performance at task T, as measured by P, improves with
+experience E.ΓÇ¥
+Example: learning to detect tumours from medical images
+┬╖ Task T: detect tumours from medical image
+┬╖ Performance measure P: proportion of tumours correctly
+identiεÇüed
+┬╖ Experience E: 
+
+[colliot_ml_2023_p012_paragraph_002]
+examining a dataset of medical images where
+the presence of tumours has been annotated
+3.1
+Types of learning
+One usually considers three main types of learning: supervised learn-
+ing, unsupervised learning and reinforcement learning (Box 2). In both
+supervised and unsupervised learning, the experience E is actually the
+inspection of a set of examples, which will we refer to as training examples
+or training set.
+3.1.1. Supervised learning
+In supervised learning, the machine learns to perform a ta
+
+[colliot_ml_2023_p012_paragraph_003]
+sk by examin-
+ing a set of examples for which the output is known (i.e. the examples
+have been labelled). The two most common tasks in supervised learn-
+ing are classiεÇücation and regression (Figure 7). ClassiεÇücation aims at
+assigning a category for each sample.
+The examples can for instance
+be diεÇÇerent patients and the categories are the diεÇÇerent possible diag-
+noses. The outputs are thus discrete. Examples of common classiεÇücation
+algorithms include logistic regression (in spite of its name, it 
+
+[colliot_ml_2023_p012_paragraph_004]
+is a classi-
+εÇücation method), linear discriminant analysis, support vector machines,
+random forest classiεÇüers and deep learning models for classiεÇücation. In
+regression, the output is a continuous number. This can be for example
+the future clinical score of a patient that we are trying to predict. Ex-
+Machine Learning for Brain Disorders, Chapter 1"
+Q13,What distinguishes supervised learning from unsupervised learning in Colliot’s examples?,Supervised learning uses labeled examples; unsupervised learning uses unlabeled examples.,colliot_ml_2023,13,NEEDS_REVIEW,colliot_ml_2023_p013_paragraph_001 | colliot_ml_2023_p013_paragraph_002 | colliot_ml_2023_p013_paragraph_003 | colliot_ml_2023_p013_paragraph_004,"Supervised learning. Learns from labelled examples, i.e. examples for which the output that we are trying to learn is known. – Example 1. The task is computer-aided diagnosis (a clas- sication problem), the label can be the diagnosis of each patient, as dened by an expert physician. – Example 2. The task is the prediction of the age of a person from a set of biological variables (for example a brain MRI). This is a regression problem. The label is the true age of a given person in the training set. · Unsupervised learning. Learns from unlabelled examples.","[colliot_ml_2023_p013_paragraph_001]
+12
+Colliot
+Box 2: Supervised, unsupervised and reinforcement learning
+┬╖ Supervised learning.
+Learns from labelled examples, i.e.
+examples for which the output that we are trying to learn is
+known.
+ΓÇô Example 1. The task is computer-aided diagnosis (a clas-
+siεÇücation problem), the label can be the diagnosis of each
+patient, as deεÇüned by an expert physician.
+ΓÇô Example 2. The task is the prediction of the age of a
+person from a set of biological variables (for example a
+brain MRI). This is a regress
+
+[colliot_ml_2023_p013_paragraph_002]
+ion problem. The label is
+the true age of a given person in the training set.
+┬╖ Unsupervised learning. Learns from unlabelled examples.
+ΓÇô Example 1. Given a large set of newspapers articles, auto-
+matically cluster them into groups dealing with the same
+topic based only on the text of the article. The topics can
+for example be economics, politics, international aεÇÇairs.
+The topics are not known a priori.
+ΓÇô Example 2.
+Given a set of patients with autism spec-
+trum disorders, the aim is to discover
+
+[colliot_ml_2023_p013_paragraph_003]
+ cluster of patients
+that share the same characteristics. The clusters are not
+known a priori. Examples 1 and 2 will be referred to as
+clustering tasks.
+ΓÇô Example 3. Given a large set of medical characteristics
+(various biological measurements, clinical and cognitive
+tests, medical images), εÇünd a small set of variables that
+best explain the variability of the dataset. This is a di-
+mensionality reduction problem.
+┬╖ Reinforcement learning. Learns by iteratively performing
+actions to maximize some
+
+[colliot_ml_2023_p013_paragraph_004]
+ reward.
+ΓÇô Classical approach used for learning to play games (chess,
+go. . . ) or in the domain of robotics.
+ΓÇô Currently few applications in the domain of brain dis-
+eases.
+Machine Learning for Brain Disorders, Chapter 1"
+Q14,What two tasks are most common in unsupervised learning in Colliot’s chapter?,Clustering and dimensionality reduction.,colliot_ml_2023,15,NEEDS_REVIEW,colliot_ml_2023_p015_paragraph_001 | colliot_ml_2023_p015_paragraph_002 | colliot_ml_2023_p015_paragraph_003 | colliot_ml_2023_p015_paragraph_004 | colliot_ml_2023_p015_paragraph_005,tasks in unsupervised learning are clustering and dimensionality reduction (Figure 8). Clustering aims at discovering groups within the training set but these groups are not known,"[colliot_ml_2023_p015_paragraph_001]
+14
+Colliot
+amples of common regression methods include simple or multiple linear
+regression, penalized regression, and random forest regression. Finally,
+there are many other tasks that can be framed as a supervised learning
+problem, including for example data synthesis, image segmentation and
+many others which will be described in other chapters of this book.
+3.1.2. Unsupervised learning
+In unsupervised learning, the examples are not labeled. The two most
+common tasks in unsupervised learning a
+
+[colliot_ml_2023_p015_paragraph_002]
+re clustering and dimensionality
+reduction (Figure 8). Clustering aims at discovering groups within the
+training set but these groups are not known a priori. The objective is
+to εÇünd groups such that members of the same group are similar while
+members of diεÇÇerent groups are dissimilar. For example, one can aim
+to discover disease subtypes which are not known a priori. Some clas-
+sical clustering methods are k-means or spectral clustering for instance.
+Dimensionality reduction aims at εÇünding a spa
+
+[colliot_ml_2023_p015_paragraph_003]
+ce of variables (of lower
+dimension than the input space) that best explain the variability of the
+training data, given a larger set of input variables. This produces a new
+set of variables that, in general, are not among the input variables but
+are combinations of them. Examples of such methods include principal
+component analysis, Laplacian eigenmaps or variational autoencoders.
+3.1.3. Reinforcement learning
+In reinforcement learning, the machine will take a series of actions in
+order to maxim
+
+[colliot_ml_2023_p015_paragraph_004]
+ize a reward.
+This can for example be the case of a
+machine learning to play chess, which will play games against itself in
+order to maximize the number of victories. These methods are widely
+used for learning to play games or in the domain of robotics. So far, they
+have had few applications to brain diseases and will not be covered in
+the rest of this book.
+3.1.4. Discussion
+Unsupervised learning is obviously attractive because it does not re-
+quire labels. Indeed, acquiring labels for a traini
+
+[colliot_ml_2023_p015_paragraph_005]
+ng set is usually time-
+consuming and expensive because the labels need to be assigned by a
+human. This is even more problematic in medicine because the labels
+must be provided by experts in the εÇüeld.
+It is thus in principle at-
+tractive to adopt unsupervised strategies, even for tasks which could be
+framed as supervised learning problems. Nevertheless, up to now, the
+performances of supervised approaches are often vastly superior in many
+Machine Learning for Brain Disorders, Chapter 1"
+Q15,What does self-supervised learning do according to the chapter?,The machine provides its own supervision.,colliot_ml_2023,17,NEEDS_REVIEW,colliot_ml_2023_p017_paragraph_001 | colliot_ml_2023_p017_paragraph_002 | colliot_ml_2023_p017_paragraph_003 | colliot_ml_2023_p017_paragraph_004 | colliot_ml_2023_p017_paragraph_005 | colliot_ml_2023_p017_paragraph_006,"self-supervised learning, where the machine itself provides its own super- vision, has emerged. This is a promising approach which has already led to impressive results in dierent elds","[colliot_ml_2023_p017_paragraph_001]
+16
+Colliot
+applications. However, in the past years, an alternative strategy called
+self-supervised learning, where the machine itself provides its own super-
+vision, has emerged. This is a promising approach which has already led
+to impressive results in diεÇÇerent εÇüelds such as natural language process-
+ing in particular [32, 33, 34].
+3.2
+Overview of the learning process
+In this section, we aim at formalizing the main concepts underlying most
+supervised learning methods. Some of these concepts, 
+
+[colliot_ml_2023_p017_paragraph_002]
+with modiεÇücations,
+also extend to unsupervised cases.
+The task that we will consider will be to provide an output, denoted as
+y, from an input given to the computer, denoted as x. At this moment,
+the nature of x does not matter. It can for example be any possible
+photograph as in the example presented in Figure 9. It could be also
+be a single number, a series of numbers, a text . . . For now, the nature
+of y can also be varied. Typically, in the case of regression, it can be
+a number. In the cas
+
+[colliot_ml_2023_p017_paragraph_003]
+e of classiεÇücation, it corresponds to a label (for
+instance the label ΓÇ£catΓÇ¥ in our example). For now, you do not need to
+bother about how these data (images, labels . . . ) are represented in a
+computer. For those without a background in computer science, this will
+be brieεÇéy covered in subsection 3.3.
+Learning will aim at εÇünding a function f that can transform x into y,
+that is such that y = f(x). For now, f can be of any type, just imagine
+it as an operation that can associate a given x with a 
+
+[colliot_ml_2023_p017_paragraph_004]
+given y. In chapter
+3, the functions f will be artiεÇücial neural networks. Learning aims at
+εÇünding a function f which will provide the correct output for each given
+input. Let us call the loss function and denote Γäôa function that measures
+the error that is made by the function f. The loss function takes two
+arguments: the true output y and the predicted output f(x). The lower
+the loss function value, the closer the predicted output is to the true
+output. An example of loss function is the classic
+
+[colliot_ml_2023_p017_paragraph_005]
+al least squares loss
+Γäô(y, f(x)) = (y ΓêÆf(x))2 but many others exist. Ideally, the best function
+f would be the one that produces the minimal error for any possible
+input x and associated output y, not only those which we have at our
+disposal, but any other possible new data. Of course, we do not have
+any possible data at our disposal. Thus, we are going to use a set of
+data called the training set. In supervised learning, this set is labelled,
+i.e. for each example in this set, we know the value
+
+[colliot_ml_2023_p017_paragraph_006]
+ of both x and y. Let
+us denote as (x(1), y(1)), . . ., (x(n), y(n)) the n examples of the training set
+which are n pairs of inputs and outputs. We are now going to search
+for the function f that makes the minimum error over the n samples of
+Machine Learning for Brain Disorders, Chapter 1"
+Q16,What does the cost function measure in the learning process?,The average error across the training set.,colliot_ml_2023,19,NEEDS_REVIEW,colliot_ml_2023_p019_paragraph_001 | colliot_ml_2023_p019_paragraph_002 | colliot_ml_2023_p019_paragraph_003 | colliot_ml_2023_p019_paragraph_004 | colliot_ml_2023_p019_paragraph_005,"for the function which minimizes the average error over the training set. Let us call this average error the cost function: J(f) = 1 n n  i=1 ℓ  y(i), f(x(i))  Learning will then aim at","[colliot_ml_2023_p019_paragraph_001]
+18
+Colliot
+the training set. In other words, we are looking for the function which
+minimizes the average error over the training set. Let us call this average
+error the cost function:
+J(f) = 1
+n
+n
+εÇë
+i=1
+Γäô
+εÇÇ
+y(i), f(x(i))
+εÇü
+Learning will then aim at εÇünding the function ╦åf which minimizes the
+cost function:
+╦åf = arg min
+fΓêêF
+1
+n
+n
+εÇë
+i=1
+Γäô
+εÇÇ
+y(i), f(x(i))
+εÇü
+In the above equation, arg min indicates that we are interested in the
+function f that minimizes the cost J(f) and not in the value of the cost
+
+
+[colliot_ml_2023_p019_paragraph_002]
+itself. F is the space that contains all admissible functions. F can for
+instance be the set of linear functions or the set of neural networks with
+a given architecture.
+The procedure that will aim at εÇünding f that minimizes the cost is
+called an optimization procedure. Sometimes, the minimum can be εÇünd
+analytically (i.e. by directly solving an equation for f) but this will rarely
+be the case. In other cases, one will resort to an iterative procedure (i.e.
+an algorithm): the function f is iterat
+
+[colliot_ml_2023_p019_paragraph_003]
+ively modiεÇüed until we εÇünd the
+function which minimizes the cost. There are cases where we will have
+an algorithm that is guaranteed to εÇünd the global minimum and others
+where one will only εÇünd a local minimum.
+Minimizing the errors on the training set does not guarantee that
+the trained computer will perform well on new examples which were
+not part of the training set. A εÇürst reason may be that the training
+set is too diεÇÇerent from the general population (for instance, we have
+trained a model o
+
+[colliot_ml_2023_p019_paragraph_004]
+n a dataset of young males and we would like to apply
+it to patients of any gender and age). Another reason is that, even if
+the training set characteristics follow those of the general population,
+the learned function f may be too speciεÇüc to the training set. In other
+words, it has learned the training set ΓÇ£by heartΓÇ¥ but has not discovered a
+more general rule that would work for other examples. This phenomenon
+is called overεÇütting and often arises when the dimensionality of the data
+is too high
+
+[colliot_ml_2023_p019_paragraph_005]
+ (there are many variables to represent an input), when the
+training set is too small or when the function f is too εÇéexible. A way to
+prevent overεÇütting will be to modify the cost function so that it not only
+represents the average error across training samples but also constrains
+the function f to have some speciεÇüc properties.
+Machine Learning for Brain Disorders, Chapter 1"
+Q17,What is overfitting according to Colliot’s chapter?,A model learns the training set too specifically and fails to generalize to new examples.,colliot_ml_2023,19,NEEDS_REVIEW,colliot_ml_2023_p019_paragraph_001 | colliot_ml_2023_p019_paragraph_002 | colliot_ml_2023_p019_paragraph_003 | colliot_ml_2023_p019_paragraph_004 | colliot_ml_2023_p019_paragraph_005,"In other words, it has learned the training set “by heart” but has not discovered a more general rule that would work for other examples. This phenomenon is called over","[colliot_ml_2023_p019_paragraph_001]
+18
+Colliot
+the training set. In other words, we are looking for the function which
+minimizes the average error over the training set. Let us call this average
+error the cost function:
+J(f) = 1
+n
+n
+εÇë
+i=1
+Γäô
+εÇÇ
+y(i), f(x(i))
+εÇü
+Learning will then aim at εÇünding the function ╦åf which minimizes the
+cost function:
+╦åf = arg min
+fΓêêF
+1
+n
+n
+εÇë
+i=1
+Γäô
+εÇÇ
+y(i), f(x(i))
+εÇü
+In the above equation, arg min indicates that we are interested in the
+function f that minimizes the cost J(f) and not in the value of the cost
+
+
+[colliot_ml_2023_p019_paragraph_002]
+itself. F is the space that contains all admissible functions. F can for
+instance be the set of linear functions or the set of neural networks with
+a given architecture.
+The procedure that will aim at εÇünding f that minimizes the cost is
+called an optimization procedure. Sometimes, the minimum can be εÇünd
+analytically (i.e. by directly solving an equation for f) but this will rarely
+be the case. In other cases, one will resort to an iterative procedure (i.e.
+an algorithm): the function f is iterat
+
+[colliot_ml_2023_p019_paragraph_003]
+ively modiεÇüed until we εÇünd the
+function which minimizes the cost. There are cases where we will have
+an algorithm that is guaranteed to εÇünd the global minimum and others
+where one will only εÇünd a local minimum.
+Minimizing the errors on the training set does not guarantee that
+the trained computer will perform well on new examples which were
+not part of the training set. A εÇürst reason may be that the training
+set is too diεÇÇerent from the general population (for instance, we have
+trained a model o
+
+[colliot_ml_2023_p019_paragraph_004]
+n a dataset of young males and we would like to apply
+it to patients of any gender and age). Another reason is that, even if
+the training set characteristics follow those of the general population,
+the learned function f may be too speciεÇüc to the training set. In other
+words, it has learned the training set ΓÇ£by heartΓÇ¥ but has not discovered a
+more general rule that would work for other examples. This phenomenon
+is called overεÇütting and often arises when the dimensionality of the data
+is too high
+
+[colliot_ml_2023_p019_paragraph_005]
+ (there are many variables to represent an input), when the
+training set is too small or when the function f is too εÇéexible. A way to
+prevent overεÇütting will be to modify the cost function so that it not only
+represents the average error across training samples but also constrains
+the function f to have some speciεÇüc properties.
+Machine Learning for Brain Disorders, Chapter 1"
